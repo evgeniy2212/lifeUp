@@ -1,0 +1,637 @@
+@media screen and (max-width: 1200px) {
+    h2 {
+        font-size: 90px;
+    }
+
+    /*Life-Up*/
+    .img-life-up ul {
+        justify-content: center;
+    }
+    .title-life-up a span {
+        left: -60px;
+    }
+
+
+    /*Prototype*/
+    .our-prototype-text:before {
+        max-width: 575px;
+    }
+    .our-prototype-text {
+        margin-left: 0;
+        padding: 0;
+    }
+
+    /*Reviews*/
+    .new-review div:before {
+        display: none;
+    }
+
+
+    /*Be with Us*/
+    .gifts h2 {
+        font-size: 70px;
+        line-height: 90px;
+    }
+    .gifts p,
+    .gifts li {
+        font-size: 22px;
+        line-height: 30px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    h2 {
+        font-size: 70px;
+    }
+    .about-section {
+        padding: 0;
+    }
+    .about-section:before,
+    .reviews .about-section:before {
+        min-height: 500px;
+    }
+    .heating h3 {
+        font-size: 45px;
+        line-height: 50px;
+    }
+
+    /*Life-Up*/
+    .title-life-up {
+        padding-right: 15px;
+    }
+
+
+    /*Prototype*/
+    .our-prototype-video h4 {
+        margin-bottom: 30px;
+        font-size: 25px;
+        padding-left: 15px;
+    }
+    .our-prototype-video p {
+        font-size: 18px;
+        line-height: 20px;
+    }
+    .our-prototype-video a {
+        min-height: 90px;
+        padding-left: 15px;
+    }
+    .our-prototype-video i {
+        width: 90px;
+        height: 90px;
+        left: -90px;
+    }
+    .our-prototype-block figure span {
+        left: -30%;
+    }
+    .our-prototype-text h4 {
+        font-size: 30px;
+        line-height: 35px;
+    }
+
+
+    /*Team*/
+    .team {
+        padding-bottom: 140px;
+    }
+    .about-liked-blocks:before {
+        display: none;
+    }
+    .our-team .slick-slide {
+        padding: 30px;
+    }
+    .hobby {
+        margin-bottom: 40px;
+    }
+    .hobby-icon img {
+        height: 40px;
+    }
+    .our-team h4 {
+        font-size: 35px;
+        line-height: 40px;
+    }
+    .our-team h5 {
+        margin-bottom: 30px;
+    }
+    .our-team p {
+        line-height: 20px;
+        margin-bottom: 20px;
+    }
+    .our-team p:last-of-type {
+        margin-bottom: 50px;
+    }
+    .our-team figure:before {
+        top: 35px;
+        left: -35px;
+    }
+    .our-team figure:after {
+        top: 75px;
+        right: -65px;
+    }
+
+    /*Be With Us*/
+    .gifts h2 {
+        font-size: 50px;
+        line-height: 70px;
+    }
+    .gifts p,
+    .gifts li {
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+
+    /*Footer*/
+    .foot-text h5 {
+        text-align: left;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    h2 {
+        font-size: 50px;
+        line-height: 50px;
+    }
+
+
+    .about-section:before,
+    .reviews .about-section:before,
+    .be-with-us .about-section:before {
+        width: 300%;
+        top: 250px;
+    }
+    .reviews .about-section:before,
+    .be-with-us .about-section:before{
+        top: 0;
+        min-height: 300px;
+    }
+    .heating {
+        text-align: center !important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .heating h3 {
+        font-size: 30px;
+        line-height: 32px;
+    }
+    .heating p {
+        font-size: 16px;
+        line-height: 18px;
+    }
+    .heating span,
+    .reviews .heating span,
+    .be-with-us .heating span {
+        transform: scale(0.5);
+        left: -60px;
+        right: auto;
+    }
+
+
+
+    /*Life-Up*/
+    .life-up {
+        padding-bottom: 100px;
+    }
+    .life-up > div {
+        flex-direction: column-reverse;
+    }
+    .title-life-up h4,
+    .title-life-up p,
+    .title-life-up img {
+        margin-bottom: 15px;
+    }
+    .title-life-up p {
+        font-size: 16px;
+        line-height: 18px;
+    }
+    .title-life-up span {
+        display: none;
+    }
+    .title-life-up a span {
+        display: block;
+        transform: scale(0.8);
+        left: -55px;
+    }
+
+
+    /*Capabilities*/
+    .capabilities {
+        padding-bottom: 35px;
+        margin-bottom: 50px;
+    }
+    /*Our Capabilities*/
+    .our-capabilities {
+        padding: 130px 15px 30px;
+    }
+    .capabilities .our-capabilities li {
+        min-height: 75px;
+    }
+    .our-capabilities li:nth-child(odd) {
+        padding: 0 25px 0 70px;
+    }
+    .our-capabilities li:nth-child(even) {
+        padding: 0 70px 0 25px;
+    }
+    .our-capabilities li p {
+        font-size: 17px;
+        line-height: 22px;
+    }
+    .our-capabilities li i {
+        margin: auto;
+        top: 0; bottom: 0;
+        width: 90px;
+        height: 90px;
+    }
+    .our-capabilities li:nth-child(odd) i {
+        left: -25px;
+    }
+    .our-capabilities li:nth-child(even) i {
+        right: -25px;
+    }
+    /*Advantage*/
+    .advantage-name {
+        margin-bottom: 50px;
+    }
+    .advantage-name div {
+        height: 60px;
+    }
+    .advantage-name div:before {
+        width: 50%;
+    }
+    .our-advantage-block h5 {
+        font-size: 14px;
+    }
+
+
+    /*Prototype*/
+    .our-prototype {
+        margin-bottom: 100px;
+    }
+    .our-prototype-video a {
+        min-height: 80px;
+    }
+    .our-prototype-video i {
+        height: 80px;
+        width: 80px;
+        left: -80px;
+    }
+    .our-prototype-video p {
+        font-size: 16px;
+        line-height: 18px;
+    }
+    .our-prototype-block figure span {
+        display: none;
+    }
+    .our-prototype-text {
+        margin-top: 15px;
+    }
+    .our-prototype-text:before {
+        display: none;
+    }
+    .our-prototype-text h4 {
+        text-align: center;
+        font-size: 25px;
+        line-height: 30px;
+    }
+
+    /*Reviews*/
+    .reviews {
+        margin-bottom: 100px;
+    }
+    .new-review h4 {
+        font-size: 25px;
+        line-height: 30px;
+    }
+
+
+    /*Team*/
+    .our-team .slick-slide {
+        flex-direction: column;
+    }
+    .hobby {
+        margin-bottom: 40px;
+    }
+    .hobby-icon img {
+        height: 40px;
+    }
+    .our-team h4 {
+        font-size: 35px;
+        line-height: 40px;
+    }
+    .our-team h5 {
+        margin-bottom: 30px;
+    }
+    .our-team p {
+        line-height: 20px;
+        margin-bottom: 20px;
+    }
+    .our-team p:last-of-type {
+        margin-bottom: 50px;
+    }
+    .our-team figure {
+        max-width: 125px;
+        height: 165px;
+    }
+    .our-team figure:before {
+        top: 35px;
+        left: -35px;
+    }
+    .our-team figure:after {
+        top: 65px;
+        right: -55px;
+    }
+    /*Liked*/
+    .liked-name {
+        margin-bottom: 50px;
+    }
+    .liked-name div {
+        height: 60px;
+    }
+    .liked-name div:before {
+        width: 50%;
+    }
+    .about-liked h5 {
+        font-size: 22px;
+        line-height: 30px;
+    }
+    .support .liked-btn, .join .liked-btn {
+        font-size: 28px;
+        line-height: 32px;
+        min-height: 70px;
+    }
+
+
+    /*Be With Us*/
+    .gifts h2 {
+        font-size: 35px;
+        line-height: 40px;
+    }
+    .gifts p,
+    .gifts li,
+    .gifts input,
+    .gifts form button {
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+
+    /*Contacts*/
+    .our-contacts form {
+        padding: 15px;
+    }
+
+
+    /*Footer*/
+    .language {
+        margin-bottom: 15px;
+    }
+    .foot-text h5 {
+        text-align: center;
+    }
+    .foot-btn button {
+        float: none;
+        text-align: center;
+    }
+    .foot-btn {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    h2 {
+        font-size: 30px;
+        line-height: 30px;
+    }
+    header .language {
+        display: none;
+        position: absolute;
+        right: 0;
+        top: -14px;
+        padding: 75px 15px 35px;
+        background: rgba(81,207,206, 0.4);
+        border-bottom-left-radius: 300px;
+        margin: 0;
+        max-width: 250px;
+        animation: hamburger 0.5s;
+        z-index: 1;
+    }
+    header .language ul {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    header .download {
+        margin: 0;
+    }
+    header .language li {
+        margin: 5px 0;
+    }
+    header .language ul a {
+        border: none;
+        padding: 15px 0;
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .hamburger {
+        display: block;
+    }
+    .about-section:before {
+        top: 300px;
+    }
+    .heating h3 {
+        font-size: 25px;
+    }
+    .heating p {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+
+    /*Life-Up*/
+    .life-up {
+        padding-top: 150px;
+    }
+    .title-life-up {
+        padding: 0 25px;
+    }
+
+
+    /*Capabilities*/
+    /*Advantage*/
+    .advantage-name div {
+        height: 30px;
+    }
+    .advantage-name div:before {
+        height: 6px;
+        top: -6px;
+    }
+    .our-advantage-block {
+        max-width: none;
+        margin: 0 30px;
+    }
+
+
+    /*Prototype*/
+    .our-prototype-block {
+        flex-direction: column;
+        align-items: center;
+    }
+    .our-prototype-text {
+        display: none;
+    }
+    .our-prototype-video {
+        margin-left: 50px;
+    }
+    .our-prototype-block figure {
+        margin-bottom: 50px;
+    }
+
+
+    /*Reviews*/
+    .reviews {
+        margin-bottom: 50px;
+    }
+    .new-review {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .new-review div {
+        margin-bottom: 15px;
+    }
+    .new-review h4 {
+        text-align: center;
+    }
+    .new-review .btn-modal-review {
+        padding: 15px 25px;
+    }
+
+
+    /*Team*/
+    /*Liked*/
+    .liked-name div {
+        height: 30px;
+    }
+    .liked-name div:before {
+        height: 6px;
+        top: -6px;
+    }
+    .about-liked h5 {
+        font-size: 20px;
+        line-height: 22px;
+    }
+    .support .liked-btn, .join .liked-btn {
+        font-size: 25px;
+        line-height: 27px;
+    }
+
+
+    /*Be With Us*/
+    .be-with-us {
+        margin-bottom: 100px;
+    }
+    .gifts h2 {
+        font-size: 25px;
+        line-height: 30px;
+        text-align: center;
+    }
+    .gifts p,
+    .gifts li,
+    .gifts input,
+    .gifts form button{
+        font-size: 14px;
+        line-height: 16px;
+        text-align: center;
+    }
+    .gifts form {
+        flex-direction: column;
+        align-items: center;
+    }
+    .gifts form p {
+        font-size: 10px;
+        line-height: 12px;
+    }
+
+
+    /*Contacts*/
+    .our-contacts {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 150px;
+    }
+    .our-contacts form textarea {
+        height: 200px   ;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h2 {
+        font-size: 25px;
+    }
+    .heating h3 {
+        font-size: 20px;
+    }
+
+    /*Life-Up*/
+    .title-life-up h4,
+    .title-life-up a {
+        padding: 15px 15px 15px 25px;
+    }
+    .title-life-up a {
+        margin-left: 25px;
+    }
+
+    /*Capabilities*/
+    /*Our Capabilities*/
+    .capabilities {
+        background-size: 100% 99%;
+    }
+    .our-capabilities {
+        padding-bottom: 0;
+    }
+    .our-capabilities ul {
+        padding: 0;
+    }
+    .our-capabilities li:nth-child(odd) {
+        padding: 5px 15px 5px 60px;
+    }
+    .our-capabilities li:nth-child(even) {
+        padding: 5px 60px 5px 15px;
+    }
+    .our-capabilities li p {
+        font-size: 16px;
+        line-height: 18px;
+    }
+    .our-capabilities li i {
+        width: 65px;
+        height: 65px;
+    }
+    .our-capabilities li:nth-child(odd) i {
+        left: -10px;
+    }
+    .our-capabilities li:nth-child(even) i {
+        right: -10px;
+    }
+    .our-capabilities li i:before {
+        transform: scale(0.7);
+    }
+    /*Advantage*/
+    .our-advantage-block {
+        margin: 0 20px;
+    }
+
+
+    /*team*/
+    .support,
+    .join {
+        padding: 0 15px;
+    }
+
+
+    /*Be With Us*/
+    .gifts figure {
+        display: none;
+    }
+}

@@ -1,0 +1,1186 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+    <head>
+
+        <meta charset="utf-8">
+
+        <title>LifeUp</title>
+        <meta name="description" content="">
+
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+        <meta property="og:image" content="path/to/image.jpg">
+        <link rel="shortcut icon" href="img/icons/mobile_logo.png" type="image/x-icon">
+        <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+        <!-- Chrome, Firefox OS and Opera -->
+        <meta name="theme-color" content="#000">
+        <!-- Windows Phone -->
+        <meta name="msapplication-navbutton-color" content="#000">
+        <!-- iOS Safari -->
+        <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
+        <style>body { opacity: 0; overflow-x: hidden; } html { background-color: #fff; }</style>
+	      <link rel="stylesheet" href="css/main.min.css">
+        <link rel="stylesheet" href="css/libs.css">
+        <link rel="stylesheet" href="css/style_life.css">
+
+    </head>
+
+    <body>
+        <header id="header" style="background-image: url(img/header_bg.png);">
+            <div class="top_mnu">
+                <div class="top_line">
+                    <div class="h_social_wrap_top" id="social_top" style="visibility: hidden">
+                        <p>Поделитесь<br>с друзьями</p>
+                        <a href="https://twitter.com/lifeupkiev" target="_blank"><i style="color: #c2024f;" class="fa fa-twitter"></i></a>
+                        <a href="https://www.facebook.com/sivchikov27" target="_blank"><i style="color: #c2024f;" class="fa fa-facebook"></i></a>
+                        <a href="https://plus.google.com/+%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B0%D0%BD%D0%B4%D1%80%D0%A1%D0%B8%D0%B2%D1%87%D0%B8%D0%BA%D0%BE%D0%B2" target="_blank"><i style="color: #c2024f;" class="fa fa-google-plus"></i></a>
+                    </div>
+                    <a href='https://drive.google.com/drive/folders/1U3grWPSWQdO5VFlPCV6M13eEhZ0a9GWA?usp=sharing' target="_blank" class="transp_button " >Файлы</a>
+                    <div class="lang_wrap">
+                        <p class="now_lang lang_ru">RU</p>
+                    </div>
+                    <button class="toggle_mnu">
+                    <span class="sandwich">
+                        <span class="sw_top"></span>
+                        <span class="sw_mid"></span>
+                        <span class="sw_bot"></span>
+                    </span>
+                    </button>
+                </div>
+                <div class="nav_wrap">
+                    <nav class="main_mnu">
+                        <ul>
+                            <li><a href="#about">О нас</a></li>
+                            <li><a href="#screenshots">Прототип</a></li>
+                            <li><a href="#s_review">Отзывы</a></li>
+                            <li><a href="#s_team">Наша команда</a></li>
+                            <li><a href="#contacts">Контакты</a></li>
+                        </ul>
+                    </nav>
+                </div>
+	              <div class="language_wrap">
+		              <div class="languages">
+			              <div class="l_item_wrap"><a href="indexSorry.html" class="lw_item denmark">DN</a></div>
+			              <div class="l_item_wrap"><a href="indexSorry.html" class="lw_item china">CN</a></div>
+			              <div class="l_item_wrap"><a href="indexSorry.html" class="lw_item france">FR</a></div>
+			              <div class="l_item_wrap"><a href="indexSorry.html" class="lw_item romania">RO</a></div>
+			              <div class="l_item_wrap"><a href="indexItaly.html" class="lw_item italy">IT</a></div>
+			              <div class="l_item_wrap"><a href="indexSorry.html" class="lw_item germany">DE</a></div>
+			              <div class="l_item_wrap"><a href="indexSorry.html" class="lw_item japan">JP</a></div>
+			              <div class="l_item_wrap"><a href="#" class="lw_item ukraine">UA</a></div>
+			              <div class="l_item_wrap"><a href="indexSorry.html" class="lw_item united_arab">AE</a></div>
+			              <div class="l_item_wrap"><a href="indexSorry.html" class="lw_item turkey">TR</a></div>
+			              <div class="l_item_wrap"><a href="#" class="lw_item poland">PL</a></div>
+			              <div class="l_item_wrap"><a href="indexSorry.html" class="lw_item usa">EN</a></div>
+			              <div class="l_item_wrap"><a href="indexSorry.html" class="lw_item spain">SP</a></div>
+			              <div class="l_item_wrap"><a href="indexSorry.html" class="lw_item russia">RU</a></div>
+			              <div class="l_item_wrap"><a href="indexSorry.html" class="lw_item hung">HN</a></div>
+		              </div>
+	              </div>
+            </div>
+            <div class="scroll_top_btn" title="Наверх">
+                <i class="fa fa-angle-double-up"></i>
+            </div>
+            <!--Контент шапки-->
+            <div class="header_content">
+                <div class="h_left_content">
+	                  <div class="hc_logo">
+		                  <img id="logo" src="img/LIFEUP.png" alt="LifeUP">
+		                  <span class="hc_logo_descr">Территория свободных людей</span>
+	                  </div>
+
+                    <div class="h_l_description">
+                        <p style="margin-bottom: 20px; font-size: 16px">Хотите отправиться в путешествие мечты?<br>Устали добираться на работу тремя видами транспорта?<br>Или ищете веселую компанию, чтобы позвать в отпуск?</p>
+                        <p style="margin-bottom: 20px; font-size: 16px">Уделите всего пару минут и узнайте о новой платформе "LIFEUP".<br>LifeUp быстро решает эти задачи и предлагает еще 99+ "плюшек",<br>которые упростят Вам жизнь.</p>
+                    </div>
+                    <a href="https://www.youtube.com/watch?v=wufA-pqBMXc" class="transp_button magnific_youtube promo">Промо-ролик</a>
+                    <div class="h_social_wrap">
+                        <p>Поделитесь<br>с друзьями</p>
+                        <a href="https://twitter.com/lifeupkiev" target="_blank"><i style="color: #c2024f;" class="fa fa-twitter"></i></a>
+                        <a href="https://www.facebook.com/sivchikov27" target="_blank"><i style="color: #c2024f;" class="fa fa-facebook"></i></a>
+                        <a href="https://plus.google.com/+%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B0%D0%BD%D0%B4%D1%80%D0%A1%D0%B8%D0%B2%D1%87%D0%B8%D0%BA%D0%BE%D0%B2" target="_blank"><i style="color: #c2024f;" class="fa fa-google-plus"></i></a>
+                    </div>
+                </div>
+                <div class="h_right_content">
+                    <div class="prototype_wrap">
+	                    <div class="scroll_to_prototype">
+		                    <div class="mw-wrapper">
+			                    <div class="mouse-icon" href="screenshots">
+				                    <div class="wheel"></div>
+			                    </div>
+                                <div class="line-arrow-div">
+                                    <img class="line-arrow" src="img/line-arrow.png" alt="">
+                                <div class="arrow-down-div">
+                                    <img class="arrow-down" src="img/arrow-down.png" alt="">
+                                </div>
+                                </div>
+		                    </div>
+		                    <p style="text-transform: uppercase;margin-top: -25px" id="top_phone">нажми на экран</p>
+	                    </div>
+	                    <img class="h_prototype" href="#screenshots" src="img/prototype_phone.png" alt="Прототип">
+
+	                    <div class="prototype_info">
+		                    <div class="apple_ready">
+			                    <p>Complete 7%</p>
+			                    <div class="apple_range_wrap">
+                              <div class="apple_range"></div>
+                          </div>
+		                    </div>
+		                    <div class="android_ready">
+			                    <p>Complete 34%</p>
+                            <div class="android_range_wrap">
+                                <div class="android_range"></div>
+                            </div>
+		                    </div>
+		                    <div class="web_ready">
+			                    <p>Complete 18%</p>
+                            <div class="web_range_wrap">
+                                <div class="web_range"></div>
+                            </div>
+		                    </div>
+	                    </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="doc_popup">
+                <div class="doc_popup_wrap">
+                    <a href="" class="doc_file">
+                        <div class="df_img"><img src="img/doc_img.png" alt=""></div>
+                        <div class="df_name"><span>Название документа</span></div>
+                    </a>
+                    <a href="" class="doc_file">
+                        <div class="df_img"><img src="img/doc_img.png" alt=""></div>
+                        <div class="df_name"><span>Название документа</span></div>
+                    </a>
+                    <a href="" class="doc_file">
+                        <div class="df_img"><img src="img/doc_img.png" alt=""></div>
+                        <div class="df_name"><span>Название документа</span></div>
+                    </a>
+                    <a href="" class="doc_file">
+                        <div class="df_img"><img src="img/doc_img.png" alt=""></div>
+                        <div class="df_name"><span>Название документа</span></div>
+                    </a>
+                    <a href="" class="doc_file">
+                        <div class="df_img"><img src="img/doc_img.png" alt=""></div>
+                        <div class="df_name"><span>Название документа</span></div>
+                    </a>
+                    <a href="" class="doc_file">
+                        <div class="df_img"><img src="img/doc_img.png" alt=""></div>
+                        <div class="df_name"><span>Название документа</span></div>
+                    </a>
+                    <a href="" class="doc_file">
+                        <div class="df_img"><img src="img/doc_img.png" alt=""></div>
+                        <div class="df_name"><span>Название документа</span></div>
+                    </a>
+                    <a href="" class="doc_file">
+                        <div class="df_img"><img src="img/doc_img.png" alt=""></div>
+                        <div class="df_name"><span>Название документа</span></div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="popup_donate">
+                <i class="fa-fa fa-window-close donate_window_close"></i>
+                <h4>Помощь нашему проекту:</h4>
+                <p>Нам необходима любая помощь для создания приложения. Если вы можете и хотите нам помочь, то вы можете это сделать одним из следующих способов:</p>
+                <ul>
+                    <li>Перевод на карту банка</li>
+                    <li>Перевод на счет YandexДеньги</li>
+                    <li>Перевод на QIWI кошелек</li>
+                    <li>Перевод на WebMoney</li>
+                </ul>
+            </div>
+        </header>
+        <section class="about">
+            <div class="s_header" id="about">
+                <img src="img/s_header.png" alt="Новая секция">
+                <div class="number"><img src="img/icons/s_about_icon.png" alt="О нас"></div>
+                <div class="header_cont">
+                    <h2 style="font-size: 36px;text-transform: uppercase">Возможности</h2>
+                    <p></p>
+                </div>
+            </div>
+            <div class="about_top" style="background-image: url(img/bg/bg_1.jpg);">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12">
+                            <ul style="margin-top: -70px" class="tasks">
+                                <li class="blue-li-desc" style="margin-left: -80px;">Комфортно и бюджетно путешествовать.</li>
+                                <li class="black-li-desc">Находить людей по общим интересами вместе планировать поездки по всему миру.</li>
+                                <li class="blue-li-desc">Делиться впечатлениями от путешествий с другими пользователями приложения.</li>
+                                <li class="black-li-desc">Общаться без языковых барьеров благодаря переводчику, интегрированному в мессенджер.</li>
+                                <li class="blue-li-desc">Быстро находить жилье на любой вкус и бюджет.</li>
+                                <li class="black-li-desc">Пользоваться виртуальным автостопом и искать попутчиков в любой точке планеты.</li>
+                                <li class="blue-li-desc">Находить любый туристические сервисы всего в 3 клика.</li>
+                                <li class="black-li-desc">Арендовать транспорт и снаряжение для активного отдыха в любом городе.</li>
+                                <li class="blue-li-desc">Полная свобода действий с проверенными людьми.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="s_container">
+                <div class="s_content">
+                    <div class="about_bot" style="background-image: url("../img/bg/bg_1.jpg")!important;">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-6 col-xl-3">
+                                    <div class="icon_cont">
+                                        <div class="img_wrap"><img id="first-img" class="img-responsive" src="img/icons/icon_two_phones.png" alt="Два телефона))"></div>
+                                        <p style="font-size: 24px;font-weight: bold">Нам по пути</p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-xl-3">
+                                    <div class="icon_cont">
+                                        <div class="img_wrap"><img id="second-img" class="img-responsive" src="img/icons/icon_man.png" alt="Интерфейс"></div>
+                                        <p style="font-size: 24px;font-weight: bold">Удобный интерфейс и креативный дизайн</p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-xl-3">
+                                    <div class="icon_cont">
+                                        <div class="img_wrap"><img id="third-img" class="img-responsive" src="img/icons/icon_social.png" alt="Интегрирование"></div>
+                                        <p style="font-size: 24px;font-weight: bold">Социальное интегрирование</p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-xl-3">
+                                    <div class="icon_cont">
+                                        <div class="img_wrap"><img id="fourth-img" class="img-responsive" src="img/icons/icon_multifunc.png" alt="Мультифункциональность"></div>
+                                        <p style="font-size: 24px;font-weight: bold">Мульти-функциональность</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="screenshots">
+            <div class="s_header_invers" id="screenshots">
+                <img src="img/s_header_invers.png" alt="Новая секция">
+                <div class="header_cont">
+                    <h2>Прототип</h2>
+                    <p>Оцените наш уникальный дизайн, и оставьте ниже свои комментарии</p>
+                </div>
+                <div class="number"><img src="img/icons/s_prototype_icon.png" alt="Прототип"></div>
+            </div>
+            <div class="s_container">
+                <div class="s_content">
+                    <div class="top_content">
+                        <div class="prototype_wrap">
+                            <div class="scroll_to_prototype_phone">
+                                <div class="mw-wrapper_phone">
+                                    <p style="text-transform: uppercase;">вернуться обратно</p>
+                                    <div class="line-arrow-div_phone">
+                                        <img style="position:absolute;margin-left: -19%;margin-top: 109%;width: 11px;height: 6px;" src="img/black-arrow-top.png" alt="">
+                                        <img style="width: 1px;height: 74px;position: absolute;margin-top: 120%;margin-left: 0%;" src="img/black-arrow.png" alt="">
+                                        <!--<img style="position: absolute;width: 20px;height: 30px;margin-top: -570%;margin-left: -40%;" src="img/mouse61.png" alt="">-->
+                                    </div>
+                                    <div class="mouse-icon_phone" href="#">
+                                        <div class="wheel_phone"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <img class="img-responsive" src="img/prototype_phone.png" alt="prototype">
+                        </div>
+                        <div class="select_wrap">
+                            <a id="link-near-prototype" style="position: absolute;margin-top: -100px;margin-left: 815px;border-right: 0;" href="#"></a>
+                        </div>
+                        <div class="blue-triangle-right">
+                            <img class="blue-triangle-img" src="img/figure.png" alt="">
+                            <p class="desc-blue-trian">GO</p>
+                            <p class="desc-under-go">REVIEW</p>
+                            <div class="review-blue-trian">
+                                <div id="first-review" style="color:white; margin-left: 460px;margin-top: -215px" class="circle-number"><p style="position: absolute;margin-top: -4px;margin-left: 4px;cursor: pointer">1</p></div>
+                                <p onclick="location.href='https://youtu.be/sqYye-FgD5Y'" id="first-review-p" style="color:white;margin-left: 490px;margin-top: -215px;cursor: pointer" class="review-p" >весь мир уже перед тобой</p>
+                                <div id="second-review" style="color:white;margin-left: 460px;margin-top: -185px" class="circle-number"><p style="position: absolute;margin-top: -4px;margin-left: 4px;cursor: pointer">2</p></div>
+                                <p onclick="location.href='https://youtu.be/LY-yc85u5Bs'" id="second-review-p" style="margin-left: 490px;margin-top: -185px;cursor: pointer" class="review-p">ищи и находи</p>
+                                <div id="third-review" style="color:white;margin-left: 460px;margin-top: -155px" class="circle-number"><p style="position: absolute;margin-top: -4px;margin-left: 4px;cursor: pointer">3</p></div>
+                                <p onclick="location.href='https://youtu.be/_bA_VD_EDa0'" id="third-review-p" style="margin-left: 490px;margin-top: -155px;cursor: pointer" class="review-p">путешествуй без границ</p>
+                            </div>
+                        </div>
+                        <div class="descr-under">
+                            <p style="font-family: SFUIText;font-size: 36px;text-align: center;margin-bottom: 65px;font-weight: 500">Это интерактивный прототип,<br>чтобы посмотреть как работает приложение, кликните по экрану. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="s_review">
+            <div class="s_header" id="s_review">
+                <img src="img/s_header.png" alt="Новая секция">
+                <div class="number"><img src="img/icons/s_reviews_icon.png" alt="Отзывы"></div>
+                <div class="header_cont">
+                <h2 style="font-family: SFUIText;font-size: 36px;font-weight: 600">Отзывы</h2>
+                    <p style="font-size: 16px">Нам важно каждое Ваше мнение,<br>потому что мы делаем это для Вас!</p>
+                </div>
+            </div>
+            <div class="s_container">
+                <div class="bot_content text-center">
+                    <h2>Что говорят о нашем проекте пользователи</h2>
+                    <div class="sr_form">
+                        <div class="srf_exit">
+                            <span class="exit_line_1"></span><span class="exit_line_2"></span>
+                        </div>
+                        <p class="srf_header">Что вы думаете о нас?</p>
+                        <form class="review_form" method="post" name="review_form">
+                            <ul>
+                                <li>
+                                    <label for="name">Ваше имя:</label>
+                                    <input id="name" type="text" required>
+                                </li>
+                                <li>
+                                    <label for="email">Email:</label>
+                                    <input id="email" type="email" required>
+                                </li>
+                                <li>
+                                    <label for="city">Город:</label>
+                                    <input id="city" type="text" required>
+                                </li>
+                                <li>
+                                    <textarea name="message" placeholder="Ваш комментарий" rows="5" required></textarea>
+                                </li>
+                                <li>
+                                    <input id="personal_data_access" type="checkbox" required>
+                                    <label class="personal_data_access" for="personal_data_access">Я предоставляю своё согласие на использование моих персональных данных согласно норм действующего законодательства</label>
+                                </li>
+                                <li>
+                                    <button class="review_btn" type="submit">Отправить</button>
+                                    <span class="no_spam">Мы не рассылаем спам</span>
+                                </li>
+                            </ul>
+                        </form>
+                    </div>
+                    <div class="carousel_wrap">
+                        <div class="owl-carousel owl-theme">
+                            <div class="carousel_item">
+                              <div class="comment_wrap">
+                                <div class="person_info">
+                                  <span class="person_name">Имя</span>
+                                  <br>
+                                  <span class="person_geo"></span>
+                                </div>
+                                <div class="comment">
+                                  <p></p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="carousel_item">
+                                <div class="comment_wrap">
+                                    <div class="person_info">
+                                        <span class="person_name">Имя</span>
+                                        <br>
+                                        <span class="person_geo"></span>
+                                    </div>
+                                    <div class="comment">
+                                        <p></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel_item">
+                              <div class="comment_wrap">
+                                <div class="person_info">
+                                  <span class="person_name">Имя</span>
+                                  <br>
+                                  <span class="person_geo"></span>
+                                </div>
+                                <div class="comment">
+                                  <p></p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="carousel_item">
+                              <div class="comment_wrap">
+                                <div class="person_info">
+                                  <span class="person_name">Имя</span>
+                                  <br>
+                                  <span class="person_geo"></span>
+                                </div>
+                                <div class="comment">
+                                  <p></p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="carousel_item">
+                              <div class="comment_wrap">
+                                <div class="person_info">
+                                  <span class="person_name">Имя</span>
+                                  <br>
+                                  <span class="person_geo"></span>
+                                </div>
+                                <div class="comment">
+                                  <p></p>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post_rev">
+                        <button class="common_button rf_open" type="button">Оставить комментарий</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="s_team">
+            <div class="s_header_invers" id="s_team">
+                <img src="img/s_header_invers.png" alt="Новая секция">
+                <div class="header_cont">
+                    <h2>Команда LifeUP</h2>
+                    <p>Это команда молодых амбициозных разработчиков и дизайнеров которые хотят сломать социальную стенку между людьми и сделать это как ни странно с помощью мобильного приложения. Дальше  о нас:
+                    </p>
+                </div>
+                <div class="number"><img src="img/icons/s_team_icon.png" alt="команда"></div>
+            </div>
+            <div class="s_container">
+                    <div class="top_cont" id="top_cont_id">
+                        <div class="owl-carousel owl-theme">
+                            <div class="teammate_item">
+	                            <div class="t_descr">
+		                            <div class="td_interests">
+			                            <div class="tdi_icons">
+				                            <img src="img/icons/swimming.png" alt="Фотография">
+				                            <img src="img/icons/interests_photo.png" alt="Теннис">
+				                            <img src="img/icons/coffee-cup.png" alt="Путешествия">
+				                            <img src="img/icons/tent.png" alt="Спорт">
+			                            </div>
+			                            <span>Мои интересы</span>
+		                            </div>
+		                            <div class="td_name">
+			                            <p>Александр Сивчиков</p>
+			                            <span class="tdn_position">Разработчик</span>
+		                            </div>
+		                            <div class="td_about">
+			                            <p>Каждое путешествие дает какой-то опыт. Для меня – это, в первую очередь, новые эмоции и знакомства с интересными людьми. Но чтобы поездка удалась, ее надо спланировать, а это занимает время.</p>
+                                        <p>Приложение, которое разрабатывает наша команда, помогает быстро организовать путешествие и отправиться в него с «твоими» людьми. Это приложение – «LIFEUP».
+                                        </p>
+                                    </div>
+                                    <div id="promo-video" style="color: black; text-align:center;padding-top: 10px;width: 181px;height: 50px;color: black;border-radius: 6px;border: 1px solid #4ab3bf;">
+                                        <a style="color: gray;font-family: SFUIText;font-weight: bold"  href="#video1">Так же благодарю:</a>
+                                    </div>
+	                            </div>
+	                            <div class="t_photo">
+		                            <div class="tp_wrap">
+                                    <img src="img/team_photos/alex.jpg" alt="Александр">
+		                            </div>
+	                            </div>
+                            </div>
+                            <div class="teammate_item">
+                                <div class="t_descr">
+                                    <div class="td_interests">
+                                        <div class="tdi_icons">
+                                            <img src="img/icons/microphone.png" alt="Фотография">
+                                            <img src="img/icons/dog.png" alt="Теннис">
+                                            <img src="img/icons/car.png" alt="Путешествия">
+                                            <img src="img/icons/joystick.png" alt="Спорт">
+                                        </div>
+                                        <span>Мои интересы</span>
+                                    </div>
+                                    <div class="td_name">
+                                        <p>Ксения</p>
+                                        <span class="tdn_position">Дизайнер</span>
+                                    </div>
+                                    <div class="td_about">
+                                        <p>Приветсвую!
+                                            Считаю этот проект полезным для всех людей, кто путешествует, есть необходимо прокладывать маршруты,
+                                        </p>
+                                        <p>заранее искать интересные места, если ты один, то можно найти попутчиков и того, кто приютит.
+                                            Путешественникам я хочу пожелать хорошего отдыха, изучения новой культуры/ мест, это главное при любых путешествиях.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="t_photo">
+                                    <div class="tp_wrap">
+                                        <img src="img/team_photos/Ksenia.jpg" alt="Александр">
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="teammate_item">
+                                <div class="t_descr">
+                                    <div class="td_interests">
+                                        <div class="tdi_icons">
+                                            <img src="img/icons/ice-skating.png" alt="Фотография">
+                                            <img src="img/icons/bucket.png" alt="Теннис">
+                                            <img src="img/icons/books.png" alt="Путешествия">
+                                            <img src="img/icons/fake-flowers.png" alt="Спорт">
+                                        </div>
+                                        <span>Мои интересы</span>
+                                    </div>
+                                    <div class="td_name">
+                                        <p>Дмитрий</p>
+                                        <span class="tdn_position">Разработчик</span>
+                                    </div>
+                                    <div class="td_about">
+                                        <p>Когда во время путешествия встречаешь разных людей, слушаешь их истории, узнаешь их менталитет, характер - начинаешь смотреть на свою жизнь иначе, с другой стороны.
+                                        </p>
+                                        <p>Меняется мировоззрение, мышление. Ты сам меняешься, становясь другим человеком…
+                                            путешественникам желаю ярких эмоций, море позитива Приложением буду пользоваться с удовольствием, т.к. оно помогает решить множество задач, и мне оно нравится =)
+
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="t_photo">
+                                    <div class="tp_wrap">
+                                        <img src="img/team_photos/Dmitriy.jpg" alt="Александр">
+                                    </div>
+                                </div>
+                        </div>
+                            <div class="teammate_item">
+                                <div class="t_descr">
+                                    <div class="td_interests">
+                                        <div class="tdi_icons">
+                                            <img src="img/icons/interests_photo.png" alt="Фотография">
+                                            <img src="img/icons/interests_tennis.png" alt="Теннис">
+                                            <img src="img/icons/interests_travel.png" alt="Путешествия">
+                                            <img src="img/icons/interests_sport.png" alt="Спорт">
+                                        </div>
+                                        <span>Мои интересы</span>
+                                    </div>
+                                    <div class="td_name">
+                                        <p>Андрей</p>
+                                        <span class="tdn_position">Координатор проекта</span>
+                                    </div>
+                                    <div class="td_about">
+                                        <p>Я бачу потенціал цієї платформи як зручного агрегатора сервісів, потрібних для організації подорожі.
+                                        </p>
+                                        <p>Більше того, «LIFEUP» об’єднує людей за інтересами і дає змогу спілкуватись без мовних обмежень. Тобто, по суті – це ще й повноцінна соціальна мережа для мандрівників.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="t_photo">
+                                    <div class="tp_wrap">
+                                        <img src="img/team_photos/Andrey.jpg" alt="Александр">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="teammate_item">
+                                <div class="t_descr">
+                                    <div class="td_interests">
+                                        <div class="tdi_icons">
+                                            <img src="img/icons/darts.png" alt="Фотография">
+                                            <img src="img/icons/guitar.png" alt="Теннис">
+                                            <img src="img/icons/television.png" alt="Путешествия">
+                                            <img src="img/icons/soccer-ball.png" alt="Спорт">
+                                        </div>
+                                        <span>Мои интересы</span>
+                                    </div>
+                                    <div class="td_name">
+                                        <p>Aлексей</p>
+                                        <span class="tdn_position">Бизнес-планирование,управление финансами</span>
+                                    </div>
+                                    <div class="td_about">
+                                        <p>Есть много версий о том, зачем люди путешествуют: «повидать мир», «узнать что-то новое», «пообщаться с людьми из разных стран», «познакомиться с другими культурами».
+                                        </p>
+                                        <p>Моя версия – люди ищут и находят себя. И LifeUp им в этом поможет
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="t_photo">
+                                    <div class="tp_wrap">
+                                        <img src="img/team_photos/Alexey.JPG" alt="Александр">
+                                    </div>
+                                </div>
+
+                        </div>
+                            <div class="teammate_item">
+                                <div class="t_descr">
+                                    <div class="td_interests">
+                                        <div class="tdi_icons">
+                                            <img src="img/icons/car.png" alt="Фотография">
+                                            <img src="img/icons/ice-skating.png" alt="Теннис">
+                                            <img src="img/icons/fake-flowers.png" alt="Путешествия">
+                                            <img src="img/icons/tent.png" alt="Спорт">
+                                        </div>
+                                        <span>Мои интересы</span>
+                                    </div>
+                                    <div class="td_name">
+                                        <p>Наталия Ступарь</p>
+                                        <span class="tdn_position">Копирайтер</span>
+                                    </div>
+                                    <div class="td_about">
+                                        <p>Как минимум 80% людей перед отправкой в дорогу волнуются: будет ли жилье таким как на фото, сколько придется заплатить за экскурсии, а вдруг не будет свободного транспорта для аренды… Приложение LIFEUP позволяет решить множество подобных проблем, узнать отзывы о месте куда вы планируете отправиться, посоветоваться с местными, найти общие интересы, завести полезные знакомства и многое другое - все это в одной программе на Вашем смартфоне.</p>
+                                        <p>Мы позаботились о том, чтобы вам было максимально комфортно в пути с LIFEUP!
+                                            Отдыхайте, развлекайтесь, наслаждайтесь отдыхом, живите на полную вместе с LIFEUP!</p>
+                                    </div>
+                                </div>
+                                <div class="t_photo">
+                                    <div class="tp_wrap">
+                                        <img src="img/team_photos/Natalia.jpg" alt="Александр">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="teammate_item">
+                                <div class="t_descr">
+                                    <div class="td_interests">
+                                        <div class="tdi_icons">
+                                            <img src="img/icons/soccer-ball.png" alt="Фотография">
+                                            <img src="img/icons/camera.png" alt="Теннис">
+                                            <img src="img/icons/fake-flowers.png" alt="Путешествия">
+                                            <img src="img/icons/tent.png" alt="Спорт">
+                                        </div>
+                                        <span>Мои интересы</span>
+                                    </div>
+                                    <div class="td_name">
+                                        <p>Анна Боровая</p>
+                                        <span class="tdn_position">Дизайнер</span>
+                                    </div>
+                                    <div class="td_about">
+                                        <p>Привет, не так давно данное приложение могло показаться неактуальным и чем то фантастическим, как полет на марс) Сейчас, когда открыты все дороги, мир полон прекрасного и интересного, хочется к этому миру прикоснуться и быть его частью..</p>
+                                        <p>И хоть в данный момент есть другие приложения помогающие в этом, именно наше приложение Life Up соединяет в себе все возможности  других приложений для путешественников в одно и даже немного больше) Приложение Life Up шагнуло в ногу со временем и приглашает тебя сделать тоже самое. Будь свободным вместе с Life Up!</p>
+                                    </div>
+                                </div>
+                                <div class="t_photo">
+                                    <div class="tp_wrap">
+                                        <img src="img/team_photos/Anna.jpg" alt="Александр">
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+
+            </div>
+                <div id="donate" class="bot_cont" style="background-image: url(img/gifts_bg.png)">
+                    <h3>Понравилось наше приложение?</h3>
+                    <div class="donate">
+                        <div class="donate_mnu">
+                            <span onclick="ImyFunc()" class="donate_btn active">Поддержать</span><span onclick="myFunc()" class="gifts_btn">Присоедениться к разработке</span><span class="bot_line left"></span>
+                        </div>
+                        <div class="cont_wrap">
+                            <div class="donate_content">
+                                <p id="LifeUoApp"> «LIFEUP» – это уникальная платформа, Каждый участник команды вложил много сил и средств для разработки и реализации этой идеи.
+                                    Это некоммерческий проект, поэтому нам нужна ваша помощь для развития платформы. Вместе мы сможем!</p>
+                                <p><strong>Поддержать «LIFEUP» можно так:</strong>
+                                    <ol>
+                                       <li>рассказать о нас своим знакомым и друзьям. Поделиться ссылкой на проект в социальных сетях или просто поверить в нас;</li>
+                                        <li>принять участие в разработке;</li>
+                                        <li>оказать проекту финансовую помощь. Для этого просто нажмите кнопку одной из удобных для вас платежных систем. Пожалуйста, в назначении платежа укажите: «Помощь LIFEUP».</li>
+                                    </ol>
+                                <div class="donate_icons">
+                                    <div class="icon_wrap"><a target="_blank" href="https://sendmoney.privatbank.ua/ua/?hash=2132714647"><img src="img/icons/donate_icon.png" alt=""></a></div>
+                                    <div class="icon_wrap"><a target="_blank" href="https://www.liqpay.ua/ru/checkout/lifeup"><img src="img/icons/donate_icon_2.png" alt=""></a></div>
+                                    <div class="icon_wrap"><a target="_blank" href="https://sendmoney.privatbank.ua/ua/?hash=2132714647"><img src="img/icons/donate_icon_3.png" alt=""></a></div>
+                                    <div class="icon_wrap"><a target="_blank" href="https://www.liqpay.ua/ru/checkout/lifeup"><img src="img/icons/donate_icon_4.png" alt=""></a></div>
+                                    <div class="icon_wrap"><a target="_blank" href="" data-toggle="modal" data-target="#BTC"><img src="img/icons/bitcoin.png" alt=""></a></div>
+                                    <div class="icon_wrap"><a target="_blank" href="https://send.monobank.com.ua/L95upbmG"><img src="img/icons/mono.png" alt=""></a></div>
+                                </div>
+
+                            </div>
+                            <div class="gifts_content">
+                                <p>Если ты такой же энтузиаст, как и мы, у тебя полно идей<br>как можно усовершенствовать наше приложение, ты<br>хочешь быть в команде LifeUP - жми кнопку, если ты:</p>
+                                <ul style="list-style-type: none;font-weight: bold">
+                                    <li>-SEO - Оптимизатор;</li>
+                                    <li>-Опытный и креативный UX/UI дизайнер;</li>
+                                    <li>-Разработчик Android приложений;</li>
+                                    <li>-Опытный и креативный UX/UI дизайнер;</li>
+                                    <li>-Бекенд разработчик, знания: html, css, ajax, jQuery, php, javascript,, mysql, работа с linux, apach,</li>
+                                    <li>-Фронт-енд , знания : html, css, sass, javascript</li>
+                                    <li>-Android разработчик: Java, c++, AndroidStudio, ООП</li>
+                                    <li>-iOS: swift, xcode</li>
+
+                                </ul>
+                                <a style="padding-top: 12px; margin-left: -77px; font-weight:500;color:white;font-size: 20px;text-align: center;font-family: SFUIText; background-color:#c2024f; width: 204px; height: 58px; position: absolute" href="https://goo.gl/forms/S5sBmFYMWPjLDO6B3">Присоединиться</a>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            <div class="show-more-div">
+                <a data-toggle="modal" data-target="#3Modal" id="show-more-div-link" style="padding-top: 12px; margin-left: 860px;margin-top: -350px; font-weight:500;color:white;font-size: 20px;text-align: center;font-family: SFUIText; background-color:#c2024f; width: 204px; height: 58px; position: absolute" type="button" href="#">Показать больше</a>
+            </div>
+        </section>
+        <section class="s_contacts" style="background-image: url(img/contacts_bg.png)">
+            <div class="s_header" id='contacts'>
+                <img src="img/s_header.png" alt="Новая секция">
+                <div class="number"><img src="img/icons/new-email-outline.png" alt="команда"></div>
+                <div class="header_cont">
+                    <h2 style="font-family: SFUIText;font-size: 36px;font-weight: 600">Наши контакты</h2>
+                    <p style="font-size: 16px; font-family: HelveticaNeueCyr">Свяжитесь с нами, чтобы узнать подробности о нашей платформе</p>
+                </div>
+            </div>
+            <div class="contacts_cont">
+                <div class="contacts_wrap">
+                    <div class="container">
+                        <h3>Остались вопросы?</h3>
+                        <div class="row">
+                            <div class="col-lg-8">
+                                <div class="contacts_column">
+                                    <form id="form-1" method="post">
+                                        <h4>Напишите нам</h4>
+                                        <label>
+                                            <input type="text" placeholder="Имя">
+                                        </label>
+                                        <label>
+                                            <input  type="email" placeholder="E-mail">
+                                        </label>
+                                        <input id="input-foot" placeholder="Ваше сообщение..." style="position: absolute;height: 200px!important;max-height: 200px;margin-top: 80px;margin-left:-478px;width: 473px;" type="text">
+                                    <button style="margin-top: 230px" class="transp_button">Отправить</button>
+
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="contacts_column">
+                                    <h4>Наши контакты</h4>
+                                    <ul style="font-family: SFUIText;font-size: 20px;font-weight: 300" class="contacts">
+                                        <li class="adress">г.Киев</li>
+                                        <li class="phone">+380(99)-258-28-56</li>
+                                        <li class="e-mail">admin344@gmail.com</li>
+                                        <li class="social">
+                                            <a href="https://www.facebook.com/sivchikov27" target="_blank"><i class="fa fa-facebook"></i></a>
+                                            <a href="https://twitter.com/lifeupkiev" target="_blank"><i class="fa fa-twitter"></i></a>
+                                            <a href="https://twitter.com/lifeupkiev" target="_blank"><i class="fa fa-google-plus"></i></a>
+                                            <a href="https://www.instagram.com/aleksandr_sivchikov/"  target="_blank"><i class="fa fa-instagram"></i></a>
+                                            <a href="https://twitter.com/lifeupkiev" target="_blank"><i class="fa fa-linkedin"></i></a>
+                                        <li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="container">
+                <div id="foot-row" style="margin-bottom: 20px;margin-left: 40px" class="row">
+                    <div class="col-md-4"><a id="foot-a-1" style="color: white" href="#">О сервисе</a></div>
+                    <div class="col-md-4"><a id="foot-a-2" data-toggle="modal" data-target="#2Modal" style="color: white;margin-left: -50px" href="">Политика конфиденциальности</a></div>
+                    <div class="col-md-4"><a id="foot-a-3" data-toggle="modal" data-target="#myModal" style="color: white" href="">Правила и условия</a></div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4"><img src="img/logo.png" class="img-responsive" alt="LifeUp"></div>
+                    <div class="col-md-4">
+                        <p style="font-size: 20px">Made in Ukraine</p>
+                    </div>
+                    <div class="col-md-4">
+                        <p style="margin-bottom: 20px">(c)  LifeUP 2017 - 2018</p>
+                        <p style="text-transform: uppercase; font-size: 9px">Design     Anja Borovaja</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <div id="myModal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div data-dismiss="modal" style="width: 10%;float: right;height: 3000px"></div>
+                        <p style="width: 90%">Правила пользования Сайтом LifeUp / Пользовательское соглашение
+
+                            Добро пожаловать на Сайт LifeUp, интернет-ресурс, который помогает Вам поддерживать связь с Вашими друзьями. Сайт LifeUp (https://lifeup.com.ua) – это сетевой проект, объединяющий людей на принципах взаимных интересов и помощи.
+
+                            Вы также можете ознакомиться с Политикой использования и защиты данных  на Сайте https://lifeup.com.ua. 
+
+                            Администрация Сайта предоставляет Вам доступ к использованию Сайта LifeUp и его функционала на условиях, являющихся предметом настоящих Правил пользования Сайтом LifeUp. В этой связи Вам необходимо внимательно ознакомиться с условиями настоящих Правил, которые рассматриваются Администрацией Сайта как публичная оферта т.е. согласно статье 633 Гражданского кодекса Украины его условия одинаковы для всех потребителей.
+
+
+                            1. Термины, используемые в настоящих Правилах
+                            1.1. Сайт LifeUp (или Сайт) – социальная сеть, известная под именем «LifeUp», размещенная на сайте в сети Интернет по адресу: https://lifeup.com.ua (включая все уровни указанного домена, как функционирующие на дату принятия Пользователем настоящих Правил, так и запускаемые и вводимые в эксплуатацию в течение всего срока его действия) и доступная Пользователю через сайт, мобильную версию сайта, приложения и иные ресурсы, представляющая собой результат интеллектуальной деятельности в форме программы для ЭВМ. Социальная сеть представлена в объективной форме совокупностью данных и команд, и порождаемых аудиовизуальных отображений (включая входящие в ее состав графические изображения и пользовательский интерфейс), (далее – данные и команды), предназначенных для функционирования ЭВМ и мобильных устройств в целях получения определенного результата в виде организации функционала социальной сети. Совокупность данных и команд состоит из активированных и неактивированных данных и команд.
+                            1.2. Неактивированные данные и команды – данные, команды и порождаемые аудиовизуальные отображения, позволяющие увеличить количество виртуальных ценностей, используемых в рамках функциональных возможностей Сайта. Условия предоставления Администрацией Пользователю права на использование неактивированных данных и команд определены в лицензионном соглашении, действующая редакция которого располагается в свободном доступе в сети Интернет по адресу: https://lifeup.com.ua, заключаемом Администрацией Сайта с Пользователем.
+
+
+                            2. Статус Правил пользования Сайтом LifeUp
+                            2.1. Настоящие Правила пользования Сайтом LifeUp (ранее и далее – Правила) разработаны Администрацией Сайта и определяют условия использования и развития Сайта, а также права и обязанности его Пользователей и Администрации. Правила распространяются также на отношения, связанные с правами и интересами третьих лиц, не являющимися Пользователями Сайта, но чьи права и интересы могут быть затронуты в результате действий Пользователей Сайта.
+                            2.2. Настоящие Правила являются юридически обязательным соглашением между Пользователем и Администрацией Сайта, предметом которого является предоставление Администрацией Сайта Пользователю доступа к использованию Сайта и его функционала. Помимо настоящих Правил, к соглашению между Пользователем и Администрацией Сайта относятся все специальные документы, регулирующие предоставление доступа к использованию отдельного функционала Сайта (в том числе его неактивированных данных и команд), размещенного в соответствующих разделах Сайта в сети Интернет.
+                            2.3. Пользователь обязан полностью ознакомиться с настоящими Правилами до момента регистрации на Сайте. Регистрация Пользователя на Сайте означает полное и безоговорочное принятие Пользователем настоящих Правил в соответствии со ст. 633 Гражданского кодекса Украины.
+                            2.4. Настоящие Правила могут быть изменены и/или дополнены Администрацией Сайта в одностороннем порядке без какого-либо специального уведомления. Настоящие Правила являются открытым и общедоступным документом. Действующая редакция Правил располагается в сети Интернет по адресу: https://lifeup.com.ua. Администрация Сайта рекомендует Пользователям регулярно проверять условия настоящих Правил на предмет их изменения и/или дополнения. Продолжение использования Сайта Пользователем после внесения изменений и/или дополнений в настоящие Правила означает принятие и согласие Пользователя с такими изменениями и/или дополнениями.
+
+
+                            3. Статус Сайта LifeUp
+                            3.1. Права на Сайт в целом и на использование сетевого адреса (доменного имени) https://lifeup.com.ua принадлежат Администрации Сайта. Последняя предоставляет доступ к Сайту всем заинтересованным лицам в соответствии с настоящими Правилами и действующим законодательством Украины.
+                            3.2. Настоящими Правилами установлены условия, в соответствии с которыми права на использование информации и результатов интеллектуальной деятельности (включая, но не ограничиваясь литературными, музыкальными, аудиовизуальными произведениями и фонограммами, произведениями графики и дизайна, фотографическими произведениями, программами для ЭВМ) в составе отдельных разделов Сайта, могут принадлежать Пользователям Сайта и иным лицам, самостоятельно создавшим и/или разместившим указанные объекты на Сайте без непосредственного участия Администрации Сайта.
+
+
+                            4. Администрация Сайта LifeUp
+                            4.1. Под Администрацией Сайта LifeUp (ранее и далее – Администрация Сайта или Администрация) в настоящих Правилах и иных специальных документах, размещенных на Сайте, понимается СПД ________________,  зарегистрированный в соответствии с законодательством Украины и зарегистрированный по адресу: ___________________________________________.
+                            4.2. Обращения, предложения и претензии физических и юридических лиц к Администрации Сайта в связи с настоящими Правилами и всеми вопросами по функционированию Сайта, нарушениями прав и интересов третьих лиц при его использовании, могут быть направлены на почтовый адрес СПД ________________, указанный в п. 4.1. настоящих Правил.
+                            4.3. В отношении функционирования и развития Сайта Администрация руководствуется законодательством Украины, настоящими Правилами и иными специальными документами, которые разработаны или могут быть разработаны и приняты Администрацией Сайта в целях регламентации предоставления Пользователям доступа к отдельному функционалу Сайта.
+                            4.4. Никакие положения настоящих Правил не предоставляют Пользователю право на использование фирменного наименования, товарных знаков, доменных имен и иных отличительных знаков Администрации Сайта. Право на использование фирменного наименования, товарных знаков, доменных имен и иных отличительных знаков Администрации Сайта может быть предоставлено исключительно по письменному соглашению с Администрацией Сайта.
+
+
+                            5. Регистрация на Сайте LifeUp и статус Пользователя
+                            5.1. Регистрация Пользователя на Сайте является бесплатной, добровольной и производится по адресу в сети Интернет: https://lifeup.com.ua.
+                            5.2. Пользователем Сайта является физическое лицо, зарегистрированное на Сайте в соответствии с установленным настоящими Правилами порядком, достигшее возраста, допустимого в соответствии с законодательством Украины для акцепта настоящих Правил, и обладающее соответствующими полномочиями (ранее и далее – Пользователь).
+                            5.3. При регистрации на Сайте Пользователь обязан предоставить Администрации Сайта необходимую достоверную и актуальную информацию для формирования персональной страницы Пользователя, включая уникальные для каждого Пользователя логин и пароль доступа к Сайту, а также фамилию и имя. Регистрационная форма Сайта может запрашивать у Пользователя дополнительную информацию.
+                            5.4. Пользователь несет ответственность за достоверность, актуальность, полноту и соответствие законодательству Украины предоставленной при регистрации информации и ее чистоту от претензий третьих лиц.
+                            5.5. После предоставления информации, указанной в п. 5.3. настоящих Правил, Пользователю необходимо пройти ряд удостоверительных процедур, а именно, (а) подтвердить регистрацию путем распознания автоматизированного теста, предназначенного для различия компьютеров и людей («капчи»); (б) подтвердить регистрацию путем введения в соответствующую форму на Сайте кода, полученного Пользователем в виде sms-сообщения от Администрации Сайта на мобильный телефон Пользователя, номер которого предоставляется самим Пользователем. В случае верного последовательного выполнения всех регистрационных действий на Сайте создается персональная страница Пользователя. Пользователь вправе зарегистрировать не более одной персональной страницы на Сайте.
+                            5.6. При регистрации Пользователь соглашается с настоящими Правилами и принимает на себя указанные в них права и обязанности, связанные с использованием и функционированием Сайта. Пользователь соглашается на получение посредством сервисов Администрации Сайта и/или сервисов третьих лиц электронных сообщений, sms и иных видов рассылок информационного, в т.ч. рекламно-информационного, содержания, в том числе от партнеров Администрации Сайта. Пользователь приобретает полный доступ к использованию функционала Сайта (его данных и команд), за исключением неактивированных данных и команд, при условии заполнения персональной страницы более чем на тридцать процентов. Право использования неактивированных данных и команд предоставляется Пользователю при выполнении дополнительно к указанному выше условий лицензионного соглашения (см. п. 1.2. настоящих Правил).
+                            5.7. После успешной регистрации Пользователя на Сайте Администрация принимает на себя права и обязанности перед Пользователем, указанные в настоящих Правилах.
+                            5.8. Обработка персональных данных Пользователя осуществляется в соответствии с законодательством Украины. Администрация Сайта обрабатывает персональные данные Пользователя в целях предоставления Пользователю доступа к использованию функционала Сайта, в том числе в целях получения Пользователем таргетированной рекламы; проверки, исследования и анализа таких данных, позволяющих поддерживать и улучшать функционал и разделы Сайта, а также разрабатывать новый функционал и разделы Сайта. Администрация Сайта принимает все необходимые меры для защиты персональных данных Пользователя от неправомерного доступа, изменения, раскрытия или уничтожения. Администрация предоставляет доступ к персональным данным Пользователя только тем работникам, подрядчикам и агентам Администрации, которым эта информация необходима для обеспечения функционирования Сайта и предоставления Пользователю доступа к его использованию. Администрация Сайта вправе использовать предоставленную Пользователем информацию, в том числе персональные данные, а также передавать ее третьим лицам, в целях обеспечения соблюдения требований действующего законодательства Украины, защиты прав и интересов Пользователей, Администрации Сайта, третьих лиц (в том числе в целях выявления, проверки/расследования и/или пресечения противоправных действий). Раскрытие предоставленной Пользователем информации может быть произведено лишь в соответствии с действующим законодательством Украины по требованию суда, правоохранительных органов, а равно в иных предусмотренных законодательством Украины случаях. Поскольку Администрация Сайта осуществляет обработку персональных данных Пользователя в целях исполнения настоящих Правил, в силу положений законодательства о персональных данных согласие Пользователя на обработку его персональных данных не требуется.
+                            5.9. Выбранные Пользователем логин и пароль являются необходимой и достаточной информацией для доступа Пользователя на Сайт. Пользователь не имеет права передавать свои логин и пароль третьим лицам, несет полную ответственность за их сохранность, самостоятельно выбирая способ их хранения. Пользователь на используемом им аппаратно-программном обеспечении может разрешить хранение логина и пароля (с использованием файлов cookies) для последующей автоматической авторизации на Сайте.
+                            5.10. Если Пользователем не доказано обратное, любые действия, совершенные с использованием его логина и пароля, считаются совершенными соответствующим Пользователем. В случае несанкционированного доступа к логину и паролю и/или персональной странице Пользователя, или распространения логина и пароля Пользователь обязан незамедлительно сообщить об этом Администрации Сайта в установленном порядке.
+                            5.11. После регистрации Пользователь получает право самостоятельно в личных целях создавать, использовать и определять содержание собственной персональной страницы и условия доступа других Пользователей к ее содержанию, а также получает возможности доступа и размещения информации на персональных страницах других Пользователей (при условии получения соответствующих прав доступа от их обладателей), использования социальных виджетов LifeUp на сторонних сайтах без дополнительной авторизации. При использовании социальных виджетов Пользователем сторонним сайтам не предоставляются данные о логине и пароле Пользователя, а также его данные, защищенные настройками приватности.
+                            5.12. Пользователь как обладатель информации, размещенной на собственной персональной странице, осознает, что за исключением случаев, установленных настоящими Правилами и действующим законодательством Украины, Администрация Сайта не принимает участие в формировании и использовании содержания и контроле доступа других пользователей к персональной странице Пользователя. Размещая информацию на персональной странице, в том числе свои персональные данные, Пользователь осознает и соглашается с тем, что указанная информация может быть доступна другим пользователям сети Интернет с учетом особенностей архитектуры и функционала Сайта.
+                            5.13. Создание и использование Сообществ
+                            5.13.1. Пользователь вправе создавать группы, публичные страницы и сообщества (далее — Сообщества) для целей информирования других Пользователей о каких-либо событиях, мероприятиях, организациях, как коммерческих, так и некоммерческих (например, благотворительных), их создании и деятельности, иных интересующих Пользователей материалах (далее – Объекты обсуждения), и/или/либо возможного обсуждения их с другими Пользователями (в том числе путем создания фан-клубов, обмена мнениями, отзывами и так далее). В процессе информирования и обсуждения в Сообществах Объектов обсуждений Пользователи обязаны соблюдать действующее украинское и международное законодательство, а также размещать только такую информацию, которая соответствует настоящим Правилам, а также признанным этическим нормам и принципам морали, в том числе относящимся к таковым по мнению Администрации Сайта.
+                            5.13.2. При создании и администрировании Сообщества, в том числе при регистрации поддоменного имени, используемого для адресации на страницу Сообщества, Пользователь подтверждает, что действует на законных основаниях (например, по доверенности), обладает всеми необходимыми правами и не нарушает своими действиями законные права и интересы третьих лиц и действующее законодательство Украины, в том числе законодательство о конкуренции и правах на результаты интеллектуальной деятельности и средства индивидуализации.
+                            5.13.3. В Сообществе, в том числе в описании, на главной фотографии Сообщества, в альбомах, в новостях, обсуждениях, опросах, аудиозаписях, видеозаписях, на «стене», не допускается размещение Контента (в значении, предусмотренном п. 7.1.1. настоящих Правил) целиком или по частям без предварительного разрешения правообладателя, а также информации, предусмотренной п. 6.3.4. настоящих Правил. Пользователь, администрирующий Сообщество, обязан самостоятельно следить и пресекать не соответствующее Правилам размещение информации в Сообществе, и при необходимости блокировать пользователям, нарушающим настоящие Правила, доступ к Сообществу, используя функциональные возможности Сайта.
+                            5.13.4. Размещение рекламы в Сообществах:
+                            5.13.4.1. В Сообществе, в том числе в описании, на главной фотографии Сообщества, в альбомах, в материалах, обсуждениях, опросах, закрепленных записях на стене, на обложке, в сообщениях, в историях Сообщества, в виджетах сообществ и т.д., за исключением прямо установленных настоящим пунктом случаев и нативных интеграций, не допускается размещение сторонней коммерческой и политической рекламы. Сторонней рекламой признается любая информация, за исключением нативных интеграций, не имеющая прямого отношения к Сообществу, распространяемая в любой форме как от лица Сообщества, так и от лица других сообществ и Пользователей, и направленная на привлечение внимания Пользователей к объекту рекламирования, формирование или поддержание интереса к нему. Пользователю, администрирующему Сообщество, необходимо самостоятельно следить и пресекать не соответствующее Правилам размещение сторонней рекламы в Сообществе. Сообщество может быть размещено в системе поиска Сайта LifeUp при обязательном соблюдении требований, предусмотренных в настоящем пункте. Подключение к Рекламной сети LifeUp осуществляется через специальный интерфейс управления Сообществом с обязательным указанием количества сторонних объявлений, от реализации права на размещение которых на стене Сообщества предоставляется отказ. Правила показа рекламы в рамках Рекламной сети LifeUp регулируются специальными документами.
+                            5.13.4.2. В Сообществе разрешается размещение нативных интеграций, соответствующих настоящим Правилам. Интеграции, не соответствующие настоящим Правилам, признаются сторонней рекламой. Нативной интеграцией признается такая органическая имплементация объекта продвижения третьего лица (товара/услуги/работы, средства индивидуализации юридического лица и (или) товара/услуги/работы, изготовителя или продавца товара/услуги/работы, результатов интеллектуальной деятельности либо мероприятия третьего лица (в том числе спортивного соревнования, концерта, конкурса, фестиваля)) без очевидного акцента на него в информационный материал Сообщества, при которой информационный материал Сообщества соответствует общей тематике и стилю Сообщества и обладает самостоятельной смысловой ценностью.
+                            5.13.4.2.1. При размещении нативных интеграций должны соблюдаться следующие требования:
+                            (а) имплементация объекта продвижения на обложку, главную фотографию Сообщества и в закрепленные записи на стене Сообщества допускается при условии, что общий стиль Сообщества остается неизменным, а интеграция не носит доминирующего характера в таком информационным материале Сообщества.
+                            (б) не допускаются нативные интеграции объектов продвижения, которые нарушают настоящие Правила;
+                            (в) не признаются нативными интеграциями имплементации мероприятий третьего лица в случае, если среди обязательных условий участия в них присутствуют указания осуществления следующих действий: подписаться на сообщество; совершить покупку; поставить «Мне нравится»; поделиться записью.
+                            5.13.4.2.2. Содержание нативных интеграций должно соответствовать следующим требованиям:
+                            (а) нативные интеграции не должны носить очевидно рекламный характер, т.е. привлекать основное внимание в рамках информационного материала Сообщества;
+                            (б) информационный материал Сообщества с нативной интеграцией должен в полной мере соответствовать тематике Сообщества, обладать самостоятельной смысловой ценностью, гармонично вписываясь в стиль Сообщества;
+                            (в) нативные интеграции могут содержать гиперссылки на сторонние ресурсы для получения дополнительной информации, однако переход по таковым не должен быть обязательным условием получения основной информации;
+                            (г) нативной интеграцией в видео признается упоминание объекта продвижения (как устное в ходе повествования, так и визуальная демонстрация), обусловленное творческим характером видео и гармонично вписывающееся в сюжет.
+                            5.13.5. Все сторонние рекламные объявления и нативные интеграции должны соответствовать Правилам размещения рекламных объявлений на Сайте.
+                            5.13.6. Администрация Сайта вправе самостоятельно по своему усмотрению формировать и размещать список рекомендуемых Сообществ, исходя из их информационной ценности для пользователей и иных критериев. В случае несоблюдения этого ограничения, Администрация Сайта вправе исключить Сообщество из списка рекомендуемых.
+                            5.13.7. Пользователь несет полную ответственность за свои действия, связанные с созданием и администрированием Сообществ, в соответствии с действующим законодательством Украины, международными правовыми актами и настоящими Правилами.
+                            5.13.8. В случае обнаружения факта нарушения в Сообществе законных прав и интересов третьих лиц, действующего законодательства Украины, а также положений настоящих Правил Администрация Сайта вправе, по своему выбору, принимать следующие меры:
+                            (а) удалять Контент и иную информацию со страницы Сообщества и/или блокировать доступ к ним;
+                            (б) блокировать доступ конкретных пользователей к странице Сообщества;
+                            (в) блокировать доступ Пользователя, осуществляющего администрирование Сообщества, к Сообществу;
+                            (г) передать права администрирования Сообщества, а также право использования зарегистрированного поддоменного имени, законному правообладателю, в установленном порядке подтвердившему свои права на Контент Сообщества, в том числе право на объекты авторского права, смежных прав, а также право на средство индивидуализации, сходное до степени смешения с используемым в Сообществе поддоменным именем;
+                            (д) исключить Сообщество из системы поиска и/или заблокировать Сообщество;
+                            (е) временно запретить публикацию любых ссылок в Сообществе.
+                            5.13.9. В случае нарушения Сообществом порядка размещения рекламы (предусмотренного в пп. 5.13.4, 5.13.5 настоящих Правил), Администрация Сайта вправе ограничить рекламную деятельность Сообщества путем запрета публикации в Сообществе любых ссылок на любой срок на усмотрение Администрации и/или отключения Сообщества от Маркет-платформы LifeUp и/или отключения Сообщества от Рекламной сети LifeUp. В случае попыток обойти техническое ограничение на публикацию ссылок (вставка дополнительных символов, публикация изображений со ссылками и т.д.) в период действия запрета, Администрация вправе заблокировать Сообщество без возможности восстановления.
+                            5.13.10. Администраторы и модераторы сообществ несут полную ответственность за модерацию и блокировку Контента, размещенного на страницах подконтрольных им сообществ. В случае появления на страницах подконтрольных им сообществ Контента, который противоречит Правилам Сайта или действующему законодательству Украины, администраторы и модераторы сообществ обязаны принять меры по удалению соответствующих материалов со страниц подконтрольных им сообществ.
+                            5.14. В отношении информации о себе Пользователь имеет право:
+                            (а) самостоятельно удалять ранее размещенную Пользователем информацию на Сайте;
+                            (б) самостоятельно удалять персональную страницу Пользователя с использованием функциональной возможности «удалить свою страницу», доступной Пользователю в разделе «Мои настройки».
+
+
+                            6. Обязанности Пользователя LifeUp
+                            6.1. При использовании Сайта Пользователь обязан:
+                            соблюдать положения действующего законодательства Укрианы, настоящих Правил и иных специальных документов Администрации Сайта;
+                            предоставлять при регистрации достоверные, полные и актуальные данные, следить за их актуализацией;
+                            информировать Администрацию Сайта о несанкционированном доступе к персональной странице и/или о несанкционированном доступе и/или использовании пароля и логина Пользователя;
+                            не предоставлять доступ другим Пользователям к собственной персональной странице или к отдельной содержащейся на ней информации в случае, если это может привести к нарушению законодательства Украины и/или настоящих Правил, специальных документов Администрации Сайта;
+                            не размещать на персональной странице информацию и объекты (включая ссылки на них), которые могут нарушать права и интересы других лиц;
+                            перед размещением информации и объектов (включая, но не ограничиваясь, изображениями других лиц, чужими текстами различного содержания, аудиозаписями и видеофильмами) предварительно оценивать законность их размещения;
+                            хранить в тайне и не предоставлять другим Пользователям и третьим лицам ставшие ему известными в результате общения с другими Пользователями и иного использования Сайта персональные данные (включая, но не ограничиваясь, домашними адресами, номерами телефонов, адресами электронной почты, ICQ, паспортными данными, банковской информацией) и информацию о частной жизни других Пользователей и третьих лиц без получения соответствующего предварительного разрешения последних;
+                            осуществлять резервное копирование важной для Пользователя хранящейся на его персональной странице информации.
+                            6.2. В случае наличия сомнений в отношении законности осуществления тех или иных действий, в том числе по размещению информации или предоставлению доступа, Администрация Сайта рекомендует воздержаться от осуществления последних.
+                            6.3. Пользователю при использовании Сайта запрещается:
+                            6.3.1. регистрироваться в качестве Пользователя от имени или вместо другого лица («фальшивый аккаунт») или регистрировать группу (объединение) лиц или юридическое лицо в качестве Пользователя. При этом, возможна регистрация от имени и поручению другого физического лица или юридического лица при условии получения необходимых полномочий в порядке и форме, предусмотренных законодательством Украины;
+                            6.3.2. вводить Пользователей в заблуждение относительно своей личности, используя логин и пароль другого зарегистрированного Пользователя;
+                            6.3.3. искажать сведения о себе, своем возрасте или своих отношениях с другими лицами или организациями;
+                            6.3.4. загружать, хранить, публиковать, распространять и предоставлять доступ или иным образом использовать любую информацию, которая:
+                            (а) содержит угрозы, дискредитирует, оскорбляет, порочит честь и достоинство или деловую репутацию или нарушает неприкосновенность частной жизни других Пользователей или третьих лиц;
+                            (б) нарушает права несовершеннолетних лиц;
+                            (в) является вульгарной или непристойной, содержит порнографические изображения и тексты или сцены сексуального характера с участием несовершеннолетних;
+                            (г) содержит сцены бесчеловечного обращения с животными;
+                            (д) содержит описание средств и способов суицида, любое подстрекательство к его совершению;
+                            (е) пропагандирует и/или способствует разжиганию расовой, религиозной, этнической ненависти или вражды, пропагандирует фашизм или идеологию расового превосходства;
+                            (ж) содержит экстремистские материалы;
+                            (з) пропагандирует преступную деятельность или содержит советы, инструкции или руководства по совершению преступных действий;
+                            (и) содержит информацию ограниченного доступа, включая, но не ограничиваясь, государственной и коммерческой тайной, информацией о частной жизни третьих лиц;
+                            (к) содержит рекламу или описывает привлекательность употребления наркотических веществ, в том числе «цифровых наркотиков» (звуковых файлов, оказывающих воздействие на мозг человека за счет бинауральных ритмов), информацию о распространении наркотиков, рецепты их изготовления и советы по употреблению;
+                            (л) потенциально может привести к совершению противоправных действий путем введения Пользователей в заблуждение или злоупотребления их доверием;
+                            (м) а также нарушает иные права и интересы граждан и юридических лиц или требования законодательства Украины.
+                            6.3.5. незаконно загружать, хранить, публиковать, распространять и предоставлять доступ или иным образом использовать интеллектуальную собственность Пользователей и третьих лиц;
+                            6.3.6. осуществлять массовые рассылки сообщений в адрес других Пользователей Сайта без их согласия;
+                            6.3.7. использовать программное обеспечение и осуществлять действия, направленные на нарушение нормального функционирования Сайта или персональных страниц Пользователей;
+                            6.3.8. загружать, хранить, публиковать, распространять и предоставлять доступ или иным образом использовать вирусы, трояны и другие вредоносные программы;
+                            6.3.9. использовать без специального на то разрешения Администрации Сайта автоматизированные скрипты (программы, боты, краулеры) для сбора информации на Сайте и/или взаимодействия с Сайтом и его функционалом;
+                            6.3.10. любым способом, в том числе, но не ограничиваясь, путем обмана, злоупотребления доверием, взлома, пытаться получить доступ к логину и паролю другого Пользователя;
+                            6.3.11. осуществлять незаконные сбор и обработку персональных данных других лиц;
+                            6.3.12. осуществлять использование Сайта иным способом, кроме как через интерфейс, предоставленный Администрацией Сайта, за исключением случаев, когда такие действия были прямо разрешены Пользователю в соответствии с отдельным соглашением с Администрацией;
+                            6.3.13. воспроизводить, дублировать, копировать, продавать, осуществлять торговые операции и перепродавать доступ к использованию Сайта, в том числе его неактивированных данных и команд, для каких-либо целей, за исключением случаев, когда такие действия были прямо разрешены Пользователю в соответствии с условиями отдельного соглашения с Администрацией;
+                            6.3.14. размещать коммерческую и политическую рекламу вне специальных разделов Сайта, установленных Администрацией Сайта;
+                            6.3.15. размещать любую другую информацию, которая, по личному мнению Администрации, является нежелательной, не соответствует целям создания Сайта, ущемляет интересы Пользователей или по другим причинам является нежелательной для размещения на Сайте;
+                            6.3.16. осуществлять самостоятельно либо от имени других Пользователей с использованием функционала их аккаунта, в том числе путем введения в заблуждение или с обещанием поощрения, в том числе с использованием любых программ, автоматизированных скриптов, массовые однотипные действия, направленные на искусственное повышение показателей счётчиков Сайта (числа друзей, отметок «Нравится», событий «Рассказать друзьям» и т.д.).
+                            6.4. Пользователь несет личную ответственность за любую информацию, которую размещает на Сайте, сообщает другим Пользователям, а также за любые взаимодействия с другими Пользователями, осуществляемые на свой риск.
+                            6.5. В случае несогласия Пользователя с настоящими Правилами или их обновлениями, Пользователь обязан отказаться от использования Сайта, проинформировав об этом Администрацию Сайта в установленном порядке.
+                            6.6. Приобретение Пользователем права использования неактивированных данных и команд Сайта осуществляется на основании лицензионного соглашения, текст которого расположен в свободном доступе в сети Интернет по адресу: https://lifeup.com.ua , заключаемого Администрацией Сайта с Пользователем.
+                            6.7. Создаваемые Пользователями приложения API должны использовать только опубликованные на Сайте методы API, а также ID, защищенный ключ и сервисный ключ доступа, указанные в настройках данных приложений. Использование других методов API, а также ID, защищенного ключа и сервисного ключа доступа приложений API третьих лиц, в т.ч. приложения API Администрации Сайта, строго запрещено. Пользователь обязуется регулярно проверять перечень разрешённых методов и незамедлительно вносить корректировки в функциональность своих приложений API в соответствии с изменениями перечня. За нарушение настоящего пункта Пользователь несет предусмотренную применимым законодательством, настоящими Правилами и иными документами Администрации Сайта ответственность. Администрация Сайта при этом оставляет за собой право на защиту собственных прав и законных интересов.
+
+
+                            7. Условия об интеллектуальных правах
+                            7.1. Исключительные права на Контент, размещенный на Сайте.
+                            7.1.1. Все объекты, размещенные на Сайте, в том числе элементы дизайна, текст, графические изображения, иллюстрации, видео, скрипты, программы, музыка, звуки и другие объекты и их подборки (далее — Контент), являются объектами исключительных прав Администрации, Пользователей Сайта и других правообладателей, все права на эти объекты защищены.
+                            7.1.2. Кроме случаев, установленных настоящими Правилами, а также действующим законодательством Украины, никакой Контент не может быть скопирован (воспроизведен), переработан, распространен, отображен во фрейме, опубликован, скачан, передан, продан или иным способом использован целиком или по частям без предварительного разрешения правообладателя, кроме случаев, когда правообладатель явным образом выразил свое согласие на свободное использование Контента любым лицом. Воспроизведение, копирование, сбор, систематизация, хранение, передача Контента с целью создания базы данных в коммерческих и/или некоммерческих целях и/или использование Контента полностью или в любой его части, независимо от способа использования, без согласия Администрации не допускается.
+                            7.1.3. Пользователь, размещая на Сайте принадлежащий ему на законных основаниях Контент, предоставляет другим пользователям неисключительное право на его использование исключительно в рамках предоставляемого Сайтом функционала, путем просмотра, воспроизведения (в том числе копирования) и иные права исключительно с целью личного некоммерческого использования, кроме случаев, когда такое использование причиняет или может причинить вред охраняемым законом интересам правообладателя.
+                            7.1.4. Использование Пользователем Контента, доступ к которому получен исключительно для личного некоммерческого использования, допускается при условии сохранения всех знаков авторства (копирайтов) или других уведомлений об авторстве, сохранения имени автора в неизменном виде, сохранении произведения в неизменном виде.
+                            7.1.5. Пользователь предоставляет также Администрации Сайта неисключительное право использовать на безвозмездной основе размещенный на Сайте и принадлежащий ему на законных основаниях Контент в целях обеспечения Администрацией Сайта функционирования Сайта в объеме, определяемом функционалом и архитектурой Сайта, и отображения Контента в промоматериалах Администрации Сайта, в том числе в рамках изображений интерфейса Сайта, в том числе путём доведения таких промоматериалов до всеобщего сведения. Указанное неисключительное право предоставляется на срок размещения Контента на Сайте и распространяет свое действие на территории стран всего мира. Окончание срока размещения Контента на Сайте и/или срока действия неисключительного права не влечет за собой необходимость изъятия из оборота промоматериалов Администрации Сайта с отображением Контента (в том числе их удаление из сети Интернет). Администрация Сайта вправе передавать права, указанные в настоящем пункте третьим лицам. Пользователь соглашается с тем, что Администрация вправе использовать функциональные и технические возможности Сайта, обеспечивающие отображение размещаемого Пользователем Контента, включая проигрыватель (плеер), предназначенные для целей отображения Контента, по своему усмотрению, в том числе для целей показа рекламной информации.
+                            7.1.6. Если Пользователь удаляет свой Контент с Сайта, неисключительное право, упомянутое в п. 7.1.5. настоящих Правил, будет автоматически отозвано, однако Администрация оставляет за собой право в случае необходимости, обусловленной техническими особенностями работы Сайта, сохранять архивные копии пользовательского Контента в течение необходимого срока.
+                            7.1.7. Кроме своего собственного Контента, Пользователь не вправе загружать или иным образом доводить до всеобщего сведения (публиковать на Сайте) Контент других сайтов, баз данных и прочие результаты интеллектуальной деятельности при отсутствии явным образом выраженного согласия правообладателя на такие действия.
+                            7.1.8. Любое использование Сайта или Контента, кроме разрешенного в настоящих Правилах или в случае явно выраженного согласия правообладателя на такое использование, без предварительного письменного разрешения правообладателя, категорически запрещено.
+                            7.1.9. Если иное явным образом не установлено в настоящих Правилах, ничто в настоящих Правилах не может быть рассмотрено как передача исключительных прав на Контент.
+                            7.2. Ответственность за нарушение исключительных прав.
+                            7.2.1. Пользователь несет личную ответственность за любой Контент или иную информацию, которые он загружает или иным образом доводит до всеобщего сведения (публикует) на Сайте или с его помощью. Пользователь не имеет права загружать, передавать или публиковать Контент на Сайте, если он не обладает соответствующими правами на совершение таких действий, приобретенными или переданными ему в соответствии с законодательством Укрианы. При обнаружении нарушения прав для подачи жалоб используются Правила рассмотрения жалоб на пользовательский контент.
+                            7.2.2. Администрация Сайта может, но не обязана, просматривать Сайт на наличие запрещенного Контента и может удалять или перемещать (без предупреждения) любой Контент или пользователей по своему личному усмотрению, по любой причине или без причины, включая без всяких ограничений перемещение или удаление Контента, который, по личному мнению Администрации, нарушает настоящие Правила, законодательство Украины и/или может нарушать права, причинить вред или угрожать безопасности других Пользователей или третьих лиц.
+                            7.3. Сайты и Контент третьих лиц.
+                            7.3.1. Сайт содержит (или может содержать) ссылки на другие сайты в сети Интернет (сайты третьих лиц) так же, как и статьи, фотографии, иллюстрации, графические изображения, музыку, звуки, видео, информацию, приложения, программы и другой Контент, принадлежащий или исходящий от третьих лиц (Контент третьих лиц), являющийся результатом интеллектуальной деятельности и охраняемых в соответствии с законодательством Украины.
+                            7.3.2. Указанные третьи лица и их Контент не проверяются Администрацией на соответствие тем или иным требованиям (достоверности, полноты, добросовестности и т.п.). Администрация не несет ответственность за любую информацию, размещенную на сайтах третьих лиц, к которым Пользователь получает доступ через Сайт или через Контент третьих лиц, включая, в том числе, любые мнения или утверждения, выраженные на сайтах третьих лиц или в их Контенте.
+                            7.3.3. Размещенные на Сайте ссылки или руководства по скачиванию файлов и/или установке программ третьих лиц не означают поддержки или одобрения этих действий со стороны Администрации.
+                            7.3.4. Ссылка на любой сайт, продукт, услугу, любую информацию коммерческого или некоммерческого характера, размещенная на Сайте, не является одобрением или рекомендацией данных продуктов (услуг) со стороны Администрации.
+                            7.3.5. Если Пользователь решил покинуть Сайт и перейти к сайтам третьих лиц или использовать, или установить программы третьих лиц, он делает это на свой риск и с этого момента настоящие Правила более не распространяются на Пользователя. При дальнейших действиях Пользователю стоит руководствоваться применимыми нормами и политикой, в том числе деловыми обычаями тех лиц, чей Контент он собирается использовать.
+
+
+                            8. Функционирование Сайта LifeUp и ответственность при его использовании
+                            8.1. Пользователи несут ответственность за собственные действия в связи с созданием и размещением информации на собственной персональной странице на Сайте, а также в связи с размещением информации на персональных страницах других Пользователей и в иных разделах Сайта в соответствии с действующим законодательством Укрианы. Нарушение настоящих Правил и действующего законодательства Украины влечет за собой гражданско-правовую, административную и уголовную ответственность.
+                            8.2. Администрация Сайта предоставляет техническую возможность его использования Пользователями, не участвует в формировании содержания персональных страниц Пользователей и не контролирует и не несет ответственности за действия или бездействие любых лиц в отношении использования Сайта или формирования и использования содержания персональных страниц Пользователей на Сайте.
+                            8.3. В информационной системе Сайта и его программном обеспечении отсутствуют технические решения, осуществляющие автоматические цензуру и контроль действий и информационных отношений Пользователей по использованию Сайта, за исключением специальных технических решений, которые могут реализовываться Администрацией в целях предотвращения и пресечения нарушений прав третьих лиц на результаты интеллектуальной деятельности.
+                            8.4. Администрация сохраняет за собой право в любое время изменять оформление Сайта, его содержание, функционал, изменять или дополнять используемые скрипты, программное обеспечение и другие объекты, используемые или хранящиеся на Сайте, любые серверные приложения в любое время с предварительным уведомлением или без такового.
+                            8.5. Администрация Сайта не занимается предварительной модерацией или цензурой информации Пользователей и предпринимает действия по защите прав и интересов лиц и обеспечению соблюдения требований законодательства Украины только после обращения заинтересованного лица к Администрации Сайта в установленном порядке.
+                            8.6. Администрация Сайта не несет ответственности за нарушение Пользователем настоящих Правил и оставляет за собой право по своему собственному усмотрению, а также при получении информации от других пользователей либо третьих лиц о нарушении Пользователем настоящих Правил, изменять (модерировать), блокировать или удалять любую публикуемую Пользователем информацию, нарушающую запреты, установленные настоящими Правилами, приостанавливать, ограничивать или прекращать доступ Пользователя ко всем или к любому из разделов или функционалу Сайта в любое время по любой причине или без объяснения причин, с предварительным уведомлением или без такового. Администрация Сайта закрепляет за собой право удалить персональную страницу Пользователя и/или приостановить, ограничить или прекратить доступ Пользователя к любой из функциональных возможностей Сайта, если Администрация обнаружит, что по ее мнению, Пользователь представляет угрозу для Сайта и/или его Пользователей. Наряду с указанным в настоящем пункте выше Администрация Сайта вправе блокировать и/или удалять Приложения API, ограничивать доступ Пользователей к Приложения API, сайтам, приложениям третьих лиц, иным сторонним ресурсам, блокировать и/или удалять ссылки на них, в случае если у Администрации Сайта появятся основания полагать, что такие Приложения API, сайты, приложения третьих лиц, иные сторонние ресурсы представляют или могут представлять угрозу для нормальной работы Сайта и его Пользователей. Администрация Сайта реализует описанные выше меры в соответствии с применимым законодательством и не несет ответственности за возможные негативные последствия таких мер для Пользователя или третьих лиц.
+                            8.7. Удаление персональной страницы Пользователя означает автоматическое удаление всей информации, размещенной на ней, а также всей информации Пользователя, введенной при регистрации на Сайте. После удаления персональной страницы Пользователь теряет доступ к использованию Сайта.
+                            8.8. Администрация Сайта обеспечивает функционирование и работоспособность Сайта и обязуется оперативно восстанавливать его работоспособность в случае технических сбоев и перерывов. Администрация Сайта не несет ответственности за временные сбои и перерывы в работе Сайта и вызванные ими потерю информации. Администрация не несет ответственности за любой ущерб компьютеру Пользователя или иного лица, мобильным устройствам, любому другому оборудованию или программному обеспечению, вызванный или связанный со скачиванием материалов с Сайта или по ссылкам, размещенным на Сайте.
+                            8.9. Администрация Сайта имеет право распоряжаться статистической информацией, связанной с функционированием Сайта, а также информацией Пользователей для обеспечения адресного показа рекламной информации различным аудиториям Пользователей Сайта. Для целей организации функционирования и технической поддержки Сайта и исполнения настоящих Правил Администрация Сайта имеет техническую возможность доступа к персональным страницам Пользователей, которую реализует только в случаях, установленных настоящими Правилами.
+                            8.10. Администрация Сайта имеет право направлять Пользователю информацию о развитии Сайта и его функционала, а также рекламировать собственную деятельность.
+                            8.11. Ограничение ответственности Администрации Сайта:
+                            8.11.1. САЙТ И ЕГО ФУНКЦИОНАЛ, ВКЛЮЧАЯ ВСЕ СКРИПТЫ, ПРИЛОЖЕНИЯ, КОНТЕНТ И ОФОРМЛЕНИЕ САЙТА ПОСТАВЛЯЮТСЯ «КАК ЕСТЬ». АДМИНИСТРАЦИЯ ОТКАЗЫВАЕТСЯ ОТ ВСЯКИХ ГАРАНТИЙ ТОГО, ЧТО САЙТ ИЛИ ЕГО ФУНКЦИОНАЛ МОГУТ ПОДХОДИТЬ ИЛИ НЕ ПОДХОДИТЬ ДЛЯ КОНКРЕТНЫХ ЦЕЛЕЙ ИСПОЛЬЗОВАНИЯ. АДМИНИСТРАЦИЯ НЕ МОЖЕТ ГАРАНТИРОВАТЬ И НЕ ОБЕЩАЕТ НИКАКИХ СПЕЦИФИЧЕСКИХ РЕЗУЛЬТАТОВ ОТ ИСПОЛЬЗОВАНИЯ САЙТА И/ИЛИ ЕГО ФУНКЦИОНАЛА;
+                            8.11.2. ВО ИЗБЕЖАНИЕ НЕДОРАЗУМЕНИЙ ПОЛЬЗОВАТЕЛЮ СЛЕДУЕТ СОБЛЮДАТЬ МЕРЫ ПРЕДОСТОРОЖНОСТИ В СКАЧИВАНИИ С САЙТА ИЛИ ПО РАЗМЕЩЕННЫМ НА НЕМ ССЫЛКАМ, И ИСПОЛЬЗОВАНИИ ЛЮБЫХ ФАЙЛОВ, В ТОМ ЧИСЛЕ ПРОГРАММНОГО ОБЕСПЕЧЕНИЯ. АДМИНИСТРАЦИЯ САЙТА НАСТОЯТЕЛЬНО РЕКОМЕНДУЕТ ИСПОЛЬЗОВАТЬ ТОЛЬКО ЛИЦЕНЗИОННОЕ, В ТОМ ЧИСЛЕ АНТИВИРУСНОЕ, ПРОГРАММНОЕ ОБЕСПЕЧЕНИЕ;
+                            8.11.3. ИСПОЛЬЗУЯ САЙТ, ПОЛЬЗОВАТЕЛЬ СОГЛАШАЕТСЯ С ТЕМ, ЧТО СКАЧИВАЕТ С САЙТА ИЛИ С ЕГО ПОМОЩЬЮ ЛЮБЫЕ МАТЕРИАЛЫ НА СВОЙ СОБСТВЕННЫЙ РИСК И НЕСЕТ ЛИЧНУЮ ОТВЕТСТВЕННОСТЬ ЗА ВОЗМОЖНЫЕ ПОСЛЕДСТВИЯ ИСПОЛЬЗОВАНИЯ УКАЗАННЫХ МАТЕРИАЛОВ, В ТОМ ЧИСЛЕ ЗА УЩЕРБ, КОТОРЫЙ ЭТО МОЖЕТ ПРИЧИНИТЬ КОМПЬЮТЕРУ ПОЛЬЗОВАТЕЛЯ ИЛИ ТРЕТЬИМ ЛИЦАМ, ЗА ПОТЕРЮ ДАННЫХ ИЛИ ЛЮБОЙ ДРУГОЙ ВРЕД;
+                            8.11.4. НИ ПРИ КАКИХ ОБСТОЯТЕЛЬСТВАХ АДМИНИСТРАЦИЯ САЙТА ИЛИ ЕЕ ПРЕДСТАВИТЕЛИ НЕ НЕСУТ ОТВЕТСТВЕННОСТЬ ПЕРЕД ПОЛЬЗОВАТЕЛЕМ ИЛИ ПЕРЕД ЛЮБЫМИ ТРЕТЬИМИ ЛИЦАМИ ЗА ЛЮБОЙ КОСВЕННЫЙ, СЛУЧАЙНЫЙ, НЕУМЫШЛЕННЫЙ УЩЕРБ, ВКЛЮЧАЯ УПУЩЕННУЮ ВЫГОДУ ИЛИ ПОТЕРЯННЫЕ ДАННЫЕ, ВРЕД ЧЕСТИ, ДОСТОИНСТВУ ИЛИ ДЕЛОВОЙ РЕПУТАЦИИ, ВЫЗВАННЫЙ В СВЯЗИ С ИСПОЛЬЗОВАНИЕМ САЙТА, СОДЕРЖИМОГО САЙТА ИЛИ ИНЫХ МАТЕРИАЛОВ, К КОТОРЫМ ВЫ ИЛИ ИНЫЕ ЛИЦА ПОЛУЧИЛИ ДОСТУП С ПОМОЩЬЮ САЙТА, ДАЖЕ ЕСЛИ АДМИНИСТРАЦИЯ САЙТА ПРЕДУПРЕЖДАЛА ИЛИ УКАЗЫВАЛА НА ВОЗМОЖНОСТЬ ТАКОГО ВРЕДА.
+
+
+                            9. Заключительные положения
+                            9.1. Настоящие Правила составляют соглашение между Пользователем и Администрацией Сайта относительно порядка использования Сайта и его функционала и заменяют собой все предыдущие соглашения между Пользователем и Администрацией.
+                            9.2. Настоящие Правила регулируются и толкуются в соответствии с законодательством Украины. Вопросы, не урегулированные Правилами, подлежат разрешению в соответствии с законодательством Украины.
+                            9.3. В случае возникновения любых споров или разногласий, связанных с исполнением настоящих Правил, Пользователь и Администрация Сайта приложат все усилия для их разрешения путем проведения переговоров между ними. В случае, если споры не будут разрешены путем переговоров, споры подлежат разрешению в порядке, установленном действующим законодательством Украины.
+                            9.4. Настоящие Правила вступают в силу для Пользователя с момента его присоединения к ним и действуют в течение неопределенного срока.
+                            9.5. Настоящие Правила составлены на русском языке и могут быть предоставлены Пользователю для ознакомления на другом языке. В случае расхождения русскоязычной версии Правил и версии Правил на ином языке, применяются положения русскоязычной версии настоящих Правил.
+                            9.6. Если по тем или иным причинам одно или несколько положений настоящих Правил будут признаны недействительными или не имеющими юридической силы, это не оказывает влияния на действительность или применимость остальных положений.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="2Modal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div data-dismiss="modal" style="width: 10%;float: right;height: 3000px"></div>
+                        <p>Политика использования и защиты данных
+
+
+                            В настоящей политике описывается информация, которую мы обрабатываем для поддержки продуктов, приложений, платформ и функций (далее по тексту: "Продукты LifeUp " или "Продукты"), предлагаемых проектом LifeUp (LifeUp.com.ua).
+
+                            Типы информации, которые мы можем собирать
+
+                            Ваши действия, действия других людей и можем предоставлятьая вами и ими информация.
+                            Можем предоставлятьые вами информация и контент. Мы можем собирать контент, сообщения и другую информацию, которые вы предоставляете при использовании наших Продуктов, в том числе когда вы регистрируете аккаунт, создаете контент или делитесь им, отправляете сообщения или взаимодействуете с другими людьми. Это может быть информация из можем предоставлятього вами контента или о нем (такая как метаданные), например место, где было сделано фото, или дата создания файла. Кроме того, мы можем собирать данные о том, что вы видите, с помощью можем предоставлятьых нами функций, таких как наша камера, например, чтобы предлагать маски и фильтры, которые могут вам понравиться, или давать советы по использованию форматов камеры. Наши системы автоматически обрабатывают контент и сообщения, можем предоставлятьые вами и другими людьми, для анализа их контекста и содержания в целях, описанных ниже.
+                            Данные с особой защитой. В полях профиля вы можете по желанию указать информацию о своих религиозных убеждениях, политических взглядах, лицах, которые вас интересуют, или состоянии вашего здоровья. Эта и другая информация (в том числе раса и этническое происхождение, философские взгляды или членство в профсоюзах) может требовать применения особых мер защиты в соответствии с законодательством вашей страны.
+                            Сообщества и связи. Мы можем собирать информацию о людях, Страницах, аккаунтах, хэштегах и группах, с которыми вы связаны, и о вашем взаимодействии с ними в различных Продуктах. Это, например, люди, с которыми вы больше всего общаетесь, или группы, к которым вы присоединились. Мы также можем собирать контактную информацию, если вы загружаете, синхронизируете или импортируете ее с устройства (например, адресную книгу, журнал вызовов или SMS), и можем использоватьее, к примеру, чтобы помогать вам и другим пользователям находить людей, которых вы можете знать, и в других целях, перечисленных ниже.
+                            Использование вами Продуктов. Мы можем собирать информацию о том, как вы используете наши Продукты, такую как типы контента, который вы просматриваете или с которым вы взаимодействуете; функции, которые вы используете; действия, которые вы совершаете; люди или аккаунты, с которыми вы взаимодействуете; время, частота и продолжительность ваших действий. Например, мы регистрируем данные о том, когда вы используете и в последний раз использовали наши Продукты, какие публикации, видео и другой контент вы просматриваете в наших Продуктах. Мы также можем собирать информацию о том, как вы используете такие функции, как наша камера.
+                            Информация о транзакциях, совершаемых в наших Продуктах. Если вы используете наши Продукты для покупок или других финансовых транзакций (например, когда вы совершаете покупку в игре или делаете пожертвование), мы можем собирать сведения о покупке или транзакции. К ним относится платежная информация, например номер кредитной или дебетовой карты и другие данные о ней, другая информация о счете и аутентификации, выставлении счета и доставке, а также контактные данные.
+                            Действия других людей и можем предоставлятьая ими информация о вас. Мы также можем получать и анализируем контент, сообщения и информацию, которые другие люди предоставляют при использовании ими наших Продуктов. Это может быть информация о вас, например, когда другие люди делятся фото с вами или комментируют такое фото, отправляют вам сообщение, загружают, синхронизируют или импортируют вашу контактную информацию.
+                            Информация с устройств.
+                            Как описано ниже, мы можем собирать информацию с используемых вами компьютеров, телефонов, подключенного ТВ (connected TV) и других подключенных к Интернету устройств, интегрируемых с нашими Продуктами, а также информацию об этих устройствах, и объединяем такие данные с разных устройств, которые вы используете. Например, мы можем использоватьсобранную нами информацию о том, как вы используете наши Продукты на своем телефоне, для более эффективной персонализации контента (включая рекламу) или функций, которые вы видите при использовании наших Продуктов на другом устройстве, например на ноутбуке или планшете, либо для определения, совершили ли вы какие-либо действия в ответ на рекламу, показанную нами на вашем телефоне, на другом устройстве. 
+
+                            Мы можем получать с этих устройств следующую информацию: 
+                            Атрибуты устройства: такая информация, как операционная система, версии аппаратного и программного обеспечения, уровень заряда аккумулятора, сила сигнала, объем доступной памяти, тип браузера, имена и типы приложений и файлов, а также плагины.
+                            Действия на устройстве: информация о действиях на устройстве: расположение окна на переднем или заднем плане, движения указателя мыши (это помогает отличить ботов от людей).
+                            Идентификаторы: уникальные идентификаторы, идентификаторы устройств и другие идентификаторы, например игр, приложений или аккаунтов, которые вы используете, а также общие ID устройств (или другие идентификаторы, уникальные для Продуктов , связанные с тем же устройством или аккаунтом).
+                            Сигналы устройств: сигналы Bluetooth и информация о расположенных поблизости точках доступа Wi-Fi, маячках и вышках сотовой связи.
+                            Данные из настроек устройства: информация, которую вы разрешаете нам получать путем включения настроек устройства, таких как доступ к данным о вашем местоположении (GPS), камере или фото.
+                            Сеть и подключения: такая информация, как название вашего мобильного оператора или провайдера, язык, часовой пояс, номер мобильного телефона, IP-адрес, скорость соединения и в некоторых случаях информация о других устройствах, расположенных поблизости или входящих в вашу сеть, чтобы мы могли выполнять такие операции, как потоковая передача видео с вашего телефона на телевизор.
+                            Данные файлов cookie: данные из файлов cookie, хранящихся на вашем устройстве, в том числе идентификаторы и настройки файлов cookie.
+                            Информация от партнеров.
+                            Рекламодатели, разработчики приложений и издатели могут отправлять нам информацию с помощью используемых ими Продуктов для бизнеса, в том числе наших социальных плагинов (таких как кнопка "Нравится" и подобных), "Вход через LifeUp", наших API и SDK. Эти партнеры предоставляют информацию о ваших действиях вне LifeUp — в том числе информацию о вашем устройстве, посещаемых вами сайтах, совершаемых вами покупках, просматриваемой вами рекламе и использовании вами их сервисов — независимо от наличия у вас аккаунта LifeUp и входа в него. Например, разработчик приложений может использовать наш API, чтобы сообщать нам, как вы используете приложение, а компания может сообщать нам о покупках, совершенных вами в ее магазине. Мы также можем получать информацию о ваших действиях и покупках в сети Интернет и вне ее от сторонних поставщиков данных, имеющих право предоставлять нам вашу информацию. 
+
+                            Партнеры получают ваши данные, когда вы посещаете или используете их сервисы, либо через третьи стороны, с которыми они сотрудничают. Мы требуем, чтобы перед предоставлением нам каких-либо данных о вас каждый из этих партнеров получил законные права на сбор, использование и передачу ваших данных.  
+
+
+
+                            Варианты использования собранной информации
+                            Мы можем использовать имеющуюся у нас информацию (с учетом ваших настроек) в указанных ниже целях, а также для предоставления и поддержки Продуктов LifeUp и связанных сервисов, описанных в Пользовательском соглашении LifeUp для следующих целей:  
+
+                            Для предоставления, персонализации и совершенствования наших Продуктов.
+                            Мы можем использовать имеющуюся у нас информацию для предоставления наших Продуктов, в том числе для персонализации функций и контента и предложения рекомендаций (например, групп или мероприятий, которые могут вас заинтересовать, или тем, на которые вы, возможно, захотите подписаться) в наших Продуктах и вне их. Для создания уникальных и актуальных для вас персонализированных Продуктов мы можем использовать ваши связи, предпочтения, интересы и действия, определенные на основании данных, которые мы можем собирать и можем получать от вас и других людей (включая любые данные с особой защитой, которые вы соглашаетесь предоставлять); информацию о том, как вы используете наши Продукты и взаимодействуете с ними, а также о людях, местах или вещах, с которыми вы связаны и которыми интересуетесь в наших Продуктах и вне их.
+                            Информация из различных Продуктов и с различных устройств: Мы объединяем информацию о ваших действиях в различных Продуктах и на различных устройствах, чтобы создать более персонализированный и согласованный опыт во всех используемых вами Продуктах, где бы вы их ни использовали. Например, мы можем порекомендовать вам присоединиться к группе, куда входят люди, на которых вы подписаны или с которыми вы общаетесь. Мы также можем сделать использование наших Продуктов более удобным, например, автоматически подставляя вашу регистрационную информацию (такую как номер телефона) из одного Продукта при входе в аккаунт в другом Продукте.
+                            Информация о местонахождении: Мы можем использовать информацию о местонахождении — например, вашем текущем местонахождении, месте проживания, местах, которые вы любите посещать, а также компаниях и людях, рядом с которыми вы находитесь, — для предоставления, персонализации и улучшения наших Продуктов, в том числе рекламы, для вас и других людей. Информация о местонахождении может быть получена на основе таких сведений, как точное местонахождение устройства (если вы позволили нам собирать эту информацию), IP-адреса и информация, можем собираться в ходе использования Продуктов вами и другими лицами (например, отметки о посещениях или мероприятия, на которые вы ходите).
+                            Исследование и разработка Продуктов: Мы можем использовать имеющуюся информацию для разработки, тестирования и совершенствования наших Продуктов, в том числе путем проведения опросов и исследований, а также тестирования новых продуктов и функций и устранения неполадок в них.
+                            Распознавание лиц: Если у вас включена эта функция, мы можем применять технологию распознавания лиц, чтобы узнавать вас в видео, на фото и изображениях с камеры. Создаваемые нами шаблоны распознавания лиц могут представлять собой данные с особой защитой в соответствии с законодательством вашей страны. Вы можете узнать больше о том, как мы можем использовать технологию распознавания лиц, и контролировать то, как мы это делаем, в Настройках. Перед включением технологии распознавания лиц в Продуктах мы сообщим вам об этом, и вы сможете самостоятельно решить, будет ли эта технология использоваться в отношении вас.
+                            Реклама и другой спонсорский контент: Мы можем использовать имеющуюся у нас информацию о вас — в том числе информацию о ваших интересах, действиях и связях — для подбора и персонализации рекламы, предложений и другого спонсорского контента, которые мы показываем вам.
+                            Для предоставления сервисов измерения, статистики и других служб для бизнеса.
+                            Мы можем использовать имеющуюся информацию (в том числе о ваших действиях вне наших Продуктов, таких как посещаемые вами сайты и просматриваемая вами реклама), чтобы помогать рекламодателям и другим партнерам измерять результативность и распространение их рекламы и сервисов и понимать, какие типы людей используют их сервисы и как люди взаимодействуют с их сайтами, приложениями и сервисами. 
+                            Для продвижения безопасности, целостности и защиты.
+                            Мы можем использовать имеющуюся информацию для подтверждения аккаунтов и действий, борьбы с вредным поведением, выявления и предотвращения спама и другого неприятного опыта, сохранения целостности наших Продуктов и продвижения безопасности и защиты в Продуктах и вне их. Например, мы можем использовать имеющиеся данные для расследования подозрительных действий или нарушений наших условий и политик, а также для выявления ситуаций, когда кому-нибудь нужна наша помощь.
+                            Для взаимодействия с вами.
+                            Мы можем использовать имеющуюся информацию, чтобы отправлять вам маркетинговые предложения, общаться с вами по поводу наших Продуктов и сообщать о нашей политике и условиях. Кроме того, информация нужна нам, чтобы отвечать на ваши запросы.
+                            В целях исследований и инноваций для общественного блага
+                            Мы можем использовать имеющуюся информацию (в том числе полученную от сотрудничающих с нами партнеров по исследованиям) для проведения и поддержки исследований и инноваций на темы общего социального обеспечения, технического прогресса, общественных интересов, здравоохранения и благополучия.
+
+                            Способы предоставления полученной информации
+                            Мы можем предоставлять вашу информацию другим лицам следующими способами: 
+                            Вы делитесь информацией в Продуктах LifeUp.
+                            Люди и аккаунты, с которыми вы общаетесь и делитесь информацией.
+                            Когда вы общаетесь и делитесь информацией, используя наши Продукты, вы выбираете аудиторию, которой будет доступно то, чем вы поделились. Например, если вы размещаете публикацию или обьявление, вы выбираете его аудиторию: группа, все ваши друзья, индивидуально настроенный список или "доступно всем". Мы также позволяем другим аккаунтам видеть, кто просматривал их аккаунт. 
+
+                            Общедоступная информация видна всем в наших Продуктах и вне их — в том числе при отсутствии аккаунта. Это ваше имя пользователя; любая информация, которой вы делитесь со всеми людьми; информация в вашем общедоступном профиле ; и контент, которым вы делитесь, Вы, другие люди, использующие Продукты LifeUp, и мы можем предоставлять доступ или отправлять общедоступную информацию любым лицам в наших Продуктах и вне их, в результатах поиска или с помощью инструментов и API. Возможны также просмотр, перепост, скачивание общедоступной информации и доступ к ней через сторонние сервисы, такие как поисковые системы, API и обычные СМИ, например ТВ, а также выполнение этих действий приложениями, сайтами и другими сервисами, интегрированными с нашими Продуктами. 
+
+                            Контент о вас, которым делятся и повторно делятся другие люди.
+                            Вам следует проявлять осмотрительность при выборе аудитории, так как люди, которые могут видеть ваши действия в наших Продуктах, могут делиться этой информацией с другими людьми в наших Продуктах и вне их, в том числе с людьми и компаниями, не входящими в выбранную вами аудиторию. Например, когда вы делитесь публикацией или отправляете сообщение определенным друзьям или аккаунтам, они могут скачивать, делать снимки экрана или перепост этого контента для других людей в различных Продуктах и вне их, передавать их при очном общении или в продуктах виртуальной реальности. Кроме того, когда вы комментируете чью-либо публикацию или реагируете на чей-либо контент, ваш комментарий или реакция видны всем, кто видит контент этого человека, и этот человек может впоследствии изменить аудиторию. 
+
+                            Люди также могут использовать наши Продукты, чтобы создавать контент о вас и делиться им с выбранной ими аудиторией. Например, они могут поделиться фото с вами в истории, упомянуть или отметить вас в каком-то месте в публикации, а также поделиться информацией о вас в своих публикациях или сообщениях. Если вы хотите добиться удаления информации о вас, которой другие люди поделились в наших Продуктах, вы можете подать жалобу на контент.
+                            Информация об активном статусе или присутствии в наших Продуктах.
+                            Участники ваших сообществ могут видеть сигналы, указывающие на ваш активный статус в наших Продуктах, или на то, когда вы в последний раз использовали наши Продукты.
+                            Приложения, сайты и сторонние интеграции в наших Продуктах или использующие наши Продукты.
+                            Когда вы решаете использовать сторонние приложения, сайты или другие сервисы, которые используют наши Продукты или интегрированы в них, они могут получать информацию о том, что вы публикуете или чем вы делитесь. Информация, которую собирают такие сторонние сервисы, регулируется их собственными условиями и политиками (а не этой политикой). 
+
+                            Устройства и операционные системы, предоставляющие нативные версии LifeUp (т. е. устройства и ОС, для которых мы не разработали наши собственные оригинальные приложения), будут иметь доступ ко всей информации, которой вы решите с ними поделиться, в том числе информации, которой ваши друзья делятся с вами, чтобы иметь возможность предоставлять вам основной функционал. 
+
+                            Новый владелец.
+                            В случае перехода прав собственности или контроля над всеми или частью наших Продуктов или их активов к другому лицу мы можем передать вашу информацию новому владельцу.
+
+                            Обмен информацией со сторонними партнерами
+                            Мы работаем со сторонними партнерами, которые помогают нам предоставлять и совершенствовать наши Продукты или используют Продукты LifeUp для бизнеса для продвижения своего бизнеса. Благодаря этому сотрудничеству наши компании работают и предоставляют бесплатные услуги людям по всему миру. Мы никому не продаем и никогда не будем продавать вашу информацию. Мы также строго ограничиваем способы использования и раскрытия партнерами предоставленных нами данных. Вот типы третьих сторон, с которыми мы делимся информацией: 
+
+                            Партнеры, использующие наши сервисы аналитики.
+                            Мы можем предоставлять обобщенную статистику, которая помогает людям и компаниям анализировать взаимодействие людей с их публикациями, листингами, Страницами, видео и другим контентом в Продуктах и вне их.
+                            Рекламодатели.
+                            Мы можем предоставлять рекламодателям отчеты о типах людей, которые просматривают их рекламу, и результативности их рекламы, но не делимся с ними информацией, идентифицирующей вашу личность (такой как ваше имя или электронный адрес, который сам по себе может использоваться для связи с вами или идентифицирует вашу личность), без вашего разрешения. К примеру, они могут получать от нас общие демографические данные и информацию об интересах, чтобы лучше понимать свою аудиторию. Мы также можем предоставлять им подтверждение того, что определенное объявление привело к совершению вами покупки или иного действия в связи с рекламодателем.
+                            Партнеры по измерениям.
+                            Мы делимся информацией о вас с компаниями, которые обобщают ее для предоставления нашим партнерам аналитических отчетов и отчетов об измерениях.
+                            Партнеры, предлагающие товары и услуги в наших Продуктах.
+                            Когда вы оформляете подписку для получения платного контента или покупаете что-то у продавца в наших Продуктах, создатель контента или продавец может получить вашу общедоступную информацию и другую информацию, которой вы делитесь с ними, а также информацию, необходимую для совершения транзакции, в том числе информацию о доставке и контактные данные.
+                            Поставщики товаров и услуг.
+                            Мы можем предоставлять информацию и контент поставщикам товаров и услуг, которые поддерживают нашу деятельность, например обслуживают техническую инфраструктуру, анализируют использование наших Продуктов, работают с клиентами, обеспечивают платежи и проводят опросы.
+                            Исследователи и ученые.
+                            Мы также можем предоставлять информацию и контент партнерам по исследованиям и ученым для проведения исследований, которые способствуют развитию науки и инновациям, полезным для нашей деятельности или миссии, а также совершению открытий и новым разработкам в области общего социального обеспечения, технического прогресса, общественных интересов, здравоохранения и благополучия.
+                            Правоохранительные органы и официальные запросы.
+                            Мы можем предоставлять информацию правоохранительным или другим органам по их официальным запросам.
+
+
+                            Управление информацией о своем аккаунте и ее удаление
+                            Мы можем предоставлять вам возможности доступа, исправления, переноса и удаления ваших данных.
+                            Мы можем хранить данные, пока не перестанем нуждаться в них для предоставления наших сервисов и Продуктов или пока вы не удалите свой аккаунт, — в зависимости от того, какое событие наступит раньше. Срок хранения определяется в индивидуальном порядке в зависимости от таких факторов, как характер данных, цель их сбора и обработки и соответствующие юридические или операционные потребности в их хранении. Например, когда вы ищете что-либо, вы можете в любое время осуществить доступ к запросу и удалить его из своей истории поиска, однако из журнала поиска он будет удален только через установленный промежуток времени. Если вы предоставляете копию выданного государственным органом удостоверения личности в целях подтверждения аккаунта, мы удаляем эту копию через 30 дней после предоставления.
+                            При удалении аккаунта по вашему запросу мы удаляем все, что вы опубликовали, например ваши фото и обновления статуса, и вы не сможете впоследствии восстановить эту информацию. Информация о вас, которой поделились другие люди, не является частью вашего аккаунта и не подлежит удалению. Если вы не хотите удалять свой аккаунт, но хотите временно прекратить использование Продуктов, вы можете просто отключить аккаунт. Вы можете в любое время удалить свой аккаунт.
+
+                            Вернуться наверх
+
+                            Наша политика в отношении ответов на официальные запросы или/и запросы предотвращения ущерба
+                            Мы осуществляем доступ к вашей информации, можем хранить ее и можем предоставлять ее регулирующим и правоохранительным органам и другим лицам:
+                            по официальному запросу (такому как ордер на обыск, судебное распоряжение или повестка), если у нас есть достаточные основания полагать, что мы обязаны сделать это по закону. Среди прочего, мы можем отвечать на официальные запросы, поступающие из других стран, если у нас есть достаточные основания полагать, что ответ должен быть предоставлен по законам этой страны или территории, затрагивает пользователей в этой стране или на этой территории и не противоречит международно признанным стандартам.
+                            Если мы разумно полагаем, что это необходимо для: обнаружения, предотвращения или пресечения мошенничества, несанкционированного использования Продуктов, нарушений наших условий или правил или других вредных или незаконных действий; для защиты себя (в том числе наших прав, имущества или Продуктов), вас или других лиц, в том числе в ходе расследований или в ответ на запросы регулирующих органов; или для предотвращения смерти либо непосредственной угрозы здоровью. Например, в случае необходимости мы обмениваемся со сторонними партнерами информацией о надежности вашего аккаунта для предотвращения мошенничества, нарушений и других вредных действий в наших Продуктах и вне их.
+
+                            Мы можем осуществлять доступ к полученной информации о вас (включая данные о финансовых транзакциях, связанных с покупками в Продуктах LifeUp) или хранить ее в течение более длительного срока, если она будет предметом официального запроса или юридического обязательства, расследования государственных органов или расследования на предмет возможных нарушений наших условий или правил, а также в иных случаях для предотвращения вреда. Мы также сохраняем информацию из аккаунтов, отключенных за нарушение условий, по крайней мере в течение года с целью предотвращения повторного нарушения или других нарушений условий.
+
+
+                            Принципы обработки и передачи данных в рамках наших глобальных сервисов
+                            Мы можем передавать информацию по всему миру подразделениям и компаниям LifeUp, нашим внешним партнерам и лицам, с которыми вы общаетесь и делитесь контентом, в соответствии с настоящей политикой. К примеру, ваша информация может передаваться, храниться и обрабатываться в Соединенных Штатах Америки и других странах за пределами страны вашего проживания в целях, описанных в настоящей политике. Такая передача данных необходима для предоставления сервисов, а также для обеспечения работы и предоставления вам наших Продуктов по всему миру. Мы можем использовать стандартные пункты договора, опираемся на решения Европейской комиссии о достаточности мер в отношении соответствующих стран и можем получать ваше согласие на такую передачу данных в Соединенные Штаты Америки и другие страны.
+
+
+
+
+                            Способы Как мы будем уведомлять вас об изменениях этой политики?
+                            Мы заранее уведомим вас о внесении изменений в эту политику и дадим вам возможность изучить пересмотренную версию данного документа, прежде чем принимать решение о дальнейшем использовании наших Продуктов.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="3Modal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div style="margin-left: -200px;width: 1000px" class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="donate1" class="bot_cont" style="height:600px;">
+                        </div>
+                        <div style="margin-top:-590px;" class="bgc-of-div">
+                            <div class="front-div">
+                                <div class="inside-front-div">
+                                    <div>
+                                        <p id="p-in-blue-div" style="font-size: 20px; font-family: HelveticaNeueCyr;text-align: center;color: white;font-weight: bold;padding-top: 41px">МЫ УМЕЕМ БЫТЬ БЛАГОДАРНЫМИ!</p>
+                                        <p id="p-in-blue-div-2" style="font-size: 20px; font-family: HelveticaNeueCyr;text-align: center;color: white;font-weight: bold;">Напишите нам, какой вид помощи вы оказали проект,<br>и 15 июля среди самых активных участников мы разыграем:</p>
+                                        <ul id="p-in-blue-div-3" style="font-family: HelveticaNeueCyr; color: white; font-size: 20px; list-style-type: none; text-align: center">
+                                            <li>Google Pixel 2 64GB черный - 1 шт</li>
+                                            <li>IPad mini 64GB - 2 шт, с чехлом "LifeUp"</li>
+                                            <li>Палатка Coleman Tatra 3 зеленая</li>
+                                            <li>Термокружки на 0.75 литра - 10 шт</li>
+                                            <li>Брендированная толстовка - 20 шт</li>
+                                            <li>Мультитул Leatherman Leap Green.</li>
+                                        </ul>
+                                        <p id="p-in-blue-div-4" style="text-align: center;font-size: 20px;font-family: HelveticaNeueCyr;color: white;font-weight: bold">Бонус) Наклейки или исходники с логотипом<br>могут получить все,<br>просто напишите нам.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        <div id="4Modal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <div style="margin-left: -200px;width: 1000px" class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <p>1DfowGnkqReaAoDpkNU2X7me6sMP89kKEY</p>
+                    </div>
+            </div>
+            </div>
+        </div>
+
+        <div id="BTC" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <div data-dismiss="modal" style="width: 10%;float: right;height: 300px"></div>
+                        <p>BTC: 16yEznNERFGKtqZntqXzFYT3cbUMy2GSzb</p>
+                        <p>DASH: XxGXm88yS3RYn8ZVBAbFkSvmUtYbK67odH</p>
+                        <p>ETH: 0x2b2703b9f10e436c738ecc318e7c0b87e8effab3</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Модальный блок -->
+        <div class="overlay_mod" id="video1"></div>
+        <div class="modal_mod">
+            <div class="video__title_mod">
+                Это просто заголовок и краткое описание видео
+            </div>
+            <div class="video_mod" id="youtube">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/XPKr7yEvHAY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+            <a href="" onclick="void(0)" class="close"></a>
+        </div>
+        <!-- конец блока видео-->
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120617677-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-120617677-1');
+        </script>
+
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+        <script src="js/scripts.min.js"></script>
+        <script src="js/script.js"></script>
+        <script src="js/common.js"></script>
+    </body>
+</html>

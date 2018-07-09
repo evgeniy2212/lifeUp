@@ -1,0 +1,331 @@
+.donate_content{
+    text-align: justify;
+}
+#LifeUoApp{
+    text-align: center;
+}
+.s_review .bot_content .sr_form .review_form ul li label.personal_data_access{
+    width: 260px;
+    font-size: 11px;
+}
+.h_social_wrap_top{
+    position: inherit;
+    right: 461px;
+}
+.h_social_wrap_top p{
+    margin: 0;
+    font-size: 16px;
+    display: inline-block;
+    line-height: 1;
+    position: relative;
+    padding: 5px 15px
+}
+.h_social_wrap_top p:after{
+    position: absolute;
+    content: '';
+    height: 34px;
+    width: 1px;
+    right: 0;
+    top: 50%;
+    margin-top: -17px;
+    background-color: #5BD9D8;
+}
+.h_social_wrap_top a{
+    color: #fff;
+    font-size: 28px;
+    line-height: 28px;
+    position: relative;
+    padding: 5px 15px;
+    transition: all .4s ease;
+}
+.h_social_wrap_top a:hover{
+    color: #c2024f;
+}
+.h_social_wrap_top a:after{
+    position: absolute;
+    content: '';
+    height: 34px;
+    width: 1px;
+    right: 0;
+    top: 50%;
+    margin-top: -17px;
+    background-color: #5BD9D8;
+}
+
+.scroll_to_prototype_phone{
+    position: absolute;
+    left: -5%;
+    top: 24%;
+}
+.scroll_to_prototype_phone p{
+    writing-mode: vertical-rl;
+    white-space: nowrap;
+    margin: 0;
+    padding: 0;
+    color: black;
+}
+.scroll_to_prototype_phone .line-arrow-div_phone{
+    margin-top: 23px;
+}
+.scroll_to_prototype_phone .line-arrow-div_phone .line-arrow_phone{
+    width: 1px;
+    height: 74px;
+    color: black;
+}
+.scroll_to_prototype_phone .arrow-down-div_phone{
+    margin-top: -13px;
+    color: black;
+}
+.scroll_to_prototype_phone .arrow-down-div_phone .arrow-down_phone{
+    width: 11px;
+    height: 6px;
+    color: black;
+}
+.scroll_to_prototype_phone .mw-wrapper_phone{
+    text-align: center;
+    padding: 150px 0;
+}
+.scroll_to_prototype_phone .mw-wrapper_phone .mouse-icon_phone{
+    margin-top: 570%;
+    border: 2px solid #000;
+    border-radius: 16px;
+    height: 37px;
+    width: 20px;
+    z-index: 10;
+    opacity: 0.7;
+    display: inline-block;
+    cursor: pointer;
+}
+.scroll_to_prototype_phone .mw-wrapper_phone .mouse-icon_phone .wheel_phone{
+    animation-name: initial;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    position: relative;
+    border-radius: 10px;
+    background: #000000;
+    width: 2px;
+    height: 6px;
+    top: 4px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.s_team .bot_cont .donate .donate_content .donate_icons .icon_wrap{
+    padding-left: 4%;
+}
+.review-p{
+    min-width: 300px;
+}
+.modal-dialog {
+    max-width: 1000px;
+    padding: 15px;
+}
+.modal-content{
+    width: 100%;
+    height: 700px;
+    overflow: hidden;
+    padding: 15px;
+}
+.modal-body {
+    overflow: auto;
+}
+.modal-body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    background-color: #F5F5F5;
+}
+
+.modal-body::-webkit-scrollbar {
+    width: 12px;
+    background-color: #F5F5F5;
+}
+
+.modal-body::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: #ababab;
+}
+.modal-header {
+    border: none;
+}
+.modal-header .close{
+    padding: 1%;
+}
+
+/** стили фона затемнения **/
+.overlay_mod {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 10000;
+    visibility: hidden;
+    /* фон затемнения */
+    background-color: rgba(0, 0, 0, 0.8);
+    opacity: 0;
+    position: fixed; /* фиксированное позиционирование */
+    /* трансформация прозрачности при открытии  */
+    -webkit-transition: opacity .5s;
+    -moz-transition: opacity .5s;
+    -ms-transition: opacity .5s;
+    -o-transition: opacity .5s;
+    transition: opacity .5s;
+}
+/* активируем при клике */
+.overlay_mod:target {
+    visibility: visible;
+    opacity: 1;
+}
+/** стили модального блока */
+.modal_mod {
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 50%;
+    height: 700px;
+    z-index: 10001;
+    /** полная прозрачность изначально */
+    opacity: 0;
+    display: block;
+    visibility: hidden;
+    position: fixed;
+    /* трансформация прозрачности при открытии  */
+    -webkit-transition: opacity 500ms ease-in;
+    -moz-transition: opacity 500ms ease-in;
+    transition: opacity 500ms ease-in;
+    margin: 0 auto;
+    padding: 24px;
+    min-width: 320px;
+    max-width: 1024px;
+    width: 100%;
+    border: 1px solid rgba(120,120,120,.7);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background: rgba(60, 63, 65, 0.9);
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding;
+    background-clip: padding-box;
+    -webkit-box-shadow: 0 0 13px 3px rgba(0,0,0,.5);
+    -moz-box-shadow: 0 0 13px 3px rgba(0,0,0,.5);
+    box-shadow: 0 0 13px 3px rgba(0,0,0,.5);
+}
+.modal_mod a {
+    position: absolute;
+    border-radius: 50%;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: 18px;
+    top: 18px;
+    background: #fff;
+}
+.modal_mod .close:after {
+    color: #000;
+    font-size: 43px;
+    margin-top: -10px;
+}
+.modal_mod .close:hover:after {
+    transform: scale(1);
+}
+/* активируем при клике */
+.overlay_mod:target+.modal_mod{
+    top: 15%;
+    visibility: visible;
+    opacity: 1;
+}
+/* планшет */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+    .modal_mod {
+        width: 95%;
+    }
+}
+/* смарт */
+@media only screen and (min-width: 459px) and (max-width: 767px) {
+    .modal_mod {
+        width:85%;
+    }
+}
+/* кнопка закрытия */
+button.close {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: 18px;
+    top: 18px;
+    border-radius: 50%;
+    z-index: 999999;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    background: #ababab;
+}
+@media (max-width: 530px) {
+    .close {
+        top: 6px;
+    }
+}
+.close:after {
+    content: '×';
+    color: #fff;
+    position: absolute;
+    margin: auto;
+    top: 0; bottom: 0;
+    left: 0; right: 0;
+    display: block;
+    -moz-transition: all 0.6s;
+    -webkit-transition: all 0.6s;
+    transition: all 0.6s;
+    -moz-transform: scale(0.85);
+    -ms-transform: scale(0.85);
+    -webkit-transform: scale(0.85);
+    transform: scale(0.85);
+}
+
+.close:hover:after {
+    transform: scale(1.15);
+}
+/* блок заголовка видео */
+.video__title_mod {
+    height: auto;
+    width: 70%;
+    padding: 0px 5px 15px 5px;
+    color: white;
+    font: normal 16px/22px 'Open Sans', Calibri, Arial, sans-serif;
+}
+@media (max-width: 530px) {
+    .video__title_mod {
+        height: 38px;
+        font-size: 12px;
+        line-height: 18px;
+    }
+}
+/* адаптивный блок видео */
+.video_mod {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow:hidden;
+}
+.video_mod iframe,
+.video_mod object,
+.video_mod embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+/* -- */
+/*.h_social_wrap_top a:after{*/
+    /*position: absolute;*/
+    /*content: '';*/
+    /*height: 34px;*/
+    /*width: 1px;*/
+    /*right: 0;*/
+    /*top: 50%;*/
+    /*margin-top: -17px;*/
+    /*background-color: #5BD9D8;*/
+/*}*/
