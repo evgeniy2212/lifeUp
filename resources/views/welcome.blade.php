@@ -476,7 +476,7 @@
                 </div>
                 <div class="col-md-4 col-12 team-photo">
                     <figure>
-                        <img src="{{ asset('images/team/ksenia.jpg') }}" alt="Ксения">
+                        <img src="{{ asset('images/team/Ksenia.jpg') }}" alt="Ксения">
                     </figure>
                 </div>
                 <div class="male">
@@ -521,7 +521,7 @@
                 </div>
                 <div class="col-md-4 col-12 team-photo">
                     <figure>
-                        <img src="{{ asset('images/team/Dmitriy.jpg') }}" alt="Dmitriy">
+                        <img src="{{ asset('images/team/dmitriy.jpg') }}" alt="Dmitriy">
                     </figure>
                 </div>
                 <div class="male">
