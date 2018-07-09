@@ -22,3 +22,5 @@ Route::resource('comments', 'CommentController');
 
 Route::post('/mail', 'mailController@send')->name('mail');
 
+Route::post('/mail_present', 'mailController@send_present')->name('mail_present');
+

@@ -370,66 +370,15 @@
             </div>
         </div>
         <div class="container our-reviews">
+            @foreach($comments as $comment)
             <div class="col">
-                <h3>Имя Фамилия</h3>
-                <span class="location">Россия</span>
+                <h3>{{ $comment->author }}</h3>
+                <span class="location">{{ $comment->city }}</span>
                 <p>
-                    Lorem Ipsum is simply dummy text of the printing & typesetting industry.
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                    when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                    It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-                    It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
-                    and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                   {{ $comment->text }}
                 </p>
             </div>
-            <div class="col">
-                <h3>Имя Фамилия</h3>
-                <span class="location">Россия</span>
-                <p>
-                    Lorem Ipsum is simply dummy text of the printing & typesetting industry.
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                    when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                    It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-                    It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
-                    and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                </p>
-            </div>
-            <div class="col">
-                <h3>Имя Фамилия</h3>
-                <span class="location">Россия</span>
-                <p>
-                    Lorem Ipsum is simply dummy text of the printing & typesetting industry.
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                    when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                    It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-                    It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
-                    and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                </p>
-            </div>
-            <div class="col">
-                <h3>Имя Фамилия</h3>
-                <span class="location">Россия</span>
-                <p>
-                    Lorem Ipsum is simply dummy text of the printing & typesetting industry.
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                    when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                    It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-                    It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
-                    and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                </p>
-            </div>
-            <div class="col">
-                <h3>Имя Фамилия</h3>
-                <span class="location">Россия</span>
-                <p>
-                    Lorem Ipsum is simply dummy text of the printing & typesetting industry.
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                    when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                    It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-                    It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
-                    and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                </p>
-            </div>
+                @endforeach
         </div>
         <div class="container d-flex new-review">
             <div>
@@ -869,7 +818,8 @@
                     <br>
                     просто напишите нам.
                 </p>
-                <form class="col-lg-9 col-md-12">
+                <form class="col-lg-9 col-md-12" method="POST" action="{{ route('mail_present') }}">
+                    {{ csrf_field() }}
                     <input class="col-sm-5 col" type="text" name="name" placeholder="Имя">
                     <input class="col-sm-5 col" type="email" name="email" placeholder="Почта">
                     <p>Я хочу принять участие в кункурсе и соглашаюсь на условия проведения</p>
@@ -891,11 +841,12 @@
             </div>
         </div>
         <div class="container our-contacts">
-            <form class="col-sm-6 col-12">
+            <form class="col-sm-6 col-12" method="POST" action="{{ route('mail') }}">
+                {{ csrf_field() }}
                 <h5>Форма обратной связи</h5>
                 <input type="text" name="name" placeholder="Ваше Имя">
                 <input type="email" name="email" placeholder="E-Mail">
-                <textarea placeholder="Сообщение"></textarea>
+                <textarea placeholder="Сообщение" name="text"></textarea>
                 <button type="submit">Отправить</button>
             </form>
             <div class="col-sm-6 col-12">
@@ -907,12 +858,13 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
-                <form>
+                <form method="POST" href="{{ URL::to('comments') }}">
+                    {{ csrf_field() }}
                     <h5>Что вы думаете о нас?</h5>
-                    <input class="col-12" type="text" name="name" placeholder="Имя">
-                    <input class="col-12" type="email" name="email" placeholder="E-Mail">
-                    <input class="col-12" type="text" name="name" placeholder="Город">
-                    <textarea placeholder="Ваш Коментарий"></textarea>
+                    <input class="col-12" type="text" name="author" placeholder="Имя" required>
+                    <input class="col-12" type="email" name="email" placeholder="E-Mail" required>
+                    <input class="col-12" type="text" name="city" placeholder="Город" required>
+                    <textarea placeholder="Ваш Коментарий" name="text"></textarea>
                     <label>
                         <input type="checkbox" id="agree">
                         <span>Я предоставляю своё согласие на использование моих персональных данных согласно норм действующего законодательства</span>
