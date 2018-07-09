@@ -858,7 +858,7 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
-                <form method="POST" href="{{ URL::to('comments') }}">
+                <form method="POST" action="{{'comments'}}">
                     {{ csrf_field() }}
                     <h5>Что вы думаете о нас?</h5>
                     <input class="col-12" type="text" name="author" placeholder="Имя" required>
@@ -866,7 +866,7 @@
                     <input class="col-12" type="text" name="city" placeholder="Город" required>
                     <textarea placeholder="Ваш Коментарий" name="text"></textarea>
                     <label>
-                        <input type="checkbox" id="agree">
+                        <input type="checkbox" id="agree" required>
                         <span>Я предоставляю своё согласие на использование моих персональных данных согласно норм действующего законодательства</span>
                     </label>
                     <button class="col-5" type="submit">Отправить</button>
