@@ -10,6 +10,9 @@
     .title-life-up a span {
         left: -60px;
     }
+    .title-life-up .modal-video span {
+        left: -60px;
+    }
 
 
     /*Prototype*/
@@ -164,19 +167,22 @@
         top: 0;
         min-height: 300px;
     }
-    .heating {
-        text-align: center !important;
-        display: flex;
-        flex-direction: column;
+    .heating,
+    .reviews .heating,
+    .be-with-us .heating{
         align-items: center;
+        max-width: none;
     }
     .heating h3 {
         font-size: 30px;
         line-height: 32px;
     }
-    .heating p {
+    .heating p,
+    .reviews .heating p,
+    .be-with-us .heating p{
         font-size: 16px;
         line-height: 18px;
+        text-align: center;
     }
     .heating span,
     .reviews .heating span,
@@ -204,7 +210,7 @@
         font-size: 16px;
         line-height: 18px;
     }
-    .title-life-up span {
+    .title-life-up .to-prototype {
         display: none;
     }
     .title-life-up a span {
@@ -438,7 +444,7 @@
         display: block;
     }
     .about-section:before {
-        top: 300px;
+        top: 285px;
     }
     .heating h3 {
         font-size: 25px;
@@ -525,6 +531,21 @@
     .support .liked-btn, .join .liked-btn {
         font-size: 25px;
         line-height: 27px;
+    }
+    .our-team .slick-slide {
+        margin: 0 45px;
+    }
+    .our-team h4 {
+        font-size: 20px;
+        line-height: 22px;
+    }
+    .our-team h5 {
+        font-size: 16px;
+        line-height: 18px;
+    }
+    .our-team p {
+        font-size: 14px;
+        line-height: 16px;
     }
 
 
@@ -627,6 +648,9 @@
     .support,
     .join {
         padding: 0 15px;
+    }
+    .hobby {
+        justify-content: center;
     }
 
 

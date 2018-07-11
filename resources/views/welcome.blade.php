@@ -120,17 +120,18 @@
                     эти задачи и предлагает еще 99+ «плюшек»,
                     которые упростят вам жизнь!
                 </p>
-                <span>Нажми на экран</span>
-                <a href="https://www.youtube.com/watch?time_continue=1&v=wufA-pqBMXc" target="_blank">ПРОСМОТРЕТЬ ПРОМО-РОЛИК
+                <a href="#prototype" class="to-prototype">Нажми на экран</a>
+                <button class="modal-video" data-toggle="modal" data-target="#modal_video">ПРОСМОТРЕТЬ ПРОМО-РОЛИК
                     <span></span>
-                </a>
+                </button>
             </div>
             <div class="offset-lg-1 offset-0 col-lg-5 col-md-7 col-12 img-life-up">
                 <a href="#prototype">
                     <img src="{{ asset('images/life-up.png') }}" alt="Life-Up">
                 </a>
                 <ul>
-                    <li>
+                    <li class="stat">
+                        <span>7% Complete</span>
                         <a>
                             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
 										<path class="st0" d="M395.748,272.046c-0.646-64.841,52.88-95.938,55.271-97.483c-30.075-44.01-76.925-50.039-93.62-50.736
@@ -143,7 +144,8 @@
 									</svg>
                         </a>
                     </li>
-                    <li>
+                    <li class="stat">
+                        <span>18% Complete</span>
                         <a>
                             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
 										<polygon class="st0" points="29.53,0 29.53,251.509 29.53,512 299.004,251.509 "/>
@@ -154,7 +156,8 @@
 									</svg>
                         </a>
                     </li>
-                    <li>
+                    <li class="stat">
+                        <span>36% Complete</span>
                         <a>
                             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
 										<path class="st0" d="M129.139,223.29L55.873,96.389C102.782,37.657,174.99,0.019,256,0.019c93.717,0,175.654,50.368,220.266,125.5H267.381
@@ -213,7 +216,7 @@
     <section class="capabilities">
         <div class="about-section">
             <div class="container">
-                <div class="offset-lg-6 offset-md-4 сol-6 text-right heating">
+                <div class="offset-lg-6 offset-md-4 сol-6 heating">
                     <h3>ВОЗМОЖНОСТИ<span></span></h3>
                     <p>
                         Мы -  команда молодых и амбициозных разработчиков и
@@ -241,8 +244,9 @@
                     <p>Общаться без языковых барьеров благодаря	переводчику, интегрированному в мессенджер</p>
                     <i></i>
                 </li>
-                <li class="col">
+                <li class="col" style="padding-bottom: 20px">
                     <p>Быстро находить жилье на любой вкус и бюджет, и даже “2m `Free”, а также  сдавать в аренду свое </p>
+                    <span>* 2 метра квадратных бесплатно (для поспать достаточно) <br> 2 meters square free (for a sleep enough)</span>
                     <i></i>
                 </li>
                 <li class="col">
@@ -300,7 +304,7 @@
     <section class="prototype" id="prototype">
         <div class="about-section">
             <div class="container">
-                <div class="offset-lg-6 offset-md-4 сol-6 text-right heating">
+                <div class="offset-lg-8 offset-md-4 сol-6 heating">
                     <h3>ПРОТОТИП<span></span></h3>
                     <p>
                         Оцените наш уникальный интерфейс и оставте свой комментарий ниже. Для нас важно ваше мнение.
@@ -314,21 +318,21 @@
                     <h4>Посмотри красивое видео</h4>
                     <ul>
                         <li>
-                            <a href="https://www.youtube.com/watch?v=sqYye-FgD5Y&feature=youtu.be" >
+                            <a href="https://www.youtube.com/watch?v=sqYye-FgD5Y&feature=youtu.be" target="_blank">
                                 <i></i>
                                 <p>Видео обзор</p>
                                 <p>весь мир уже перд тобой</p>
                             </a>
                         </li>
                         <li>
-                            <a href="https://www.youtube.com/watch?v=LY-yc85u5Bs&feature=youtu.be">
+                            <a href="https://www.youtube.com/watch?v=LY-yc85u5Bs&feature=youtu.be" target="_blank">
                                 <i></i>
                                 <p>Видео обзор</p>
                                 <p>ищи и находи</p>
                             </a>
                         </li>
                         <li>
-                            <a href="https://www.youtube.com/watch?v=_bA_VD_EDa0&feature=youtu.be">
+                            <a href="https://www.youtube.com/watch?v=_bA_VD_EDa0&feature=youtu.be" target="_blank">
                                 <i></i>
                                 <p>Видео обзор</p>
                                 <p>путешествуй без границ</p>
@@ -383,7 +387,7 @@
         <div class="container d-flex new-review">
             <div>
                 <h4>НАПИШИ НАМ ЧТО ДУМАЕШЬ О ПРИЛОЖЕНИИ</h4>
-                <h4>Возможно это то, чего нам так нехватает!</h4>
+                <h4>Возможно это то, чего нам так не хватает!</h4>
             </div>
             <button class="btn-modal-review" type="button" data-toggle="modal" data-target="#modal_review">
                 НАПИСАТЬ ОТЗЫВ
@@ -393,7 +397,7 @@
     <section class="team">
         <div class="about-section">
             <div class="container">
-                <div class="offset-lg-6 offset-md-4 сol-6 text-right heating">
+                <div class="offset-lg-6 offset-md-4 сol-6 heating">
                     <h3>НАША КОМАНДА<span></span></h3>
                     <p>В нашу команду входят люди которые любят свою работу заряженые оптимизмом и позитивной энергией</p>
                 </div>
@@ -710,7 +714,7 @@
                     “LIFEUP” - уникальная платформа, Каждый участник комнды вложил много сил и средств для разработки и реализации этой идеи.
                 </h5>
                 <h5 class="col-11">
-                    Это некоммерческий проект, поэтому нам нужна Ваша помощь для развитии платформы. Вместе мы сделаем е ещё функциональнее!
+                    Это некоммерческий проект, поэтому нам нужна Ваша помощь для развитии платформы. Вместе мы сделаем ещё функциональнее!
                 </h5>
                 <div class="about-liked-blocks">
                     <div class="col support">
@@ -748,34 +752,28 @@
                     </div>
                     <ul class="col-12 banks">
                         <li>
-                            <a target="_blank" href="https://sendmoney.privatbank.ua/ua/?hash=2132714647">
-                                <img src="{{ asset('images/banks/visa.png') }}" alt="Visa">
-                            </a>
+                            <a target="_blank" href="https://sendmoney.privatbank.ua/ua/?hash=2132714647" class="sprite"></a>
                         </li>
                         <li>
-                            <a target="_blank" href="https://www.liqpay.ua/ru/checkout/lifeup">
-                                <img src="{{ asset('images/banks/mastercard.png') }}" alt="MasterCard">
-                            </a>
+                            <a target="_blank" href="https://www.liqpay.ua/ru/checkout/lifeup" class="sprite"></a>
                         </li>
                         <li>
-                            <a target="_blank" href="https://sendmoney.privatbank.ua/ua/?hash=2132714647">
-                                <img src="{{ asset('images/banks/privat24.png') }}" alt="Privat24">
-                            </a>
+                            <a target="_blank" href="https://sendmoney.privatbank.ua/ua/?hash=2132714647" class="sprite"></a>
                         </li>
                         <li>
-                            <a target="_blank" href="https://www.liqpay.ua/ru/checkout/lifeup">
-                                <img src="{{ asset('images/banks/liqpay.png') }}" alt="LiqPay">
-                            </a>
+                            <a target="_blank" href="https://www.liqpay.ua/ru/checkout/lifeup" class="sprite"></a>
                         </li>
                         <li>
-                            <a target="_blank" href="" data-toggle="modal" data-target="#BTC">
-                                <img src="{{ asset('images/banks/bitcoin.png') }}" alt="Bitcoin">
-                            </a>
+                            <a target="_blank" href="" data-toggle="modal" data-target="#BTC" class="sprite"></a>
                         </li>
                         <li>
-                            <a target="_blank" href="https://send.monobank.com.ua/L95upbmG">
-                                <img src="{{ asset('images/banks/mono.png') }}" alt="Monobank">
-                            </a>
+                            <a target="_blank" href="https://send.monobank.com.ua/L95upbmG" class="sprite"></a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://sendmoney.privatbank.ua/ua/?hash=2132714647" class="sprite"></a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://www.liqpay.ua/ru/checkout/lifeup" class="sprite"></a>
                         </li>
                     </ul>
                 </div>
@@ -785,7 +783,7 @@
     <section class="be-with-us">
         <div class="about-section">
             <div class="container">
-                <div class="сol-6 text-left heating">
+                <div class="сol-6 heating">
                     <h3>БУДЬ С НАМИ<span></span></h3>
                     <p>Получай максимум от сотрудничества с нами</p>
                 </div>
@@ -834,7 +832,7 @@
     <section class="contacts" id="contatcs">
         <div class="about-section">
             <div class="container">
-                <div class="offset-lg-6 offset-md-4 сol-6 text-right heating">
+                <div class="offset-lg-7 offset-md-4 сol-6 heating">
                     <h3>КОНТАКТЫ<span></span></h3>
                     <p>Свяжитесь с нами в случае если у вас остались не решенные вопросы</p>
                 </div>
@@ -1874,7 +1872,7 @@
             </ul>
         </div>
         <div class="col-lg-3 col-md-6 foot-text">
-            <h5>“LIFEUP” 2017 - 2018</h5>
+            <h5><span>(с)</span> “LIFEUP” 2017 - 2018</h5>
             <h5>MADE IN UKRAINE</h5>
             <h5>DESIGN BY Borovaja Anya and Ivashchenko Alexey</h5>
         </div>

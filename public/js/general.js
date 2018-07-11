@@ -17,13 +17,14 @@ $(document).ready(function () {
         $(".language").toggle();
     });
 
-    $(".prototype").on("click","a", function (event) {
+    $(".our-prototype figure ").on("click","a", function (event) {
+
         event.preventDefault();
         var id  = $(this).attr('href'),
             top = $(id).offset().top;
         $('body,html').animate({scrollTop: top}, 1500);
     });
-    $(".img-life-up").on("click","a", function (event) {
+    $(".life-up").on("click","a", function (event) {
         event.preventDefault();
         var id  = $(this).attr('href'),
             top = $(id).offset().top;
@@ -76,25 +77,10 @@ $(document).ready(function () {
     });
     $('.our-team').prepend($('.our-team .slick-list'));
 
-
-
-    /*Focus Form*/
-    /*$('.form input').focus(function () {
-        $(this).parent().addClass('point');
-    }).blur(function () {
-        $(this).parent().removeClass('point');
+    /*Button To Top*/
+    $('.to-top').click(function(){
+        $("html, body").animate({ scrollTop: 0 }, 600);
     });
-    $('.form select').focus(function () {
-        $(this).parent().addClass('point');
-    }).blur(function () {
-        $(this).parent().removeClass('point');
-    });
-    $('.form textarea').focus(function () {
-        $(this).parent().addClass('point');
-    }).blur(function () {
-        $(this).parent().removeClass('point');
-    });*/
-
 
     /*Media*/
     if (window.matchMedia('(max-width: 768px)').matches) {
@@ -116,4 +102,10 @@ $(document).ready(function () {
 
     }
 
+});
+$(function(f){
+    var element = f('.to-top');
+    f(window).scroll(function(){
+        element['fade'+ (f(this).scrollTop() > 1000 ? 'In': 'Out')](400);
+    });
 });
