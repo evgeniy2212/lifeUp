@@ -37,7 +37,7 @@
                 </a>
             </li>
             <li>
-                <a href="https://www.facebook.com/sivchikov27">
+                <a href="https://www.facebook.com/LifeUPUkraine/">
                     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="49.652px" height="49.652px" viewBox="0 0 49.652 49.652" style="enable-background:new 0 0 49.652 49.652;" xml:space="preserve">
 								<path class="st0" d="M24.826,0C11.137,0,0,11.137,0,24.826c0,13.688,11.137,24.826,24.826,24.826c13.688,0,24.826-11.138,24.826-24.826
 									C49.652,11.137,38.516,0,24.826,0z M31,25.7h-4.039c0,6.453,0,14.396,0,14.396h-5.985c0,0,0-7.866,0-14.396h-2.845v-5.088h2.845
@@ -46,7 +46,7 @@
                 </a>
             </li>
             <li>
-                <a href="https://www.instagram.com/aleksandr_sivchikov/">
+                <a href="https://www.instagram.com/lifeup_startup/">
                     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="49.652px" height="49.652px" viewBox="0 0 49.652 49.652" style="enable-background:new 0 0 49.652 49.652;" xml:space="preserve">
 								<path class="st0" d="M24.825,29.796c2.739,0,4.972-2.229,4.972-4.97c0-1.082-0.354-2.081-0.94-2.897c-0.903-1.252-2.371-2.073-4.029-2.073
 									c-1.659,0-3.126,0.82-4.031,2.072c-0.588,0.816-0.939,1.815-0.94,2.897C19.854,27.566,22.085,29.796,24.825,29.796z"/>
@@ -81,6 +81,12 @@
                 </a>
             </li>
         </ul>
+        <form class="d-flex" method="POST" action="{{ route('mail_present') }}">
+            {{ csrf_field() }}
+            <input  type="text" name="name" placeholder="Имя">
+            <input  type="email" name="email" placeholder="Почта">
+            <button type="submit">Отправить</button>
+        </form>
         <div class="language">
             <a href="https://drive.google.com/drive/folders/1U3grWPSWQdO5VFlPCV6M13eEhZ0a9GWA" class="download" target="_blank">Files Download</a>
             <ul>
@@ -93,7 +99,64 @@
                 <li>
                     <a href="">UA</a>
                 </li>
+                <li class="more-language">
+                    <button id="more-language-btn" data-toggle="collapse" data-target="#more-language" aria-expanded="false" aria-controls="more-language">
+                    </button>
+                    <div id="more-language" class="collapse" aria-labelledby="more-language-btn">
+                        <ul>
+                            <li>
+                                <a href=""><img src="{{ asset('images/languages/china.png') }}" alt="China"> CN</a>
+                            </li>
+                            <li>
+                                <a href=""><img src="{{ asset('images/languages/denmark.png') }}" alt="Denmark"> DN</a>
+                            </li>
+                            <li>
+                                <a href=""><img src="{{ asset('images/languages/emirates.png') }}" alt="emirates"> AE</a>
+                            </li>
+                            <li>
+                                <a href=""><img src="{{ asset('images/languages/france.png') }}" alt="france"> FR</a>
+                            </li>
+                            <li>
+                                <a href=""><img src="{{ asset('images/languages/germany.png') }}" alt="germany"> DE</a>
+                            </li>
+                            <li>
+                                <a href=""><img src="{{ asset('images/languages/hungary.png') }}" alt="hungary"> HN</a>
+                            </li>
+                            <li>
+                                <a href=""><img src="{{ asset('images/languages/italy.png') }}" alt="italy"> IT</a>
+                            </li>
+                            <li>
+                                <a href=""><img src="{{ asset('images/languages/japan.png') }}" alt="japan"> JP</a>
+                            </li>
+                            <li>
+                                <a href=""><img src="{{ asset('images/languages/poland.png') }}" alt="Poland"> PO</a>
+                            </li>
+                            <li>
+                                <a href=""><img src="{{ asset('images/languages/poland.png') }}" alt="Portugal"> PR</a>
+                            </li>
+                            <li>
+                                <a href=""><img src="{{ asset('images/languages/romania.png') }}" alt="Romania"> RO</a>
+                            </li>
+                            <li>
+                                <a href=""><img src="{{ asset('images/languages/russia.png') }}" alt="Russia"> RU</a>
+                            </li>
+                            <li>
+                                <a href=""><img src="{{ asset('images/languages/spain.png') }}" alt="Spain"> SP</a>
+                            </li>
+                            <li>
+                                <a href=""><img src="{{ asset('images/languages/turkey.png') }}" alt="Turkey"> TR</a>
+                            </li>
+                            <li>
+                                <a href=""><img src="{{ asset('images/languages/ukraine.png') }}" alt="Ukraine"> UA</a>
+                            </li>
+                            <li>
+                                <a href=""><img src="{{ asset('images/languages/usa.png') }}" alt="USA"> EN</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
             </ul>
+
         </div>
         <div class="hamburger">
             <span></span>
@@ -104,7 +167,7 @@
 </header>
 <main>
     <section class="life-up" id="life-up">
-        <div class="container d-flex">
+        <div class="container d-flex flex-wrap">
             <div class="offset-lg-1 col-md-5 col-12 title-life-up">
                 <img src="{{ asset('images/big-logo.png') }}" alt="logo">
                 <h4>МУЛЬТИТУЛ У ТЕБЯ В ТЕЛЕФОНЕ</h4>
@@ -121,58 +184,21 @@
                     которые упростят вам жизнь!
                 </p>
                 <a href="#prototype" class="to-prototype">Нажми на экран</a>
-                <button class="modal-video" data-toggle="modal" data-target="#modal_video">ПРОСМОТРЕТЬ ПРОМО-РОЛИК
-                    <span></span>
-                </button>
             </div>
             <div class="offset-lg-1 offset-0 col-lg-5 col-md-7 col-12 img-life-up">
                 <a href="#prototype">
                     <img src="{{ asset('images/life-up.png') }}" alt="Life-Up">
                 </a>
-                <ul>
-                    <li class="stat">
-                        <span>7% Complete</span>
-                        <a>
-                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
-										<path class="st0" d="M395.748,272.046c-0.646-64.841,52.88-95.938,55.271-97.483c-30.075-44.01-76.925-50.039-93.62-50.736
-											c-39.871-4.037-77.798,23.474-98.033,23.474c-20.184,0-51.409-22.877-84.476-22.276c-43.458,0.646-83.529,25.269-105.906,64.19
-											c-45.152,78.35-11.563,194.42,32.445,257.963c21.504,31.104,47.146,66.038,80.813,64.79c32.421-1.294,44.681-20.979,83.878-20.979
-											c39.196,0,50.215,20.979,84.524,20.335c34.888-0.648,56.991-31.699,78.347-62.898c24.694-36.084,34.862-71.019,35.462-72.812
-											C463.678,375.26,396.422,349.495,395.748,272.046z M331.28,81.761C349.149,60.082,361.21,30.005,357.92,0
-											c-25.739,1.048-56.938,17.145-75.405,38.775c-16.57,19.188-31.075,49.813-27.188,79.218
-											C284.061,120.235,313.392,103.391,331.28,81.761z"/>
-									</svg>
-                        </a>
-                    </li>
-                    <li class="stat">
-                        <span>18% Complete</span>
-                        <a>
-                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
-										<polygon class="st0" points="29.53,0 29.53,251.509 29.53,512 299.004,251.509 "/>
-                                <polygon class="st1" points="369.067,180.547 262.175,119.467 29.53,0 299.004,251.509 "/>
-                                <polygon class="st2" points="29.53,512 29.53,512 262.175,383.551 369.067,322.47 299.004,251.509 "/>
-                                <path class="st3" d="M369.067,180.547l-70.063,70.961l70.063,70.961l108.688-62.877c6.288-3.593,6.288-11.677,0-15.27
-											L369.067,180.547z"/>
-									</svg>
-                        </a>
-                    </li>
-                    <li class="stat">
-                        <span>36% Complete</span>
-                        <a>
-                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
-										<path class="st0" d="M129.139,223.29L55.873,96.389C102.782,37.657,174.99,0.019,256,0.019c93.717,0,175.654,50.368,220.266,125.5H267.381
-											c-3.752-0.325-7.546-0.5-11.381-0.5C195.063,125.019,143.711,166.841,129.139,223.29z M347.652,162.519h146.73
-											c11.371,28.965,17.617,60.502,17.617,93.5c0,140.413-113.051,254.402-253.094,255.963l104.697-181.339
-											C378.344,309.454,387,283.729,387,256.019C387,219.434,371.918,186.309,347.652,162.519z M163,256.019c0-51.28,41.72-93,93-93
-											c51.279,0,93,41.72,93,93c0,51.279-41.721,93-93,93C204.72,349.019,163,307.298,163,256.019z M291.091,382.239l-73.289,126.939
-											C94.536,490.736,0,384.421,0,256.019c0-45.609,11.942-88.423,32.848-125.512l104.515,181.027
-											c20.934,44.555,66.238,75.484,118.637,75.484C268.15,387.019,279.918,385.349,291.091,382.239z"/>
-									</svg>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://twitter.com/lifeupkiev">
-                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 612 612" style="enable-background:new 0 0 612 612;" xml:space="preserve">
+            </div>
+            <div class="col-12 d-flex foot-life-up">
+                <div class="offset-1 offset-sm-0 col-lg-3 col-sm-6 d-flex soc-life-up">
+                    <button class="offset-2 modal-video" data-toggle="modal" data-target="#modal_video">ПРОСМОТРЕТЬ ПРОМО-РОЛИК
+                        <span></span>
+                    </button>
+                    <ul>
+                        <li>
+                            <a href="https://twitter.com/lifeupkiev">
+                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 612 612" style="enable-background:new 0 0 612 612;" xml:space="preserve">
 										<path class="st0" d="M612,116.258c-22.525,9.981-46.694,16.75-72.088,19.772c25.929-15.527,45.777-40.155,55.184-69.411
 												c-24.322,14.379-51.169,24.82-79.775,30.48c-22.907-24.437-55.49-39.658-91.63-39.658c-69.334,0-125.551,56.217-125.551,125.513
 												c0,9.828,1.109,19.427,3.251,28.606C197.065,206.32,104.556,156.337,42.641,80.386c-10.823,18.51-16.98,40.078-16.98,63.101
@@ -181,34 +207,94 @@
 												c-42.947,33.654-97.099,53.655-155.916,53.655c-10.134,0-20.116-0.612-29.944-1.721c55.567,35.681,121.536,56.485,192.438,56.485
 												c230.948,0,357.188-191.291,357.188-357.188l-0.421-16.253C573.872,163.526,595.211,141.422,612,116.258z"/>
 									</svg>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.facebook.com/sivchikov27">
-                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 96.124 96.123" style="enable-background:new 0 0 96.124 96.123;" xml:space="preserve">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/sivchikov27">
+                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 96.124 96.123" style="enable-background:new 0 0 96.124 96.123;" xml:space="preserve">
 										<path class="st0" d="M72.089,0.02L59.624,0C45.62,0,36.57,9.285,36.57,23.656v10.907H24.037c-1.083,0-1.96,0.878-1.96,1.961v15.803
 											c0,1.083,0.878,1.96,1.96,1.96h12.533v39.876c0,1.083,0.877,1.96,1.96,1.96h16.352c1.083,0,1.96-0.878,1.96-1.96V54.287h14.654
 											c1.083,0,1.96-0.877,1.96-1.96l0.006-15.803c0-0.52-0.207-1.018-0.574-1.386c-0.367-0.368-0.867-0.575-1.387-0.575H56.842v-9.246
 											c0-4.444,1.059-6.7,6.848-6.7l8.397-0.003c1.082,0,1.959-0.878,1.959-1.96V1.98C74.046,0.899,73.17,0.022,72.089,0.02z"/>
 									</svg>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://plus.google.com/+%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B0%D0%BD%D0%B4%D1%80%D0%A1%D0%B8%D0%B2%D1%87%D0%B8%D0%BA%D0%BE%D0%B2">
-                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 458.246 458.246" style="enable-background:new 0 0 458.246 458.246;" xml:space="preserve">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://plus.google.com/+%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B0%D0%BD%D0%B4%D1%80%D0%A1%D0%B8%D0%B2%D1%87%D0%B8%D0%BA%D0%BE%D0%B2">
+                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 458.246 458.246" style="enable-background:new 0 0 458.246 458.246;" xml:space="preserve">
 										<path class="st0" d="M160.777,259.368h71.594c-12.567,35.53-46.603,61.004-86.45,60.71
 											c-48.349-0.357-88.327-39.035-90.204-87.349c-2.012-51.789,39.537-94.563,90.887-94.563c23.479,0,44.905,8.946,61.058,23.605
 											c3.826,3.473,9.65,3.495,13.413-0.047l26.296-24.749c4.112-3.871,4.127-10.408,0.027-14.292
 											c-25.617-24.269-59.981-39.396-97.876-40.136C68.696,80.969,0.567,147.238,0.004,228.078
 											c-0.568,81.447,65.285,147.649,146.6,147.649c78.199,0,142.081-61.229,146.36-138.358c0.114-0.967,0.189-33.648,0.189-33.648
 											H160.777c-5.426,0-9.824,4.398-9.824,9.824v35.999C150.953,254.97,155.352,259.368,160.777,259.368z"/>
-                                <path class="st0" d="M414.464,206.99v-35.173c0-4.755-3.854-8.609-8.609-8.609h-29.604c-4.755,0-8.609,3.854-8.609,8.609
+                                    <path class="st0" d="M414.464,206.99v-35.173c0-4.755-3.854-8.609-8.609-8.609h-29.604c-4.755,0-8.609,3.854-8.609,8.609
 											v35.173h-35.173c-4.755,0-8.609,3.854-8.609,8.609v29.604c0,4.755,3.854,8.609,8.609,8.609h35.173v35.173
 											c0,4.755,3.854,8.609,8.609,8.609h29.604c4.755,0,8.609-3.854,8.609-8.609v-35.173h35.173c4.755,0,8.609-3.854,8.609-8.609v-29.604
 											c0-4.755-3.854-8.609-8.609-8.609L414.464,206.99L414.464,206.99z"/>
 									</svg>
-                        </a>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <form class="col-md-4 col-sm-6" method="POST" action="{{ route('mail_present') }}">
+                    {{ csrf_field() }}
+                    <label>
+                        <input class="col" type="text" name="name" placeholder="Имя">
+                        <input class="col" type="email" name="email" placeholder="Почта">
+                    </label>
+                    <p>СТАНЬ ОДИН ИЗ НАС ПРЯМО СЕЙЧАС И ПОЛУЧИ ЦЕННЫЕ ПРИЗЫ</p>
+                    <button class="col-7" type="submit">Отправить</button>
+                </form>
+                <ul class="col-md-3 col-sm-6 statistic">
+                    <li class="stat">
+                        <span>36% Complete</span>
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 505.145 505.145" style="enable-background:new 0 0 505.145 505.145;" xml:space="preserve">
+									<path class="st0" d="M68.541,164.715h-1.294c-16.588,0-30.113,13.568-30.113,30.113v131.107
+										c0,16.61,13.525,30.134,30.113,30.134h1.316c16.588,0,30.113-13.568,30.113-30.134V194.827
+										C98.654,178.283,85.108,164.715,68.541,164.715z"/>
+                            <path class="st0" d="M113.085,376.54c0,15.229,12.446,27.632,27.675,27.632h29.574v70.817
+										c0,16.631,13.568,30.156,30.113,30.156h1.294c16.61,0,30.156-13.546,30.156-30.156v-70.817h41.33v70.817
+										c0,16.631,13.611,30.156,30.156,30.156h1.273c16.609,0,30.134-13.546,30.134-30.156v-70.817h29.595
+										c15.207,0,27.654-12.403,27.654-27.632V169.525H113.085V376.54z"/>
+                            <path class="st0" d="M322.041,43.983l23.491-36.26c1.51-2.287,0.841-5.414-1.467-6.903
+										c-2.286-1.51-5.414-0.884-6.903,1.467l-24.353,37.512c-18.27-7.485-38.676-11.691-60.226-11.691
+										c-21.571,0-41.934,4.206-60.247,11.691l-24.31-37.512c-1.488-2.351-4.638-2.977-6.946-1.467
+										c-2.308,1.488-2.977,4.616-1.467,6.903l23.512,36.26c-42.387,20.773-70.968,59.924-70.968,104.834
+										c0,2.761,0.173,5.479,0.41,8.175h280.053c0.237-2.696,0.388-5.414,0.388-8.175C393.009,103.907,364.406,64.756,322.041,43.983z
+										 M187.655,108.911c-7.442,0-13.482-5.997-13.482-13.46c0-7.463,6.04-13.439,13.482-13.439c7.485,0,13.482,5.975,13.482,13.439
+										S195.097,108.911,187.655,108.911z M317.49,108.911c-7.442,0-13.482-5.997-13.482-13.46c0-7.463,6.04-13.439,13.482-13.439
+										c7.463,0,13.46,5.975,13.46,13.439C330.95,102.914,324.953,108.911,317.49,108.911z"/>
+                            <path class="st0" d="M437.876,164.715h-1.251c-16.588,0-30.156,13.568-30.156,30.113v131.107
+										c0,16.61,13.59,30.134,30.156,30.134h1.273c16.609,0,30.113-13.568,30.113-30.134V194.827
+										C468.011,178.283,454.464,164.715,437.876,164.715z"/>
+								</svg>
                     </li>
+                    <li class="stat">
+                        <span>7% Complete</span>
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+									<path class="st0" d="M395.748,272.046c-0.646-64.841,52.88-95.938,55.271-97.483c-30.075-44.01-76.925-50.039-93.62-50.736
+										c-39.871-4.037-77.798,23.474-98.033,23.474c-20.184,0-51.409-22.877-84.476-22.276c-43.458,0.646-83.529,25.269-105.906,64.19
+										c-45.152,78.35-11.563,194.42,32.445,257.963c21.504,31.104,47.146,66.038,80.813,64.79c32.421-1.294,44.681-20.979,83.878-20.979
+										c39.196,0,50.215,20.979,84.524,20.335c34.888-0.648,56.991-31.699,78.347-62.898c24.694-36.084,34.862-71.019,35.462-72.812
+										C463.678,375.26,396.422,349.495,395.748,272.046z M331.28,81.761C349.149,60.082,361.21,30.005,357.92,0
+										c-25.739,1.048-56.938,17.145-75.405,38.775c-16.57,19.188-31.075,49.813-27.188,79.218
+										C284.061,120.235,313.392,103.391,331.28,81.761z"/>
+								</svg>
+                    </li>
+                    <li class="stat">
+                        <span>18% Complete</span>
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+									<path class="st0" d="M129.139,223.29L55.873,96.389C102.782,37.657,174.99,0.019,256,0.019c93.717,0,175.654,50.368,220.266,125.5H267.381
+										c-3.752-0.325-7.546-0.5-11.381-0.5C195.063,125.019,143.711,166.841,129.139,223.29z M347.652,162.519h146.73
+										c11.371,28.965,17.617,60.502,17.617,93.5c0,140.413-113.051,254.402-253.094,255.963l104.697-181.339
+										C378.344,309.454,387,283.729,387,256.019C387,219.434,371.918,186.309,347.652,162.519z M163,256.019c0-51.28,41.72-93,93-93
+										c51.279,0,93,41.72,93,93c0,51.279-41.721,93-93,93C204.72,349.019,163,307.298,163,256.019z M291.091,382.239l-73.289,126.939
+										C94.536,490.736,0,384.421,0,256.019c0-45.609,11.942-88.423,32.848-125.512l104.515,181.027
+										c20.934,44.555,66.238,75.484,118.637,75.484C268.15,387.019,279.918,385.349,291.091,382.239z"/>
+								</svg>
+                    </li>
+
                 </ul>
             </div>
         </div>
@@ -752,28 +838,28 @@
                     </div>
                     <ul class="col-12 banks">
                         <li>
-                            <a target="_blank" href="https://sendmoney.privatbank.ua/ua/?hash=2132714647" class="sprite"></a>
+                            <a class="sprite"></a>
                         </li>
                         <li>
                             <a target="_blank" href="https://www.liqpay.ua/ru/checkout/lifeup" class="sprite"></a>
                         </li>
                         <li>
-                            <a target="_blank" href="https://sendmoney.privatbank.ua/ua/?hash=2132714647" class="sprite"></a>
+                            <a target="_blank" href="https://sendmoney.privatbank.ua/ru/?hash=3624528761" class="sprite"></a>
                         </li>
                         <li>
                             <a target="_blank" href="https://www.liqpay.ua/ru/checkout/lifeup" class="sprite"></a>
                         </li>
                         <li>
-                            <a target="_blank" href="" data-toggle="modal" data-target="#BTC" class="sprite"></a>
+                            <a href="" data-toggle="modal" data-target="#BTC" class="sprite"></a>
                         </li>
                         <li>
                             <a target="_blank" href="https://send.monobank.com.ua/L95upbmG" class="sprite"></a>
                         </li>
                         <li>
-                            <a target="_blank" href="https://sendmoney.privatbank.ua/ua/?hash=2132714647" class="sprite"></a>
+                            <a href="" data-toggle="modal" data-target="#ETH" class="sprite"></a>
                         </li>
                         <li>
-                            <a target="_blank" href="https://www.liqpay.ua/ru/checkout/lifeup" class="sprite"></a>
+                            <a href="" data-toggle="modal" data-target="#DASH" class="sprite"></a>
                         </li>
                     </ul>
                 </div>
@@ -875,12 +961,27 @@
     </div>
 
     <!--<button class="btn-modal-forms" id="modal-form-btn" type="button" data-toggle="modal" data-target="#modal_form"></button>-->
+    <!--Modal Banks-->
     <div class="modal left fade" id="BTC" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog">
             <div class="modal-content">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
                 <h5>BTC: 16yEznNERFGKtqZntqXzFYT3cbUMy2GSzb</h5>
+            </div>
+        </div>
+    </div>
+    <div class="modal left fade" id="DASH" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
                 <h5>DASH: XxGXm88yS3RYn8ZVBAbFkSvmUtYbK67odH</h5>
+            </div>
+        </div>
+    </div>
+    <div class="modal left fade" id="ETH" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
                 <h5>ETH: 0x2b2703b9f10e436c738ecc318e7c0b87e8effab3</h5>
             </div>
         </div>
@@ -1826,7 +1927,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="https://www.facebook.com/sivchikov27">
+                    <a href="https://www.facebook.com/LifeUPUkraine/">
                         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="49.652px" height="49.652px" viewBox="0 0 49.652 49.652" style="enable-background:new 0 0 49.652 49.652;" xml:space="preserve">
 								<path class="st0" d="M24.826,0C11.137,0,0,11.137,0,24.826c0,13.688,11.137,24.826,24.826,24.826c13.688,0,24.826-11.138,24.826-24.826
 									C49.652,11.137,38.516,0,24.826,0z M31,25.7h-4.039c0,6.453,0,14.396,0,14.396h-5.985c0,0,0-7.866,0-14.396h-2.845v-5.088h2.845
@@ -1835,7 +1936,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="https://www.instagram.com/aleksandr_sivchikov/">
+                    <a href="https://www.instagram.com/lifeup_startup/">
                         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="49.652px" height="49.652px" viewBox="0 0 49.652 49.652" style="enable-background:new 0 0 49.652 49.652;" xml:space="preserve">
 								<path class="st0" d="M24.825,29.796c2.739,0,4.972-2.229,4.972-4.97c0-1.082-0.354-2.081-0.94-2.897c-0.903-1.252-2.371-2.073-4.029-2.073
 									c-1.659,0-3.126,0.82-4.031,2.072c-0.588,0.816-0.939,1.815-0.94,2.897C19.854,27.566,22.085,29.796,24.825,29.796z"/>

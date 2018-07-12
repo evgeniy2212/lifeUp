@@ -8,6 +8,14 @@ $(window).scroll(function () {
         $('header').removeClass("fixed-header");
     }
 });
+$(window).scroll(function () {
+    if ($(this).scrollTop() > 800) {
+        $('header form').css( "opacity", "1" );
+    }
+    else {
+        $('header form').css( "opacity", "0" );
+    }
+});
 
 $(document).ready(function () {
 
@@ -85,7 +93,9 @@ $(document).ready(function () {
     /*Media*/
     if (window.matchMedia('(max-width: 768px)').matches) {
 
-        $('.img-life-up').prepend($('.title-life-up img'));
+        /*$('.life-up .container').prepend($('.img-life-up'));*/
+        $('.language').prepend($('header form'));
+        $('header').prepend($('#more-language'));
     }
 
     if (window.matchMedia('(max-width: 576px)').matches) {
