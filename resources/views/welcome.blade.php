@@ -7,6 +7,7 @@
     <meta name="description" content="Life Up">
     <link rel="shortcut icon" href="{{ asset('images/favicon.png') }}" type="image/x-icon">
     <script type="text/javascript" src="{{ asset('js/jquery-3.3.1.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/popper.min.js') }}"></script>
     <script type='text/javascript' src='{{ asset('js/slick.min.js') }}'></script>
     <script type='text/javascript' src='{{ asset('js/bootstrap.min.js') }}'></script>
     <script type='text/javascript' src='{{ asset('js/general.js') }}'></script>
@@ -85,13 +86,26 @@
             {{ csrf_field() }}
             <input  type="text" name="name" placeholder="Имя">
             <input  type="email" name="email" placeholder="Почта">
-            <button type="submit">Отправить</button>
+            <button type="submit">Будь первый</button>
         </form>
         <div class="language">
-            <a href="https://drive.google.com/drive/folders/1U3grWPSWQdO5VFlPCV6M13eEhZ0a9GWA" class="download" target="_blank">Files Download</a>
+            <ul class="download">
+                <li class="download-btn	">
+                    Presentation
+                </li>
+                <ul class="download-menu">
+                    <li>
+                        <a href	="" target="_blank">ENG</a>
+                    </li>
+                    <li>
+                        <a href="LifeUp-show(ukr).pdf" target="_blank">RU</a>
+                    </li>
+                </ul>
+            </ul>
+
             <ul>
                 <li>
-                    <a href="">ENG</a>
+                    <a href="" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="ожидается/soon expected">ENG</a>
                 </li>
                 <li>
                     <a href="">RU</a>
@@ -105,54 +119,89 @@
                     <div id="more-language" class="collapse" aria-labelledby="more-language-btn">
                         <ul>
                             <li>
-                                <a href=""><img src="{{ asset('images/languages/china.png') }}" alt="China"> CN</a>
+                                <a href="" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="ожидается/soon expected">
+                                    <img src="{{ asset('images/languages/china.png') }}" alt="China"> CN
+                                </a>
                             </li>
                             <li>
-                                <a href=""><img src="{{ asset('images/languages/denmark.png') }}" alt="Denmark"> DN</a>
+                                <a href="" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="ожидается/soon expected"	>
+                                    <img src="{{ asset('images/languages/denmark.png') }}" alt="Denmark"> DN
+                                </a>
                             </li>
                             <li>
-                                <a href=""><img src="{{ asset('images/languages/emirates.png') }}" alt="emirates"> AE</a>
+                                <a href="" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="ожидается/soon expected">
+                                    <img src="{{ asset('images/languages/emirates.png') }}" alt="emirates"> AE
+                                </a>
                             </li>
                             <li>
-                                <a href=""><img src="{{ asset('images/languages/france.png') }}" alt="france"> FR</a>
+                                <a href="" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="ожидается/soon expected">
+                                    <img src="{{ asset('images/languages/france.png') }}" alt="france"> FR
+                                </a>
                             </li>
                             <li>
-                                <a href=""><img src="{{ asset('images/languages/germany.png') }}" alt="germany"> DE</a>
+                                <a href="" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="ожидается/soon expected">
+                                    <img src="{{ asset('images/languages/germany.png') }}" alt="germany"> DE
+                                </a>
                             </li>
                             <li>
-                                <a href=""><img src="{{ asset('images/languages/hungary.png') }}" alt="hungary"> HN</a>
+                                <a href="" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="ожидается/soon expected">
+                                    <img src="{{ asset('images/languages/hungary.png') }}" alt="hungary"> HN
+                                </a>
                             </li>
                             <li>
-                                <a href=""><img src="{{ asset('images/languages/italy.png') }}" alt="italy"> IT</a>
+                                <a href="" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="ожидается/soon expected">
+                                    <img src="{{ asset('images/languages/italy.png') }}" alt="italy"> IT
+                                </a>
                             </li>
                             <li>
-                                <a href=""><img src="{{ asset('images/languages/japan.png') }}" alt="japan"> JP</a>
+                                <a href="" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="ожидается/soon expected">
+                                    <img src="{{ asset('images/languages/japan.png') }}" alt="japan"> JP
+                                </a>
                             </li>
                             <li>
-                                <a href=""><img src="{{ asset('images/languages/poland.png') }}" alt="Poland"> PO</a>
+                                <a href="" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="ожидается/soon expected">
+                                    <img src="{{ asset('images/languages/poland.png') }}" alt="Poland"> PO
+                                </a>
                             </li>
                             <li>
-                                <a href=""><img src="{{ asset('images/languages/poland.png') }}" alt="Portugal"> PR</a>
+                                <a href="" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="ожидается/soon expected">
+                                    <img src="{{ asset('images/languages/poland.png') }}" alt="Portugal"> PR
+                                </a>
                             </li>
                             <li>
-                                <a href=""><img src="{{ asset('images/languages/romania.png') }}" alt="Romania"> RO</a>
+                                <a href="" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="ожидается/soon expected">
+                                    <img src="{{ asset('images/languages/romania.png') }}" alt="Romania"> RO
+                                </a>
                             </li>
                             <li>
-                                <a href=""><img src="{{ asset('images/languages/russia.png') }}" alt="Russia"> RU</a>
+                                <a href="">
+                                    <img src="{{ asset('images/languages/russia.png') }}" alt="Russia"> RU
+                                </a>
                             </li>
                             <li>
-                                <a href=""><img src="{{ asset('images/languages/spain.png') }}" alt="Spain"> SP</a>
+                                <a href="" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="ожидается/soon expected">
+                                    <img src="{{ asset('images/languages/spain.png') }}" alt="Spain"> SP
+                                </a>
                             </li>
                             <li>
-                                <a href=""><img src="{{ asset('images/languages/turkey.png') }}" alt="Turkey"> TR</a>
+                                <a href="" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="ожидается/soon expected">
+                                    <img src="{{ asset('images/languages/turkey.png') }}" alt="Turkey"> TR
+                                </a>
                             </li>
                             <li>
-                                <a href=""><img src="{{ asset('images/languages/ukraine.png') }}" alt="Ukraine"> UA</a>
+                                <a href="">
+                                    <img src="{{ asset('images/languages/ukraine.png') }}" alt="Ukraine"> UA
+                                </a>
                             </li>
                             <li>
-                                <a href=""><img src="{{ asset('images/languages/usa.png') }}" alt="USA"> EN</a>
+                                <a href="" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="ожидается/soon expected">
+                                </a>
+                                <img src="{{ asset('images/languages/usa.png') }}" alt="USA"> EN
                             </li>
                         </ul>
+                    </div>
+                </li>
+            </ul>
                     </div>
                 </li>
             </ul>
@@ -248,7 +297,7 @@
                 </form>
                 <ul class="col-md-3 col-sm-6 statistic">
                     <li class="stat">
-                        <span>36% Complete</span>
+                        <span>36%<br>Android</span>
                         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 505.145 505.145" style="enable-background:new 0 0 505.145 505.145;" xml:space="preserve">
 									<path class="st0" d="M68.541,164.715h-1.294c-16.588,0-30.113,13.568-30.113,30.113v131.107
 										c0,16.61,13.525,30.134,30.113,30.134h1.316c16.588,0,30.113-13.568,30.113-30.134V194.827
@@ -271,7 +320,7 @@
 								</svg>
                     </li>
                     <li class="stat">
-                        <span>7% Complete</span>
+                        <span>7%<br>iOS</span>
                         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
 									<path class="st0" d="M395.748,272.046c-0.646-64.841,52.88-95.938,55.271-97.483c-30.075-44.01-76.925-50.039-93.62-50.736
 										c-39.871-4.037-77.798,23.474-98.033,23.474c-20.184,0-51.409-22.877-84.476-22.276c-43.458,0.646-83.529,25.269-105.906,64.19
@@ -283,7 +332,7 @@
 								</svg>
                     </li>
                     <li class="stat">
-                        <span>18% Complete</span>
+                        <span>18%<br>Web</span>
                         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
 									<path class="st0" d="M129.139,223.29L55.873,96.389C102.782,37.657,174.99,0.019,256,0.019c93.717,0,175.654,50.368,220.266,125.5H267.381
 										c-3.752-0.325-7.546-0.5-11.381-0.5C195.063,125.019,143.711,166.841,129.139,223.29z M347.652,162.519h146.73
@@ -305,9 +354,7 @@
                 <div class="offset-lg-6 offset-md-4 сol-6 heating">
                     <h3>ВОЗМОЖНОСТИ<span></span></h3>
                     <p>
-                        Мы -  команда молодых и амбициозных разработчиков и
-                        дизайнеров которые хотят сломать социальную стенку между людьми и
-                        сделать это как ни странно с помощью мобильного приложения
+
                     </p>
                 </div>
             </div>
@@ -404,28 +451,28 @@
                     <h4>Посмотри красивое видео</h4>
                     <ul>
                         <li>
-                            <a href="https://www.youtube.com/watch?v=sqYye-FgD5Y&feature=youtu.be" target="_blank">
+                            <a target="_blank">
                                 <i></i>
                                 <p>Видео обзор</p>
                                 <p>весь мир уже перд тобой</p>
                             </a>
                         </li>
                         <li>
-                            <a href="https://www.youtube.com/watch?v=LY-yc85u5Bs&feature=youtu.be" target="_blank">
+                            <a target="_blank">
                                 <i></i>
                                 <p>Видео обзор</p>
                                 <p>ищи и находи</p>
                             </a>
                         </li>
                         <li>
-                            <a href="https://www.youtube.com/watch?v=_bA_VD_EDa0&feature=youtu.be" target="_blank">
+                            <a target="_blank">
                                 <i></i>
                                 <p>Видео обзор</p>
                                 <p>путешествуй без границ</p>
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a>
                                 <i></i>
                                 <p>Видео обзор</p>
                                 <p>общайся на любом языке</p>
@@ -434,11 +481,11 @@
                     </ul>
                 </div>
                 <figure class="col-sm-5 col-12">
-                    <a href="#life-up">
+                    <button data-toggle="modal" data-target="#modal_prototype">
                         <img src="{{ asset('images/phone2.png') }}" alt="prototype">
-                        <span>ВЕРНУТЬСЯ ОБРАТНО</span>
                         <i></i>
-                    </a>
+                    </button>
+                    <a href="#life-up">ВЕРНУТЬСЯ ОБРАТНО</a>
                 </figure>
                 <div class="col-xl-10 col-lg-11 col-12 our-prototype-text">
                     <h4>ЭТО ИНТЕРАКТИВНЫЙ ПРОТОТИП</h4>
@@ -485,7 +532,10 @@
             <div class="container">
                 <div class="offset-lg-6 offset-md-4 сol-6 heating">
                     <h3>НАША КОМАНДА<span></span></h3>
-                    <p>В нашу команду входят люди которые любят свою работу заряженые оптимизмом и позитивной энергией</p>
+                    <p>Мы -  команда молодых и амбициозных разработчиков и
+                        дизайнеров которые хотят сломать социальную стенку между людьми и
+                        сделать это как ни странно с помощью мобильного приложения
+                    </p>
                 </div>
             </div>
         </div>
@@ -901,17 +951,19 @@
                     могут получить все,
                     <br>
                     просто напишите нам.
+                    <br>
+                    <span>*Под подарком подразумевается приобретение товара за 0,01 грн с учетом НДС.</span>
                 </p>
                 <form class="col-lg-9 col-md-12" method="POST" action="{{ route('mail_present') }}">
                     {{ csrf_field() }}
                     <input class="col-sm-5 col" type="text" name="name" placeholder="Имя">
                     <input class="col-sm-5 col" type="email" name="email" placeholder="Почта">
                     <p>Я хочу принять участие в кункурсе и соглашаюсь на условия проведения</p>
-                    <button class="col-sm-5 col-7" type="submit">Отправить</button>
+                    <button class="col-sm-5 col-7" type="submit">Будь первый</button>
                 </form>
             </div>
             <figure class="col-4">
-                <img src="{{ asset('') }}images/girl.png" alt="Girl">
+                <img src="{{ asset('images/girl.png') }}" alt="Girl">
             </figure>
         </div>
     </section>
@@ -938,6 +990,7 @@
             </div>
         </div>
     </section>
+    <button class="to-top"></button>
     <div class="modal left fade" id="modal_review" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog">
             <div class="modal-content">

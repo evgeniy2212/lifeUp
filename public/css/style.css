@@ -128,22 +128,69 @@ nav {
     cursor: pointer;
 }
 .download {
+    position: relative;
+    display: flex;
+}
+.download a {
     text-decoration: none;
     text-transform: uppercase;
-    padding-right: 25px;
-    position: relative;
-    margin-right: 25px;
 }
-.download:before {
+.download .download-btn {
+    position: relative;
+    color: #51cfce;
+    text-transform: uppercase;
+    font: 15px/17px 'ChevinCyrillic-Bold', sans-serif;
+    margin-right: 25px;
+    padding-right: 25px;
+    text-align: right;
+    cursor: pointer;
+}
+.download .download-btn:before {
     position: absolute;
     content: '';
     margin: auto;
     top: 0;
     bottom: 0;
     right: 0;
-    width: 15px;
-    height: 15px;
-    background: url("../images/sprite.png") -35px -52px no-repeat;
+    width: 16px;
+    height: 16px;
+    background: url("../images/pdf.png") 0 0  no-repeat;
+}
+.download .download-menu {
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    position: absolute;
+    display: flex;
+    overflow: hidden;
+    opacity: 0;
+    justify-content: center;
+    top: 100%;
+    margin: auto;
+    left: 0;
+    right: 0;
+}
+.download .download-menu:before {
+    position: absolute;
+    content: '';
+    width: 3px;
+    height: 18px;
+    background: #51cfce;
+    margin: auto;
+    top: 0; bottom: 0;
+    left: 9px; right: 0;
+}
+.download:hover .download-menu {
+    opacity: 1;
+}
+.download .download-menu a {
+    border: none;
+}
+.download-menu li:hover {
+    background: rgba(0,0,0, 0.2);
+    border-radius: 5px;
 }
 .language ul {
     display: flex;
@@ -307,6 +354,7 @@ header form button {
     right: 0;
     top: 100%;
     transition: 0.4s;
+    width: 100%;
 }
 .fixed-header #more-language.show {
     background: rgba(0,0,0, 0.4);
@@ -336,7 +384,31 @@ header form button {
     text-decoration: none;
     color: #318787;
 }
-
+/*Popover Language*/
+.popover {
+    background: rgba(0,0,0,0.4);
+    border: none;
+    top: 5px !important;
+}
+.bs-popover-auto[x-placement^=bottom] .arrow,
+.bs-popover-bottom .arrow {
+    top: auto;
+    bottom: 100%;
+}
+.bs-popover-auto[x-placement^=bottom] .arrow::after,
+.bs-popover-bottom .arrow::after {
+    top: 0;
+    border-bottom-color: rgba(0,0,0,0.4);
+}
+.bs-popover-auto[x-placement^=bottom] .arrow::before,
+.bs-popover-bottom .arrow::before {
+    border-bottom-color: transparent;
+}
+.popover-body {
+    color: #fff;
+    font: 15px/17px 'ChevinCyrillic-Bold', sans-serif;
+    padding: 5px;
+}
 
     /*Footer*/
 footer {
@@ -443,7 +515,7 @@ footer a img {
 .title-life-up .to-prototype {
     transform: rotate(90deg);
     position: absolute;
-    left: -20%;
+    right: -5%;
     bottom: 30%;
     font: 13px/15px 'ChevinCyrillic-Bold', sans-serif;
     color: #51cfce;
@@ -620,9 +692,10 @@ footer a img {
 .statistic svg {
     width: 34px;
     height: 34px;
+    filter: drop-shadow(0 0 15px rgba(0,0,0,0.8));
 }
 .statistic .st0 {
-    fill: #c1024f;
+    fill: #51cfce;
 }
 
 
@@ -938,9 +1011,13 @@ footer a img {
     max-width: 408px;
     z-index: 1;
 }
-.our-prototype-block figure a {
+.our-prototype-block figure button {
     display: inline-block;
     position: relative;
+    background: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
 }
 .our-prototype-block figure img {
     width: 100%;
@@ -957,15 +1034,16 @@ footer a img {
     height: 131px;
     transition: 0.3s;
 }
-.our-prototype-block figure span {
+.our-prototype-block figure a {
     transform: rotate(-90deg);
     position: absolute;
-    left: -20%;
+    left: -15%;
     top: 30%;
     font: 13px/15px 'ChevinCyrillic-Bold', sans-serif;
     color: #51cfce;
+    text-decoration: none;
 }
-.our-prototype-block figure span:before {
+.our-prototype-block figure a:before {
     position: absolute;
     content: '';
     background: url("../images/sprite.png") 0 -41px no-repeat;
@@ -975,7 +1053,7 @@ footer a img {
     bottom: 0; top: 0;
     left: -100px;
 }
-.our-prototype-block figure span:after {
+.our-prototype-block figure a:after {
     position: absolute;
     content: '';
     background: url("../images/sprite.png") 0 -52px no-repeat;
@@ -1893,7 +1971,8 @@ button.close {
 }
 
 /*Modal Video*/
-#modal_video .modal-content {
+#modal_video .modal-content,
+#modal_prototype .modal-content{
     padding: 35px;
     background: rgba(0,0,0, 0.7);
 }

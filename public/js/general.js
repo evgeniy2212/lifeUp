@@ -25,13 +25,18 @@ $(document).ready(function () {
         $(".language").toggle();
     });
 
-    $(".our-prototype figure ").on("click","a", function (event) {
+    /*Popover language*/
+    $('[data-toggle="tooltip"]').tooltip();
+    $('[data-toggle="popover"]').popover();
 
+
+    $(".our-prototype figure ").on("click","a", function (event) {
         event.preventDefault();
         var id  = $(this).attr('href'),
             top = $(id).offset().top;
         $('body,html').animate({scrollTop: top}, 1500);
     });
+
     $(".life-up").on("click","a", function (event) {
         event.preventDefault();
         var id  = $(this).attr('href'),
