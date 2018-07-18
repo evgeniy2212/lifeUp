@@ -219,7 +219,7 @@
         <div class="container d-flex flex-wrap">
             <div class="offset-lg-1 col-md-5 col-12 title-life-up">
                 <img src="{{ asset('images/big-logo.png') }}" alt="logo">
-                <h4>МУЛЬТИТУЛ У ТЕБЯ В ТЕЛЕФОНЕ</h4>
+                <h4>{{ trans('messages.0')}}</h4>
                 <p>
                     Хотите отправиться в путешествие мечты?
                     Устали добираться на работу тремя видами
