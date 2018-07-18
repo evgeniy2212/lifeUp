@@ -95,10 +95,13 @@
                 </li>
                 <ul class="download-menu">
                     <li>
-                        <a href	="" target="_blank">ENG</a>
+                        <a href	="LifeUp-(eng).pdf" target="_blank">ENG</a>
                     </li>
                     <li>
-                        <a href="LifeUp-show(ukr).pdf" target="_blank">RU</a>
+                        <a href="LifeUp-(rus).pdf" target="_blank">RU</a>
+                    </li>
+                    <li>
+                        <a href="LifeUp-(ukr).pdf" target="_blank">UA</a>
                     </li>
                 </ul>
             </ul>
@@ -217,14 +220,11 @@
 <main>
     <section class="life-up" id="life-up">
         <div class="container d-flex flex-wrap">
-            <div class="offset-lg-1 col-md-5 col-12 title-life-up">
-                <img src="{{ asset('images/big-logo.png') }}" alt="logo">
+            <div class="col-md-5 col-12 title-life-up">
+                <img src="images/big-logo.png" alt="logo">
                 <h4>{{ trans('messages.0')}}</h4>
                 <p>
-                    Хотите отправиться в путешествие мечты?
-                    Устали добираться на работу тремя видами
-                    транспорта? Или ищете веселую компанию,
-                    чтобы поехать в отпуск?
+                    {{ trans('messages.1')}}
                 </p>
                 <p>
                     Уделите всего пару минут и узнайте о новой
@@ -232,9 +232,9 @@
                     эти задачи и предлагает еще 99+ «плюшек»,
                     которые упростят вам жизнь!
                 </p>
-                <a href="#prototype" class="to-prototype">Нажми на экран</a>
+                <a href="#prototype" class="to-prototype">{{ trans('messages.3')}}</a>
             </div>
-            <div class="offset-lg-1 offset-0 col-lg-5 col-md-7 col-12 img-life-up">
+            <div class="offset-lg-2 offset-0 col-lg-5 col-md-7 col-12 img-life-up">
                 <a href="#prototype">
                     <img src="{{ asset('images/life-up.png') }}" alt="Life-Up">
                 </a>
@@ -293,7 +293,7 @@
                         <input class="col" type="email" name="email" placeholder="Почта">
                     </label>
                     <p>СТАНЬ ОДИН ИЗ НАС ПРЯМО СЕЙЧАС И ПОЛУЧИ ЦЕННЫЕ ПРИЗЫ</p>
-                    <button class="col-7" type="submit">Отправить</button>
+                    <button class="col-7" type="submit">{{ trans('messages.53')}}</button>
                 </form>
                 <ul class="col-md-3 col-sm-6 statistic">
                     <li class="stat">
@@ -362,40 +362,40 @@
         <div class="container our-capabilities">
             <ul>
                 <li class="col">
-                    <p>Комфортно и бюджетно путешествовать</p>
+                    <p>{{ trans('messages.5')}}</p>
                     <i></i>
                 </li>
                 <li class="col">
-                    <p>Находить людей по общим интересам и вместе планировать поездки по всему миру</p>
+                    <p>{{ trans('messages.6')}}</p>
                     <i></i>
                 </li>
                 <li class="col">
-                    <p>Делится впечатлениями с другими пользователями приложения</p>
+                    <p>{{ trans('messages.7')}}</p>
                     <i></i>
                 </li>
                 <li class="col">
-                    <p>Общаться без языковых барьеров благодаря	переводчику, интегрированному в мессенджер</p>
+                    <p>{{ trans('messages.8')}}</p>
                     <i></i>
                 </li>
                 <li class="col" style="padding-bottom: 20px">
-                    <p>Быстро находить жилье на любой вкус и бюджет, и даже “2m `Free”, а также  сдавать в аренду свое </p>
-                    <span>* 2 метра квадратных бесплатно (для поспать достаточно) <br> 2 meters square free (for a sleep enough)</span>
+                    <p>{{ trans('messages.9')}}</p>
+                    <span>{{ trans('messages.10')}}</span>
                     <i></i>
                 </li>
                 <li class="col">
-                    <p>Пользоваться виртуальным автостопом и искать попутчиков в любой точке планеты</p>
+                    <p>{{ trans('messages.11')}}</p>
                     <i></i>
                 </li>
                 <li class="col">
-                    <p>Находить любые туристические сервисы всего в 3 клика</p>
+                    <p>{{ trans('messages.12')}}</p>
                     <i></i>
                 </li>
                 <li class="col">
-                    <p>Арендовать транспорт и снаряжение для активного отдыха в любом городе или стране</p>
+                    <p>{{ trans('messages.13')}}</p>
                     <i></i>
                 </li>
                 <li class="col">
-                    <p>Полная свобода действий с проверенными людьми</p>
+                    <p>{{ trans('messages.14')}}</p>
                     <i></i>
                 </li>
             </ul>
@@ -403,7 +403,7 @@
         <div class="advantage">
             <div class="advantage-name">
                 <div class="col"></div>
-                <h2 class="col">ПРЕИМУЩЕСТВА</h2>
+                <h2 class="col">{{ trans('messages.15')}}</h2>
                 <div class="col"></div>
             </div>
             <div class="container our-advantage">
@@ -412,7 +412,7 @@
                         <img src="{{ asset('images/advantage1.png') }}" alt="advantage">
                     </figure>
                     <div>
-                        <h5>НАМ ПО ПУТИ</h5>
+                        <h5>{{ trans('messages.16')}}</h5>
                     </div>
                 </div>
                 <div class="col-sm-3 col our-advantage-block">
@@ -420,7 +420,7 @@
                         <img src="{{ asset('images/advantage2.png') }}" alt="advantage">
                     </figure>
                     <div>
-                        <h5>МНОГОФУНКЦИОНАЛЬНЫЙ	ИНСТРУМЕНТ</h5>
+                        <h5>{{ trans('messages.17')}}</h5>
                     </div>
                 </div>
                 <div class="col-sm-3 col our-advantage-block">
@@ -428,7 +428,7 @@
                         <img src="{{ asset('images/advantage3.png') }}" alt="advantage">
                     </figure>
                     <div>
-                        <h5>СОЦИАЛЬНОЕ ИНТЕГРИРОВАНИЕ</h5>
+                        <h5>{{ trans('messages.18')}}</h5>
                     </div>
                 </div>
             </div>
@@ -438,9 +438,9 @@
         <div class="about-section">
             <div class="container">
                 <div class="offset-lg-8 offset-md-4 сol-6 heating">
-                    <h3>ПРОТОТИП<span></span></h3>
+                    <h3>{{ trans('messages.19')}}<span></span></h3>
                     <p>
-                        Оцените наш уникальный интерфейс и оставте свой комментарий ниже. Для нас важно ваше мнение.
+                        {{ trans('messages.58')}}
                     </p>
                 </div>
             </div>
@@ -448,48 +448,48 @@
         <div class="container our-prototype">
             <div class="offset-1 our-prototype-block">
                 <div class="col-md-5 col-sm-7 our-prototype-video">
-                    <h4>Посмотри красивое видео</h4>
+                    <h4>{{ trans('messages.20')}}</h4>
                     <ul>
                         <li>
                             <a target="_blank">
                                 <i></i>
-                                <p>Видео обзор</p>
-                                <p>весь мир уже перд тобой</p>
+                                <p>{{ trans('messages.21')}}</p>
+                                <p>{{ trans('messages.59')}}</p>
                             </a>
                         </li>
                         <li>
                             <a target="_blank">
                                 <i></i>
-                                <p>Видео обзор</p>
-                                <p>ищи и находи</p>
+                                <p>{{ trans('messages.21')}}</p>
+                                <p>{{ trans('messages.60')}}</p>
                             </a>
                         </li>
                         <li>
                             <a target="_blank">
                                 <i></i>
-                                <p>Видео обзор</p>
-                                <p>путешествуй без границ</p>
+                                <p>{{ trans('messages.21')}}</p>
+                                <p>{{ trans('messages.61')}}</p>
                             </a>
                         </li>
                         <li>
                             <a>
                                 <i></i>
-                                <p>Видео обзор</p>
-                                <p>общайся на любом языке</p>
+                                <p>{{ trans('messages.21')}}</p>
+                                <p>{{ trans('messages.62')}}</p>
                             </a>
                         </li>
                     </ul>
                 </div>
                 <figure class="col-sm-5 col-12">
-                    <button data-toggle="modal" data-target="#modal_prototype">
+                    <a target="_blank" href="https://lifeup.com.ua/test">
                         <img src="{{ asset('images/phone2.png') }}" alt="prototype">
                         <i></i>
-                    </button>
-                    <a href="#life-up">ВЕРНУТЬСЯ ОБРАТНО</a>
+                    </a>
+                    <a href="#life-up" class="back">{{ trans('messages.22')}}</a>
                 </figure>
                 <div class="col-xl-10 col-lg-11 col-12 our-prototype-text">
-                    <h4>ЭТО ИНТЕРАКТИВНЫЙ ПРОТОТИП</h4>
-                    <h4>Что бы увидеть как работает приложение кликните по экрану</h4>
+                    <h4>{{ trans('messages.23')}}</h4>
+                    <h4>{{ trans('messages.63')}}</h4>
                 </div>
             </div>
         </div>
@@ -498,10 +498,9 @@
         <div class="about-section">
             <div class="container">
                 <div class="сol-6 text-left heating">
-                    <h3>О НАС ГОВОРЯТ<span></span></h3>
+                    <h3>{{ trans('messages.24')}}<span></span></h3>
                     <p>
-                        Каждый ваш отзыв, поможет нам сделать приложение
-                        лучше. Прежде всего, мы его делаем для вас!
+                        {{ trans('messages.25')}}
                     </p>
                 </div>
             </div>
@@ -519,11 +518,11 @@
         </div>
         <div class="container d-flex new-review">
             <div>
-                <h4>НАПИШИ НАМ ЧТО ДУМАЕШЬ О ПРИЛОЖЕНИИ</h4>
-                <h4>Возможно это то, чего нам так не хватает!</h4>
+                <h4>{{ trans('messages.26')}}</h4>
+                <h4>{{ trans('messages.64')}}</h4>
             </div>
             <button class="btn-modal-review" type="button" data-toggle="modal" data-target="#modal_review">
-                НАПИСАТЬ ОТЗЫВ
+                {{ trans('messages.27')}}
             </button>
         </div>
     </section>
@@ -532,10 +531,7 @@
             <div class="container">
                 <div class="offset-lg-6 offset-md-4 сol-6 heating">
                     <h3>НАША КОМАНДА<span></span></h3>
-                    <p>Мы -  команда молодых и амбициозных разработчиков и
-                        дизайнеров которые хотят сломать социальную стенку между людьми и
-                        сделать это как ни странно с помощью мобильного приложения
-                    </p>
+                    <p>{{ trans('messages.28')}}</p>
                 </div>
             </div>
         </div>
@@ -568,7 +564,7 @@
                         Это приложение – «LIFEUP».
                     </p>
                     <div>
-                        <span class="location">Киев, Украина</span>
+                        <span class="location">{{ trans('messages.30')}}</span>
                         <a href="https://www.youtube.com/watch?v=XPKr7yEvHAY" target="_blank">Так же благодарю:</a>
                     </div>
                 </div>
@@ -842,48 +838,38 @@
         <div class="liked">
             <div class="liked-name">
                 <div class="col"></div>
-                <h2 class="col">Понравилось?</h2>
+                <h2 class="col">{{ trans('messages.31')}}</h2>
                 <div class="col"></div>
             </div>
             <div class="container about-liked">
-                <h5 class="col-11">
-                    “LIFEUP” - уникальная платформа, Каждый участник комнды вложил много сил и средств для разработки и реализации этой идеи.
-                </h5>
-                <h5 class="col-11">
-                    Это некоммерческий проект, поэтому нам нужна Ваша помощь для развитии платформы. Вместе мы сделаем ещё функциональнее!
-                </h5>
+                <h5 class="col-11">{{ trans('messages.32')}}</h5>
+                <h5 class="col-11">{{ trans('messages.66')}}</h5>
                 <div class="about-liked-blocks">
                     <div class="col support">
-                        <a class="liked-btn" href="#contatcs">ПОДДЕРЖАТЬ</a>
+                        <a class="liked-btn" href="#contatcs">{{ trans('messages.33')}}</a>
                         <p>
-                            «LIFEUP» – это уникальная платформа, Каждый участник команды вложил много сил и средств для разработки и реализации этой идеи.
-                            Это некоммерческий проект, поэтому нам нужна ваша помощь для развития платформы. Вместе мы сможем!
+                            {{ trans('messages.35')}}
                         </p>
                         <p>
-                            Поддержать «LIFEUP» можно так:
+                            {{ trans('messages.67')}}
                         </p>
                         <ol>
-                            <li>рассказать о нас своим знакомым и друзьям. Поделиться ссылкой на проект в социальных сетях или просто поверить в нас;</li>
-                            <li>принять участие в разработке;</li>
-                            <li>оказать проекту финансовую помощь. Для этого просто нажмите кнопку одной из удобных для вас платежных систем. Пожалуйста, в назначении платежа укажите: <span>«Помощь LIFEUP»</span>.</li>
+                            <li>{{ trans('messages.68')}}</li>
+                            <li>{{ trans('messages.69')}}</li>
+                            <li>{{ trans('messages.70')}}<span>{{ trans('messages.71')}}</span>.</li>
                         </ol>
                     </div>
                     <div class="col join">
                         <a class="liked-btn" href="https://docs.google.com/forms/d/e/1FAIpQLSeZGBdghVSawe-EdhFm-LLWNrwH5niCfC1yCznMIRCC_iWdqQ/viewform" target="_blank">ПРИСОЕДЕНИТСЯ К РАЗРАБОТКЕ</a>
                         <p>
-                            Если ты такой же энтузиаст, как и мы, у тебя полно идей
-                            как можно усовершенствовать наше приложение, ты
-                            хочешь быть в команде LifeUP - жми кнопку, если ты:
+                            {{ trans('messages.36')}}
                         </p>
                         <ol>
-                            <li>-SEO - Оптимизатор;</li>
-                            <li>-Опытный и креативный UX/UI дизайнер;</li>
-                            <li>-Разработчик Android приложений;</li>
-                            <li>-Опытный и креативный UX/UI дизайнер;</li>
-                            <li>-Бекенд разработчик, знания: html, css, ajax, jQuery, php, javascript, mysql, работа с linux, apach;</li>
-                            <li>-Фронт-енд , знания : html, css, sass, javascript;</li>
-                            <li>-Android разработчик: Java, c++, AndroidStudio, ООП</li>
-                            <li>-iOS: swift, xcode</li>
+                            <li>{{ trans('messages.72')}}</li>
+                            <li>{{ trans('messages.73')}}</li>
+                            <li>{{ trans('messages.74')}}</li>
+                            <li>{{ trans('messages.75')}}</li>
+                            <li>{{ trans('messages.37')}}</li>
                         </ol>
                     </div>
                     <ul class="col-12 banks">
@@ -920,37 +906,36 @@
         <div class="about-section">
             <div class="container">
                 <div class="сol-6 heating">
-                    <h3>БУДЬ С НАМИ<span></span></h3>
-                    <p>Получай максимум от сотрудничества с нами</p>
+                    <h3>{{ trans('messages.38')}}<span></span></h3>
+                    <p>{{ trans('messages.39')}}</p>
                 </div>
             </div>
         </div>
         <div class="container gifts">
             <div class="col-xl-10 col-md-8">
-                <h2>ПОДАРКИ ДЛЯ ВАС</h2>
+                <h2>{{ trans('messages.40')}}</h2>
                 <p>
-                    МЫ УМЕЕМ БЫТЬ БЛАГОДАРНЫМИ!
+                    {{ trans('messages.41')}}
                 </p>
                 <p>
-                    Напишите нам, какой вид помощи вы оказали проект,
+                    {{ trans('messages.42')}}
                     <br>
-                    и 15 июля среди самых активных участников
+                    {{ trans('messages.77')}}
                     <br>
-                    мы разыграем:
+                    {{ trans('messages.78')}}
                 </p>
                 <ul class="col-lg-8 col-md-12">
-                    <li>Google Pixel 2 64GB черный - 1 шт</li>
-                    <li>IPad mini 64GB - 2 шт, с чехлом "LifeUp"</li>
-                    <li>Палатка Coleman Tatra 3 зеленая</li>
-                    <li>Термокружки на 0.75 литра - 10 шт</li>
-                    <li>Брендированная толстовка - 20 шт</li>
-                    <li>Мультитул Leatherman Leap Green.</li>
+                    <li>{{ trans('messages.43')}}</li>
+                    <li>{{ trans('messages.79')}}</li>
+                    <li>{{ trans('messages.80')}}</li>
+                    <li>{{ trans('messages.81')}}</li>
+                    <li>{{ trans('messages.82')}}</li>
+                    <li>{{ trans('messages.83')}}</li>
                 </ul>
                 <p>
-                    Бонус - Наклейки или исходники с логотипом
-                    могут получить все,
+                    {{ trans('messages.44')}}
                     <br>
-                    просто напишите нам.
+                    {{ trans('messages.84')}}
                     <br>
                     <span>*Под подарком подразумевается приобретение товара за 0,01 грн с учетом НДС.</span>
                 </p>
@@ -958,8 +943,8 @@
                     {{ csrf_field() }}
                     <input class="col-sm-5 col" type="text" name="name" placeholder="Имя">
                     <input class="col-sm-5 col" type="email" name="email" placeholder="Почта">
-                    <p>Я хочу принять участие в кункурсе и соглашаюсь на условия проведения</p>
-                    <button class="col-sm-5 col-7" type="submit">Будь первый</button>
+                    <p>{{ trans('messages.85')}}</p>
+                    <button class="col-sm-5 col-7" type="submit">{{ trans('messages.46')}}</button>
                 </form>
             </div>
             <figure class="col-4">
@@ -971,19 +956,19 @@
         <div class="about-section">
             <div class="container">
                 <div class="offset-lg-7 offset-md-4 сol-6 heating">
-                    <h3>КОНТАКТЫ<span></span></h3>
-                    <p>Свяжитесь с нами в случае если у вас остались не решенные вопросы</p>
+                    <h3>{{ trans('messages.47')}}<span></span></h3>
+                    <p>{{ trans('messages.48')}}</p>
                 </div>
             </div>
         </div>
         <div class="container our-contacts">
             <form class="col-sm-6 col-12" method="POST" action="{{ route('mail') }}">
                 {{ csrf_field() }}
-                <h5>Форма обратной связи</h5>
-                <input type="text" name="name" placeholder="Ваше Имя">
-                <input type="email" name="email" placeholder="E-Mail">
-                <textarea placeholder="Сообщение" name="text"></textarea>
-                <button type="submit">Отправить</button>
+                <h5>{{ trans('messages.49')}}</h5>
+                <input type="text" name="name" placeholder="{{ trans('messages.50')}}">
+                <input type="email" name="email" placeholder="{{ trans('messages.51')}}">
+                <textarea placeholder="{{ trans('messages.52')}}" name="text"></textarea>
+                <button type="submit">{{ trans('messages.53')}}</button>
             </form>
             <div class="col-sm-6 col-12">
 
@@ -1955,14 +1940,27 @@
 <footer>
     <div class="container footer">
         <div class="col-lg-3 col-md-6">
-            <a href="{{ asset('index.html') }}">
+            <a href="index.html">
                 <img src="{{ asset('images/big-logo.png') }}" alt="Logo">
             </a>
         </div>
         <div class="col-lg-3 col-md-6 head">
-            <div class="language">
-                <a href="https://drive.google.com/drive/folders/1U3grWPSWQdO5VFlPCV6M13eEhZ0a9GWA" class="download" target="_blank">Files Download</a>
-            </div>
+            <ul class="download">
+                <li class="download-btn	">
+                    Presentation
+                </li>
+                <ul class="download-menu">
+                    <li>
+                        <a href	="LifeUp-(eng).pdf" target="_blank">ENG</a>
+                    </li>
+                    <li>
+                        <a href="LifeUp-(rus).pdf" target="_blank">RU</a>
+                    </li>
+                    <li>
+                        <a href="LifeUp-(ukr).pdf" target="_blank">UA</a>
+                    </li>
+                </ul>
+            </ul>
             <ul class="soc-links">
                 <li>
                     <a href="https://twitter.com/lifeupkiev">
@@ -2031,9 +2029,9 @@
             <h5>DESIGN BY Borovaja Anya and Ivashchenko Alexey</h5>
         </div>
         <div class="col-lg-3 col-md-6 foot-btn">
-            <button type="button" data-toggle="modal" data-target="#about_service">О сервисе</button>
-            <button type="button" data-toggle="modal" data-target="#privacy_policy">Политика конфедициальности</button>
-            <button type="button" data-toggle="modal" data-target="#tos">Правила и условия</button>
+            <button type="button" data-toggle="modal" data-target="#about_service">{{ trans('messages.55')}}</button>
+            <button type="button" data-toggle="modal" data-target="#privacy_policy">{{ trans('messages.56')}}</button>
+            <button type="button" data-toggle="modal" data-target="#tos">{{ trans('messages.57')}}</button>
         </div>
     </div>
 </footer>

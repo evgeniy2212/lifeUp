@@ -134,6 +134,11 @@ nav {
 .download a {
     text-decoration: none;
     text-transform: uppercase;
+    padding: 0 7px;
+    color: #51cfce;
+    font: 15px/17px 'ChevinCyrillic-Bold', sans-serif;
+    outline: none;
+    cursor: pointer;
 }
 .download .download-btn {
     position: relative;
@@ -172,20 +177,13 @@ nav {
     left: 0;
     right: 0;
 }
-.download .download-menu:before {
-    position: absolute;
-    content: '';
-    width: 3px;
-    height: 18px;
-    background: #51cfce;
-    margin: auto;
-    top: 0; bottom: 0;
-    left: 9px; right: 0;
-}
 .download:hover .download-menu {
     opacity: 1;
 }
 .download .download-menu a {
+    border-right: 3px solid #51cfce;
+}
+.download .download-menu li:last-of-type a {
     border: none;
 }
 .download-menu li:hover {
@@ -429,6 +427,9 @@ footer .head {
     padding: 15px;
     align-items: center;
 }
+footer .download {
+    margin-bottom: 40px;
+}
 footer .language a{
     margin: 0;
  }
@@ -441,6 +442,16 @@ footer a img {
     color: #1b1b1b;
     text-transform: uppercase;
     opacity: 0.61;
+}
+.foot-text h5:nth-of-type(2) {
+    color: #51cfce;
+    opacity: 1;
+    font-size: 22px;
+}
+.foot-text h5:last-of-type {
+    font-size: 12px;
+    color: #0d6d72;
+    opacity: 1;
 }
 .foot-text h5 span {
     font: 12px/14px 'ChevinCyrillic-Bold', sans-serif;
@@ -562,7 +573,8 @@ footer a img {
     flex-direction: column;
     align-items: flex-start;
 }
-.modal-video {
+.modal-video,
+.modal-video:focus {
     color: #fff;
     background: #51cfce;
     padding: 20px 30px;
@@ -679,6 +691,12 @@ footer a img {
     align-items: center;
     margin: 6px;
     position: relative;
+}
+.statistic .stat:nth-of-type(2) {
+    background-position: -66px -230px;
+}
+.statistic .stat:nth-of-type(3) {
+    background-position: -131px -230px;
 }
 .statistic span {
     position: absolute;
@@ -957,6 +975,7 @@ footer a img {
     flex-direction: column;
     position: relative;
     padding-left: 30px;
+    cursor: pointer;
 }
 .our-prototype-video p {
     color: #b30248;
@@ -1034,7 +1053,7 @@ footer a img {
     height: 131px;
     transition: 0.3s;
 }
-.our-prototype-block figure a {
+.our-prototype-block figure a:last-of-type {
     transform: rotate(-90deg);
     position: absolute;
     left: -15%;
@@ -1043,7 +1062,7 @@ footer a img {
     color: #51cfce;
     text-decoration: none;
 }
-.our-prototype-block figure a:before {
+.our-prototype-block figure a:last-of-type:before {
     position: absolute;
     content: '';
     background: url("../images/sprite.png") 0 -41px no-repeat;
@@ -1053,7 +1072,7 @@ footer a img {
     bottom: 0; top: 0;
     left: -100px;
 }
-.our-prototype-block figure a:after {
+.our-prototype-block figure a:last-of-type:after {
     position: absolute;
     content: '';
     background: url("../images/sprite.png") 0 -52px no-repeat;
@@ -1295,6 +1314,7 @@ footer a img {
     justify-content: space-between;
     outline: none;
     border-left: 11px solid #55cbd9;
+    min-height: 667px;
 }
 .hobby {
     margin-bottom: 70px;
@@ -1333,23 +1353,26 @@ footer a img {
 .our-team p:last-of-type {
     margin-bottom: 85px;
 }
-.our-team a {
+.our-team h6 {
     color: #000;
     font: 16px/18px 'ChevinCyrillic-Bold', sans-serif;
     text-decoration: none;
     text-transform: uppercase;
     outline: none;
     position: relative;
+    display: inline-block;
 }
-.our-team a:before {
+.our-team h6 a {
     position: absolute;
     content: '';
     width: 16px;
     height: 12px;
     margin: auto;
-    top: 0; bottom: 0;
-    right: -20px;
+    top: 1px; bottom: 0;
+    right: -30px;
     background: url("../images/sprite.png") -35px -67px no-repeat;
+    outline: none;
+    cursor: pointer;
 }
 .male {
     position: absolute;
@@ -1706,13 +1729,15 @@ about-liked {
     padding: 12px 0;
     cursor: pointer;
 }
-.gifts form p {
+.gifts form p,
+.gifts p span {
     font: 12px/20px 'ChevinCyrillic-Bold', sans-serif;
     color: #656565;
     text-transform: uppercase;
     position: relative;
 }
-.gifts form p:before {
+.gifts form p:before,
+.gifts p span:before {
     position: absolute;
     content: '*';
     top: 0;

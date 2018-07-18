@@ -213,6 +213,15 @@
     .hamburger {
         display: block;
     }
+    .download .download-menu {
+        flex-direction: row;
+        justify-content: flex-start;
+        margin-left: 0;
+        width: 125px;
+    }
+    .download .download-menu a {
+        padding: 0 7px;
+    }
     #more-language {
         right: auto;
         left: 0;
