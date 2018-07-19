@@ -111,10 +111,10 @@
                     <a href="" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="ожидается/soon expected">ENG</a>
                 </li>
                 <li>
-                    <a href="">RU</a>
+                    <a href="/ru">RU</a>
                 </li>
                 <li>
-                    <a href="">UA</a>
+                    <a href="/ua">UA</a>
                 </li>
                 <li class="more-language">
                     <button id="more-language-btn" data-toggle="collapse" data-target="#more-language" aria-expanded="false" aria-controls="more-language">

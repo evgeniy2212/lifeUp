@@ -11,7 +11,6 @@ class StartController extends Controller
 {
     public function index($locale = 'ru')
     {
-        var_dump($locale);
         if (!in_array($locale, Config::get('app.locales'))){
 
             $locale = Config::get('app.locale');
