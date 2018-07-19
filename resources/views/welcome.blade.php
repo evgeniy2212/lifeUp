@@ -177,7 +177,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="">
+                                <a href="/ru">
                                     <img src="{{ asset('images/languages/russia.png') }}" alt="Russia"> RU
                                 </a>
                             </li>
@@ -192,7 +192,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="">
+                                <a href="/ua">
                                     <img src="{{ asset('images/languages/ukraine.png') }}" alt="Ukraine"> UA
                                 </a>
                             </li>
