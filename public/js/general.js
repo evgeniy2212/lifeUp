@@ -29,8 +29,7 @@ $(document).ready(function () {
     $('[data-toggle="tooltip"]').tooltip();
     $('[data-toggle="popover"]').popover();
 
-
-    $(".our-prototype figure ").on("click","a", function (event) {
+    $(".our-prototype figure").on("click","a.back", function (event) {
         event.preventDefault();
         var id  = $(this).attr('href'),
             top = $(id).offset().top;
