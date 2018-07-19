@@ -163,7 +163,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="ожидается/soon expected">
+                                <a href="/po" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="ожидается/soon expected">
                                     <img src="{{ asset('images/languages/poland.png') }}" alt="Poland"> PO
                                 </a>
                             </li>
@@ -227,12 +227,12 @@
                 <p>
                     {{ trans('messages.1')}}
                 </p>
-                <p>
-                    Уделите всего пару минут и узнайте о новой
-                    платформе «LIFEUP». LifeUP быстро решает
-                    эти задачи и предлагает еще 99+ «плюшек»,
-                    которые упростят вам жизнь!
-                </p>
+                {{--<p>--}}
+                    {{--Уделите всего пару минут и узнайте о новой--}}
+                    {{--платформе «LIFEUP». LifeUP быстро решает--}}
+                    {{--эти задачи и предлагает еще 99+ «плюшек»,--}}
+                    {{--которые упростят вам жизнь!--}}
+                {{--</p>--}}
                 <a href="#prototype" class="to-prototype">{{ trans('messages.3')}}</a>
             </div>
             <div class="offset-lg-2 offset-0 col-lg-5 col-md-7 col-12 img-life-up">
@@ -1179,7 +1179,7 @@
                     {{ csrf_field() }}
                     <input class="col-sm-5 col" type="text" name="name" placeholder="Имя">
                     <input class="col-sm-5 col" type="email" name="email" placeholder="Почта">
-                    <p>{{ trans('messages.85')}}</p>
+                    {{--<p>{{ trans('messages.85')}}</p>--}}
                     <button class="col-sm-5 col-7" type="submit">{{ trans('messages.46')}}</button>
                 </form>
             </div>
