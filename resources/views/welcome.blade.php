@@ -482,7 +482,7 @@
                     </ul>
                 </div>
                 <figure class="col-sm-5 col-12">
-                    <a target="_blank" href="https://lifeup.com.ua/test">
+                    <a target="_blank" href="https://app.lifeup.com.ua">
                         <img src="{{ asset('images/phone2.png') }}" alt="prototype">
                         <i></i>
                     </a>
