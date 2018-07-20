@@ -12,6 +12,13 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('css/fonts.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('css/style.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('css/media.css') }}">
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-MX2MVDD');</script>
+    <!-- End Google Tag Manager -->
     <script type="text/javascript" src="{{ asset('js/jquery-3.3.1.js') }}"></script>
     <script type="text/javascript" src="{{ asset('js/popper.min.js') }}"></script>
     <script type="text/javascript" src="{{ asset('js/jquery.circliful.min.js') }}"></script>
@@ -20,7 +27,12 @@
     <script type='text/javascript' src='{{ asset('js/general.js') }}'></script>
 </head>
 <body id="home-page">
-<header>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MX2MVDD"
+                      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <header>
     <nav class="container">
         <ul class="soc-links">
             <li>
