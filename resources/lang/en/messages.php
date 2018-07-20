@@ -35,7 +35,7 @@ return [
     '32' => 'LifeUp is a unique platform, where every participant of the team put a lot of effort and resources for developing and implementation of the idea. ',
     '33' => 'To support',
     '34' => 'To join the development',
-    '35' => '“LifeUp” is a unique platform, where every participant of the team spent too much effort and resources to develop and implement the idea. It is noncommercial project and we need your help for the developing of the platform. Together we can do it!',
+    '35' => '',
     '36' => 'If you are an enthusiast, as we are, you have a plenty of ideas, how the app can be improved and you want to be in LifeUp team. Click the button, if you are:',
     '37' => '-Experienced and creative UX/UI designer',
     '38' => 'Join us',

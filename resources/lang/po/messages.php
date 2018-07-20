@@ -36,8 +36,7 @@ return [
 Jest to projekt niekomercyjny, dlatego potrzebujemy twojej pomocy dla rozwoju platformy. Razem zrobimy ją jeszcze bardziej funkcjonalną.',
     '33' => 'Wspierać',
     '34' => 'DOŁĄCZYĆ SIĘ DO OPRACOWANIA',
-    '35' => 'LIFEUP" – to unikalna platforma, Każdy członek zespołu włożył wiele sił i środków w celu opracowania i realizacji tej idei. 
-Jest to projekt niekomercyjny, dlatego potrzebujemy twojej pomocy dla rozwoju platformy. Razem zmożemy!',
+    '35' => '',
     '36' => 'Jeśli jesteś entuzjastą, jak my, masz pełno pomysłów jak można poprawić naszą aplikację, chcesz być w drużynie LifeUP - wciśnij przycisk, jeśli jesteś:',
     '37' => '-Doświadczony i kreatywny UX/UI designer',
     '38' => 'Dołącz',
