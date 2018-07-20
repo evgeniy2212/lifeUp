@@ -44,7 +44,7 @@ return [
     '41' => 'We will be grateful!',
     '42' => 'Write us about how you can support our project',
     '43' => 'Google Pixel 2 64GB black - 1 pc.',
-    '44' => 'Bonus – stickers or code for the web page with the logo. Can be received by anyone,',
+    '44' => 'Bonus – stickers or code for the web page with the logo. ',
     '45' => '* UNDER THE GIFT, PURCHASE OF GOODS FOR 0.05 UAH WITH VAT',
     '46' => 'Send',
     '47' => 'Contacts',
@@ -85,4 +85,6 @@ return [
     '82' => 'Branded sweatshirt - 20 pcs',
     '83' => 'Multitool Leatherman Leap Green.',
     '84' => 'Can be received by anyone, just text us!',
+    '85' => 'Be first',
+    '86' => 'OUR TEAM',
 ];
