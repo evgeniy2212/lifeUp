@@ -6,17 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Life Up">
     <link rel="shortcut icon" href="{{ asset('images/favicon.png') }}" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/reset.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/bootstrap.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/jquery.circliful.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/fonts.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/style.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/media.css') }}">
     <script type="text/javascript" src="{{ asset('js/jquery-3.3.1.js') }}"></script>
     <script type="text/javascript" src="{{ asset('js/popper.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/jquery.circliful.min.js') }}"></script>
     <script type='text/javascript' src='{{ asset('js/slick.min.js') }}'></script>
     <script type='text/javascript' src='{{ asset('js/bootstrap.min.js') }}'></script>
     <script type='text/javascript' src='{{ asset('js/general.js') }}'></script>
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/reset.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/bootstrap.min.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/fonts.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/svg.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/style.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/media.css') }}">
 </head>
 <body id="home-page">
 <header>
@@ -108,7 +109,7 @@
 
             <ul>
                 <li>
-                    <a href="" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="ожидается/soon expected">ENG</a>
+                    <a href="/en">ENG</a>
                 </li>
                 <li>
                     <a href="/ru">RU</a>
@@ -162,7 +163,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="ожидается/soon expected">
+                                <a href="/po" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="ожидается/soon expected">
                                     <img src="{{ asset('images/languages/poland.png') }}" alt="Poland"> PO
                                 </a>
                             </li>
@@ -177,7 +178,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="/ru">
+                                <a href="">
                                     <img src="{{ asset('images/languages/russia.png') }}" alt="Russia"> RU
                                 </a>
                             </li>
@@ -192,14 +193,14 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="/ua">
+                                <a href="">
                                     <img src="{{ asset('images/languages/ukraine.png') }}" alt="Ukraine"> UA
                                 </a>
                             </li>
                             <li>
-                                <a href="" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="ожидается/soon expected">
+                                <a href="/en" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="ожидается/soon expected">
+                                    <img src="{{ asset('images/languages/usa.png') }}" alt="USA"> EN
                                 </a>
-                                <img src="{{ asset('images/languages/usa.png') }}" alt="USA"> EN
                             </li>
                         </ul>
                     </div>
@@ -221,17 +222,17 @@
     <section class="life-up" id="life-up">
         <div class="container d-flex flex-wrap">
             <div class="col-md-5 col-12 title-life-up">
-                <img src="images/big-logo.png" alt="logo">
+                <img src="{{ asset('images/big-logo.png') }}" alt="logo">
                 <h4>{{ trans('messages.0')}}</h4>
                 <p>
                     {{ trans('messages.1')}}
                 </p>
-                <p>
-                    Уделите всего пару минут и узнайте о новой
-                    платформе «LIFEUP». LifeUP быстро решает
-                    эти задачи и предлагает еще 99+ «плюшек»,
-                    которые упростят вам жизнь!
-                </p>
+                {{--<p>--}}
+                    {{--Уделите всего пару минут и узнайте о новой--}}
+                    {{--платформе «LIFEUP». LifeUP быстро решает--}}
+                    {{--эти задачи и предлагает еще 99+ «плюшек»,--}}
+                    {{--которые упростят вам жизнь!--}}
+                {{--</p>--}}
                 <a href="#prototype" class="to-prototype">{{ trans('messages.3')}}</a>
             </div>
             <div class="offset-lg-2 offset-0 col-lg-5 col-md-7 col-12 img-life-up">
@@ -241,7 +242,7 @@
             </div>
             <div class="col-12 d-flex foot-life-up">
                 <div class="offset-1 offset-sm-0 col-lg-3 col-sm-6 d-flex soc-life-up">
-                    <button class="offset-2 modal-video" data-toggle="modal" data-target="#modal_video">ПРОСМОТРЕТЬ ПРОМО-РОЛИК
+                    <button class="offset-2 modal-video" data-toggle="modal" data-target="#modal_video">{{ trans('messages.2')}}
                         <span></span>
                     </button>
                     <ul>
@@ -352,7 +353,7 @@
         <div class="about-section">
             <div class="container">
                 <div class="offset-lg-6 offset-md-4 сol-6 heating">
-                    <h3>ВОЗМОЖНОСТИ<span></span></h3>
+                    <h3>{{ trans('messages.4') }}<span></span></h3>
                     <p>
 
                     </p>
@@ -451,28 +452,28 @@
                     <h4>{{ trans('messages.20')}}</h4>
                     <ul>
                         <li>
-                            <a target="_blank">
+                            <a data-toggle="modal" data-target="#modal_prototype">
                                 <i></i>
                                 <p>{{ trans('messages.21')}}</p>
                                 <p>{{ trans('messages.59')}}</p>
                             </a>
                         </li>
                         <li>
-                            <a target="_blank">
+                            <a data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="ожидается/soon expected">
                                 <i></i>
                                 <p>{{ trans('messages.21')}}</p>
                                 <p>{{ trans('messages.60')}}</p>
                             </a>
                         </li>
                         <li>
-                            <a target="_blank">
+                            <a data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="ожидается/soon expected">
                                 <i></i>
                                 <p>{{ trans('messages.21')}}</p>
                                 <p>{{ trans('messages.61')}}</p>
                             </a>
                         </li>
                         <li>
-                            <a>
+                            <a data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="ожидается/soon expected">
                                 <i></i>
                                 <p>{{ trans('messages.21')}}</p>
                                 <p>{{ trans('messages.62')}}</p>
@@ -565,12 +566,123 @@
                     </p>
                     <div>
                         <span class="location">{{ trans('messages.30')}}</span>
-                        <a href="https://www.youtube.com/watch?v=XPKr7yEvHAY" target="_blank">Так же благодарю:</a>
+                        <h6>
+                            Так же благодарю:
+                            <a data-toggle="modal" data-target="#modal_thanks"></a>
+                        </h6>
                     </div>
                 </div>
                 <div class="col-md-4 col-12 team-photo">
                     <figure>
-                        <img src="{{ asset('images/human.png') }}">
+                        <img src="{{ asset('images/team/01-alexandr.jpg') }}" alt="Александр Сивчиков - автор проекта, разработчик" title="Александр Сивчиков - автор проекта, разработчик">
+                    </figure>
+                </div>
+                <div class="male">
+                    <span>Женщины</span>
+                    <span>Мужчины</span>
+                </div>
+            </div>
+            <div class="col man">
+                <div class="col-md-7 col-12 human">
+                    <div class="hobby">
+								<span class="hobby-icon">
+									<img src="{{ asset('images/hobby/car.png') }}" alt="Car">
+								</span>
+                        <span class="hobby-icon">
+									<img src="{{ asset('images/hobby/travel.png') }}" alt="Travel">
+								</span>
+                        <span class="hobby-icon">
+									<img src="{{ asset('images/hobby/chess.png') }}" alt="Chess">
+								</span>
+                        <span class="hobby-icon">
+									<img src="{{ asset('images/hobby/books.png') }}" alt="Books">
+								</span>
+                        <span>Мои Интересы</span>
+                    </div>
+                    <h4>Алексей</h4>
+                    <h5>финансовый директор, co-founder</h5>
+
+                    <p>
+                        Отправившись в путешествие хоть раз, потом хочется еще и еще. И вот ты уже ждешь с нетерпением очередных впечатлений, открытия новой страны, новых знаний. Ты не можешь больше думать ни о чем, кроме путешествия… LifeUp - нечто новое, масштабное и по-моему, приложение просто необходимо каждому, кто любит путешествия.
+                    </p>
+                </div>
+                <div class="col-md-4 col-12 team-photo">
+                    <figure>
+                        <img src="{{ asset('images/team/02_alexey.jpg') }}" alt="Алексей - финансовый директор, co-founder" title="Алексей - финансовый директор, co-founder">
+                    </figure>
+                </div>
+                <div class="male">
+                    <span>Женщины</span>
+                    <span>Мужчины</span>
+                </div>
+            </div>
+            <div class="col man">
+                <div class="col-md-7 col-12 human">
+                    <div class="hobby">
+								<span class="hobby-icon">
+									<img src="{{ asset('images/hobby/television.png') }}" alt="TV">
+								</span>
+                        <span class="hobby-icon">
+									<img src="{{ asset('images/hobby/bicycle.png') }}" alt="Bicycle">
+								</span>
+                        <span class="hobby-icon">
+									<img src="{{ asset('images/hobby/tent.png') }}" alt="Tent">
+								</span>
+                        <span class="hobby-icon">
+									<img src="{{ asset('images/hobby/dog.png') }}" alt="Dog">
+								</span>
+                        <span>Мои Интересы</span>
+                    </div>
+                    <h4>Андрей</h4>
+                    <h5>координатор проекта</h5>
+                    <p>
+                        Я бачу потенціал цієї платформи як зручного агрегатора сервісів, потрібних для організації подорожі.
+                    </p>
+                    <p>
+                        Більше того, «LIFEUP» об’єднує людей за інтересами і дає змогу спілкуватись без мовних обмежень.
+                        Тобто, по суті – це ще й повноцінна соціальна мережа для мандрівників.
+                    </p>
+                    <!--<div>
+                        <span class="location">Киев, Украина</span>
+                        <a href="#">Так же благодарю:</a>
+                    </div>-->
+                </div>
+                <div class="col-md-4 col-12 team-photo">
+                    <figure>
+                        <img src="{{ asset('images/team/03_andrey.jpg') }}" alt="Андрей - координатор проекта" title="Андрей - координатор проекта">
+                    </figure>
+                </div>
+                <div class="male">
+                    <span>Женщины</span>
+                    <span>Мужчины</span>
+                </div>
+            </div>
+            <div class="col man">
+                <div class="col-md-7 col-12 human">
+                    <div class="hobby">
+								<span class="hobby-icon">
+									<img src="{{ asset('images/hobby/darts.png') }}" alt="Darts">
+								</span>
+                        <span class="hobby-icon">
+									<img src="{{ asset('images/hobby/sea.png') }}" alt="Sea">
+								</span>
+                        <span class="hobby-icon">
+									<img src="{{ asset('images/hobby/television.png') }}" alt="TV">
+								</span>
+                        <span class="hobby-icon">
+									<img src="{{ asset('images/hobby/football.png') }}" alt="Football">
+								</span>
+                        <span>Мои Интересы</span>
+                    </div>
+                    <h4>Евгений</h4>
+                    <h5>креативный директор</h5>
+                    <p>
+                        Путешествие - это всегда новый мир, новые, яркие ощущения, которые практически нереально забыть. Это новые знакомства, и вообще. Просто приятное чувство! Социальная сеть LifeUp - будет полезной для туристов, это масса возможностей всего в одном приложении. Я буду им пользоваться, ведь это очень удобно.
+                    </p>
+                </div>
+                <div class="col-md-4 col-12 team-photo">
+                    <figure>
+                        <img src="{{ asset('images/team/04_evgeniy.jpg') }}" alt="Евгений - креативный директор" title="Евгений - креативный директор">
                     </figure>
                 </div>
                 <div class="male">
@@ -588,31 +700,195 @@
 									<img src="{{ asset('images/hobby/dog.png') }}" alt="Animal">
 								</span>
                         <span class="hobby-icon">
+									<img src="{{ asset('images/hobby/flowers.png') }}" alt="Flowers">
+								</span>
+                        <span class="hobby-icon">
+									<img src="{{ asset('images/hobby/skiing.png') }}" alt="Skiing">
+								</span>
+                        <span>Мои Интересы</span>
+                    </div>
+                    <h4>Александра</h4>
+                    <h5>представитель проекта</h5>
+
+                    <p>
+                        Путешествуя ты получаешь независимость. Поэтому, в первую очередь - это возможность узнать нового себя, свои возможности. LifeUp эти возможности расширяет, другими словами, с этой платформой ты становишься реально свободным.
+                    </p>
+                </div>
+                <div class="col-md-4 col-12 team-photo">
+                    <figure>
+                        <img src="{{ asset('images/team/05_alexandra.jpg') }}" alt="Александра - представитель проекта" title="Александра - представитель проекта">
+                    </figure>
+                </div>
+                <div class="male">
+                    <span>Женщины</span>
+                    <span>Мужчины</span>
+                </div>
+            </div>
+            <div class="col man">
+                <div class="col-md-7 col-12 human">
+                    <div class="hobby">
+								<span class="hobby-icon">
+									<img src="{{ asset('images/hobby/football.png') }}" alt="Football">
+								</span>
+                        <span class="hobby-icon">
+									<img src="{{ asset('images/hobby/swimming.png') }}" alt="Swimming">
+								</span>
+                        <span class="hobby-icon">
+									<img src="{{ asset('images/hobby/run.png') }}" alt="Run">
+								</span>
+                        <span class="hobby-icon">
+									<img src="{{ asset('images/hobby/barbell.png') }}" alt="Barbell">
+								</span>
+                        <span>Мои Интересы</span>
+                    </div>
+                    <h4>Алексей</h4>
+                    <h5>арт директор</h5>
+
+                    <p>
+                        Путешествуя ты получаешь независимость. Поэтому, в первую очередь - это возможность узнать нового себя, свои возможности. LifeUp эти возможности расширяет, другими словами, с этой платформой ты становишься реально свободным.
+                    </p>
+                </div>
+                <div class="col-md-4 col-12 team-photo">
+                    <figure>
+                        <img src="{{ asset('images/team/06_alexey.jpg') }}" alt="Алексей - арт директор" title="Алексей - арт директор">
+                    </figure>
+                </div>
+                <div class="male">
+                    <span>Женщины</span>
+                    <span>Мужчины</span>
+                </div>
+            </div>
+            <div class="col woman">
+                <div class="col-md-7 col-12 human">
+                    <div class="hobby">
+								<span class="hobby-icon">
+									<img src="{{ asset('images/hobby/ice-skating.png') }}" alt="Ice-skating">
+								</span>
+                        <span class="hobby-icon">
+									<img src="{{ asset('images/hobby/coffee-cup.png') }}" alt="Coffee">
+								</span>
+                        <span class="hobby-icon">
+									<img src="{{ asset('images/hobby/bucket.png') }}" alt="Busket">
+								</span>
+                        <span class="hobby-icon">
+									<img src="{{ asset('images/hobby/run.png') }}" alt="Run">
+								</span>
+                        <span>Мои Интересы</span>
+                    </div>
+                    <h4>Олеся</h4>
+                    <h5>главный бухгалтер</h5>
+
+                    <p>
+                        Очень полезное приложение для тех, кому не охота серфить поисковики. Все собрано в одном. Реальный мультитул. Суперрр 👍))) Очень жду))
+                    </p>
+                </div>
+                <div class="col-md-4 col-12 team-photo">
+                    <figure>
+                        <img src="{{ asset('images/team/07_olesya.jpg') }}" alt="Олеся - главный бухгалтер" title="Олеся - главный бухгалтер">
+                    </figure>
+                </div>
+                <div class="male">
+                    <span>Женщины</span>
+                    <span>Мужчины</span>
+                </div>
+            </div>
+            <div class="col man">
+                <div class="col-md-7 col-12 human">
+                    <div class="hobby">
+								<span class="hobby-icon">
+									<img src="{{ asset('images/hobby/camera.png') }}" alt="Camera">
+								</span>
+                        <span class="hobby-icon">
 									<img src="{{ asset('images/hobby/car.png') }}" alt="Car">
+								</span>
+                        <span class="hobby-icon">
+									<img src="{{ asset('images/hobby/football.png') }}" alt="Football">
 								</span>
                         <span class="hobby-icon">
 									<img src="{{ asset('images/hobby/games.png') }}" alt="Games">
 								</span>
                         <span>Мои Интересы</span>
                     </div>
-                    <h4>Ксения</h4>
-                    <h5>дизайнер</h5>
+                    <h4>Владислав</h4>
+                    <h5>съёмка, монтаж видео</h5>
+
                     <p>
-                        Приветсвую!
-                        Считаю этот проект полезным для всех людей, кто путешествует, есть необходимо прокладывать маршруты,
+                        Сейчас множества приложений такого рода, но ни в одном нету такого большого количества функций. Остановилась на LifeUp, жду с нетерпением запуска. Разработчикам - респект!!! Просто и ничего лишнего. Спасибо!!!
+                        Roman Popovi4
+                        Вроде хорошое приложение, задумка - тоже неплохая)) дизайн приличный, поживем, увидим))
                     </p>
-                    <p>
-                        заранее искать интересные места, если ты один, то можно найти попутчиков и того, кто приютит.
-                        Путешественникам я хочу пожелать хорошего отдыха, изучения новой культуры/ мест, это главное при любых путешествиях.
-                    </p>
-                    <!--<div>
-                        <span class="location">Киев, Украина</span>
-                        <a href="#">Так же благодарю:</a>
-                    </div>-->
                 </div>
                 <div class="col-md-4 col-12 team-photo">
                     <figure>
-                        <img src="{{ asset('images/team/Ksenia.jpg') }}" alt="Ксения">
+                        <img src="{{ asset('images/team/08_vladislav.jpg') }}" alt="Владислав - съёмка, монтаж видео" title="Владислав - съёмка, монтаж видео">
+                    </figure>
+                </div>
+                <div class="male">
+                    <span>Женщины</span>
+                    <span>Мужчины</span>
+                </div>
+            </div>
+            <div class="col man">
+                <div class="col-md-7 col-12 human">
+                    <div class="hobby">
+								<span class="hobby-icon">
+									<img src="{{ asset('images/hobby/sing.png') }}" alt="Sing">
+								</span>
+                        <span class="hobby-icon">
+									<img src="{{ asset('images/hobby/darts.png') }}" alt="Darts">
+								</span>
+                        <span class="hobby-icon">
+									<img src="{{ asset('images/hobby/sea.png') }}" alt="Sea">
+								</span>
+                        <span class="hobby-icon">
+									<img src="{{ asset('images/hobby/barbell.png') }}" alt="Barbell">
+								</span>
+                        <span>Мои Интересы</span>
+                    </div>
+                    <h4>Владислав</h4>
+                    <h5>web вёрстка</h5>
+
+                    <p>
+                       Реально полезное приложение! Я уже давно такое искал, жалко только что нет еще на андроид! Буду ждать)) Разрабам - спасибо!!!
+                    </p>
+                </div>
+                <div class="col-md-4 col-12 team-photo">
+                    <figure>
+                        <img src="{{ asset('images/team/09_vladislav.jpg') }}" alt="Владислав - web вёрстка" title="Владислав - web вёрстка">
+                    </figure>
+                </div>
+                <div class="male">
+                    <span>Женщины</span>
+                    <span>Мужчины</span>
+                </div>
+            </div>
+            <div class="col man">
+                <div class="col-md-7 col-12 human">
+                    <div class="hobby">
+								<span class="hobby-icon">
+									<img src="{{ asset('images/hobby/books.png') }}" alt="Books">
+								</span>
+                        <span class="hobby-icon">
+									<img src="{{ asset('images/hobby/tent.png') }}" alt="Tent">
+								</span>
+                        <span class="hobby-icon">
+									<img src="{{ asset('images/hobby/games.png') }}" alt="Games">
+								</span>
+                        <span class="hobby-icon">
+									<img src="{{ asset('images/hobby/guitar.png') }}" alt="Guitar">
+								</span>
+                        <span>Мои Интересы</span>
+                    </div>
+                    <h4>Денис</h4>
+                    <h5>junior web developer</h5>
+
+                    <p>
+                        Интересная задумка. все что понадобится путешественнику - все в одном месте. По идее удобно. Посмотрим  на реализацию
+                    </p>
+                </div>
+                <div class="col-md-4 col-12 team-photo">
+                    <figure>
+                        <img src="{{ asset('images/team/10_denis.jpg') }}" alt="Денис - junior web developer" title="Денис - junior web developer">
                     </figure>
                 </div>
                 <div class="male">
@@ -627,18 +903,18 @@
 									<img src="{{ asset('images/hobby/ice-skating.png') }}" alt="Ice Skating">
 								</span>
                         <span class="hobby-icon">
-									<img src="{{ asset('images/hobby/bucket.png') }}" alt="Busket">
+									<img src="{{ asset('images/hobby/swimming.png') }}" alt="Swimming">
 								</span>
                         <span class="hobby-icon">
-									<img src="{{ asset('images/hobby/books.png') }}" alt="Books">
+									<img src="{{ asset('images/hobby/football.png') }}" alt="Football">
 								</span>
                         <span class="hobby-icon">
-									<img src="{{ asset('images/hobby/flowers.png') }}" alt="Flowers">
+									<img src="{{ asset('images/hobby/dog.png') }}" alt="Dog">
 								</span>
                         <span>Мои Интересы</span>
                     </div>
                     <h4>Дмитрий</h4>
-                    <h5>разработчик</h5>
+                    <h5>Android разработчик</h5>
                     <p>
                         Когда во время путешествия встречаешь разных людей, слушаешь их истории, узнаешь их менталитет, характер -
                         начинаешь смотреть на свою жизнь иначе, с другой стороны.
@@ -657,89 +933,7 @@
                 </div>
                 <div class="col-md-4 col-12 team-photo">
                     <figure>
-                        <img src="{{ asset('images/team/dmitriy.jpg') }}" alt="Dmitriy">
-                    </figure>
-                </div>
-                <div class="male">
-                    <span>Женщины</span>
-                    <span>Мужчины</span>
-                </div>
-            </div>
-            <div class="col man">
-                <div class="col-md-7 col-12 human">
-                    <div class="hobby">
-								<span class="hobby-icon">
-									<img src="{{ asset('images/hobby/camera.png') }}" alt="Photo">
-								</span>
-                        <span class="hobby-icon">
-									<img src="{{ asset('images/hobby/tennis.png') }}" alt="Big Tennis">
-								</span>
-                        <span class="hobby-icon">
-									<img src="{{ asset('images/hobby/travel.png') }}" alt="Travel">
-								</span>
-                        <span class="hobby-icon">
-									<img src="{{ asset('images/hobby/barbell.png') }}" alt="Barbell">
-								</span>
-                        <span>Мои Интересы</span>
-                    </div>
-                    <h4>андрей</h4>
-                    <h5>координатор проекта</h5>
-                    <p>
-                        Я бачу потенціал цієї платформи як зручного агрегатора сервісів, потрібних для організації подорожі.
-                    </p>
-                    <p>
-                        Більше того, «LIFEUP» об’єднує людей за інтересами і дає змогу спілкуватись без мовних обмежень.
-                        Тобто, по суті – це ще й повноцінна соціальна мережа для мандрівників.
-                    </p>
-                    <!--<div>
-                        <span class="location">Киев, Украина</span>
-                        <a href="#">Так же благодарю:</a>
-                    </div>-->
-                </div>
-                <div class="col-md-4 col-12 team-photo">
-                    <figure>
-                        <img src="{{ asset('images/team/Andrey.jpg') }}" alt="Andrey">
-                    </figure>
-                </div>
-                <div class="male">
-                    <span>Женщины</span>
-                    <span>Мужчины</span>
-                </div>
-            </div>
-            <div class="col man">
-                <div class="col-md-7 col-12 human">
-                    <div class="hobby">
-								<span class="hobby-icon">
-									<img src="{{ asset('images/hobby/darts.png') }}" alt="Darts">
-								</span>
-                        <span class="hobby-icon">
-									<img src="{{ asset('images/hobby/guitar.png') }}" alt="Guitar">
-								</span>
-                        <span class="hobby-icon">
-									<img src="{{ asset('images/hobby/television.png') }}" alt="TV">
-								</span>
-                        <span class="hobby-icon">
-									<img src="{{ asset('images/hobby/football.png') }}" alt="Football">
-								</span>
-                        <span>Мои Интересы</span>
-                    </div>
-                    <h4>алексей</h4>
-                    <h5>Бизнес-планирование,управление финансами</h5>
-                    <p>
-                        Есть много версий о том, зачем люди путешествуют:
-                        «повидать мир», «узнать что-то новое», «пообщаться с людьми из разных стран», «познакомиться с другими культурами».
-                    </p>
-                    <p>
-                        Моя версия – люди ищут и находят себя. И LifeUp им в этом поможет
-                    </p>
-                    <!--<div>
-                        <span class="location">Киев, Украина</span>
-                        <a href="#">Так же благодарю:</a>
-                    </div>-->
-                </div>
-                <div class="col-md-4 col-12 team-photo">
-                    <figure>
-                        <img src="{{ asset('images/team/Alexey.JPG') }}" alt="Aleksey">
+                        <img src="{{ asset('images/team/11_dmitriy.jpg') }}" alt="Dmitriy">
                     </figure>
                 </div>
                 <div class="male">
@@ -751,20 +945,105 @@
                 <div class="col-md-7 col-12 human">
                     <div class="hobby">
 								<span class="hobby-icon">
-									<img src="{{ asset('images/hobby/car.png') }}" alt="Car">
+									<img src="{{ asset('images/hobby/barbell.png') }}" alt="Barbell">
 								</span>
                         <span class="hobby-icon">
-									<img src="{{ asset('images/hobby/ice-skating.png') }}" alt="ice Skating">
+									<img src="{{ asset('images/hobby/camera.png') }}" alt="Camera">
 								</span>
                         <span class="hobby-icon">
 									<img src="{{ asset('images/hobby/flowers.png') }}" alt="Flowers">
 								</span>
                         <span class="hobby-icon">
-									<img src="{{ asset('images/hobby/tent.png') }}" alt="Tent">
+									<img src="{{ asset('images/hobby/sea.png') }}" alt="Sea">
 								</span>
                         <span>Мои Интересы</span>
                     </div>
-                    <h4>наталия ступарь</h4>
+                    <h4>Анна</h4>
+                    <h5>дизайнер Android, web</h5>
+                    <p>
+                        Привет, не так давно данное приложение могло показаться неактуальным и чем то фантастическим, как полет на марс) Сейчас,
+                        когда открыты все дороги, мир полон прекрасного и интересного, хочется к этому миру прикоснуться и быть его частью..
+                    </p>
+                    <p>
+                        И хоть в данный момент есть другие приложения помогающие в этом,
+                        именно наше приложение Life Up соединяет в себе все возможности  других приложений для путешественников в одно и даже немного больше.
+                        Приложение Life Up шагнуло в ногу со временем и приглашает тебя сделать тоже самое. Будь свободным вместе с Life Up!
+                    </p>
+                    <!--<div>
+                        <span class="location">Киев, Украина</span>
+                        <a href="#">Так же благодарю:</a>
+                    </div>-->
+                </div>
+                <div class="col-md-4 col-12 team-photo">
+                    <figure>
+                        <img src="{{ asset('images/team/12_anna.jpg') }}" alt="Анна - дизайнер Android, web" title="Анна - дизайнер Android, web">
+                    </figure>
+                </div>
+                <div class="male">
+                    <span>Женщины</span>
+                    <span>Мужчины</span>
+                </div>
+            </div>
+            <div class="col woman">
+                <div class="col-md-7 col-12 human">
+                    <div class="hobby">
+								<span class="hobby-icon">
+									<img src="{{ asset('images/hobby/sing.png') }}" alt="Sign">
+								</span>
+                        <span class="hobby-icon">
+									<img src="{{ asset('images/hobby/flowers.png') }}" alt="Flowers">
+								</span>
+                        <span class="hobby-icon">
+									<img src="{{ asset('images/hobby/car.png') }}" alt="Car">
+								</span>
+                        <span class="hobby-icon">
+									<img src="{{ asset('images/hobby/camera.png') }}" alt="Camera">
+								</span>
+                        <span>Мои Интересы</span>
+                    </div>
+                    <h4>Ксения</h4>
+                    <h5>дизайнер iOS</h5>
+                    <p>
+                        Приветсвую!
+                        Считаю этот проект полезным для всех людей, кто путешествует, есть необходимо прокладывать маршруты,
+                    </p>
+                    <p>
+                        заранее искать интересные места, если ты один, то можно найти попутчиков и того, кто приютит.
+                        Путешественникам я хочу пожелать хорошего отдыха, изучения новой культуры/ мест, это главное при любых путешествиях.
+                    </p>
+                    <!--<div>
+                        <span class="location">Киев, Украина</span>
+                        <a href="#">Так же благодарю:</a>
+                    </div>-->
+                </div>
+                <div class="col-md-4 col-12 team-photo">
+                    <figure>
+                        <img src="{{ asset('images/team/13_kseniya.jpg') }}" alt="Ксения - дизайнер iOS" title="Ксения - дизайнер iOS">
+                    </figure>
+                </div>
+                <div class="male">
+                    <span>Женщины</span>
+                    <span>Мужчины</span>
+                </div>
+            </div>
+            <div class="col woman">
+                <div class="col-md-7 col-12 human">
+                    <div class="hobby">
+								<span class="hobby-icon">
+									<img src="{{ asset('images/hobby/sea.png') }}" alt="Sea">
+								</span>
+                        <span class="hobby-icon">
+									<img src="{{ asset('images/hobby/swimming.png') }}" alt="Swimming">
+								</span>
+                        <span class="hobby-icon">
+									<img src="{{ asset('images/hobby/television.png') }}" alt="television">
+								</span>
+                        <span class="hobby-icon">
+									<img src="{{ asset('images/hobby/travel.png') }}" alt="Travel">
+								</span>
+                        <span>Мои Интересы</span>
+                    </div>
+                    <h4>Наталия</h4>
                     <h5>копирайтер</h5>
                     <p>
                         Как минимум 80% людей перед отправкой в дорогу волнуются: будет ли жилье таким как на фото,
@@ -783,50 +1062,7 @@
                 </div>
                 <div class="col-md-4 col-12 team-photo">
                     <figure>
-                        <img src="{{ asset('images/team/Natalia.jpg') }}" alt="Natalia">
-                    </figure>
-                </div>
-                <div class="male">
-                    <span>Женщины</span>
-                    <span>Мужчины</span>
-                </div>
-            </div>
-            <div class="col woman">
-                <div class="col-md-7 col-12 human">
-                    <div class="hobby">
-								<span class="hobby-icon">
-									<img src="{{ asset('images/hobby/football.png') }}" alt="Football">
-								</span>
-                        <span class="hobby-icon">
-									<img src="{{ asset('images/hobby/camera.png') }}" alt="Camera">
-								</span>
-                        <span class="hobby-icon">
-									<img src="{{ asset('images/hobby/flowers.png') }}" alt="Flowers">
-								</span>
-                        <span class="hobby-icon">
-									<img src="{{ asset('images/hobby/tent.png') }}" alt="Tent">
-								</span>
-                        <span>Мои Интересы</span>
-                    </div>
-                    <h4>анна боровая</h4>
-                    <h5>дизайнер</h5>
-                    <p>
-                        Привет, не так давно данное приложение могло показаться неактуальным и чем то фантастическим, как полет на марс) Сейчас,
-                        когда открыты все дороги, мир полон прекрасного и интересного, хочется к этому миру прикоснуться и быть его частью..
-                    </p>
-                    <p>
-                        И хоть в данный момент есть другие приложения помогающие в этом,
-                        именно наше приложение Life Up соединяет в себе все возможности  других приложений для путешественников в одно и даже немного больше.
-                        Приложение Life Up шагнуло в ногу со временем и приглашает тебя сделать тоже самое. Будь свободным вместе с Life Up!
-                    </p>
-                    <!--<div>
-                        <span class="location">Киев, Украина</span>
-                        <a href="#">Так же благодарю:</a>
-                    </div>-->
-                </div>
-                <div class="col-md-4 col-12 team-photo">
-                    <figure>
-                        <img src="{{ asset('images/team/Anna.jpg') }}" alt="Anna">
+                        <img src="{{ asset('images/team/14_nataliya.jpg') }}" alt="Наталия - копирайтер" title="Наталия - копирайтер">
                     </figure>
                 </div>
                 <div class="male">
@@ -943,7 +1179,7 @@
                     {{ csrf_field() }}
                     <input class="col-sm-5 col" type="text" name="name" placeholder="Имя">
                     <input class="col-sm-5 col" type="email" name="email" placeholder="Почта">
-                    <p>{{ trans('messages.85')}}</p>
+                    {{--<p>{{ trans('messages.85')}}</p>--}}
                     <button class="col-sm-5 col-7" type="submit">{{ trans('messages.46')}}</button>
                 </form>
             </div>
@@ -998,6 +1234,34 @@
         </div>
     </div>
 
+    <!--Modal Video-->
+    <div class="modal left fade" id="modal_video" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+                <iframe width="100%" height="500" src="https://www.youtube.com/embed/wufA-pqBMXc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </div>
+    <div class="modal left fade" id="modal_prototype" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+                <iframe width="100%" height="500" src="https://www.youtube.com/embed/aLjherP7ZAY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </div>
+    <div class="modal left fade" id="modal_thanks" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+                <iframe width="100%" height="500" src="https://www.youtube.com/embed/XPKr7yEvHAY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </div>
     <!--<button class="btn-modal-forms" id="modal-form-btn" type="button" data-toggle="modal" data-target="#modal_form"></button>-->
     <!--Modal Banks-->
     <div class="modal left fade" id="BTC" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
