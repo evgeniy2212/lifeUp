@@ -316,7 +316,7 @@
                         <input class="col" type="text" name="name" placeholder="Имя">
                         <input class="col" type="email" name="email" placeholder="Почта">
                     </label>
-                    <p>СТАНЬ ОДИНМ ИЗ НАС ПРЯМО СЕЙЧАС И ПОЛУЧИ ЦЕННЫЕ ПРИЗЫ</p>
+                    <p>{{ trans('message.90')}}</p>
                     <button class="col-7" type="submit">{{ trans('messages.53')}}</button>
                 </form>
                 <ul class="col-md-3 col-sm-6 statistic">
