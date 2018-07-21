@@ -99,7 +99,7 @@
             {{ csrf_field() }}
             <input  type="text" name="name" placeholder="Имя">
             <input  type="email" name="email" placeholder="Почта">
-            <button type="submit">Будь первый</button>
+            <button type="submit">{{ trans('messages.85')}}</button>
         </form>
         <div class="language">
             <ul class="download">
@@ -305,7 +305,7 @@
                         <input class="col" type="text" name="name" placeholder="Имя">
                         <input class="col" type="email" name="email" placeholder="Почта">
                     </label>
-                    <p>СТАНЬ ОДИН ИЗ НАС ПРЯМО СЕЙЧАС И ПОЛУЧИ ЦЕННЫЕ ПРИЗЫ</p>
+                    <p>СТАНЬ ОДИНМ ИЗ НАС ПРЯМО СЕЙЧАС И ПОЛУЧИ ЦЕННЫЕ ПРИЗЫ</p>
                     <button class="col-7" type="submit">{{ trans('messages.53')}}</button>
                 </form>
                 <ul class="col-md-3 col-sm-6 statistic">
@@ -543,7 +543,7 @@
         <div class="about-section">
             <div class="container">
                 <div class="offset-lg-6 offset-md-4 сol-6 heating">
-                    <h3>НАША КОМАНДА<span></span></h3>
+                    <h3>{{ trans('messages.86') }}<span></span></h3>
                     <p>{{ trans('messages.28')}}</p>
                 </div>
             </div>
@@ -1108,7 +1108,7 @@
                         </ol>
                     </div>
                     <div class="col join">
-                        <a class="liked-btn" href="https://docs.google.com/forms/d/e/1FAIpQLSeZGBdghVSawe-EdhFm-LLWNrwH5niCfC1yCznMIRCC_iWdqQ/viewform" target="_blank">ПРИСОЕДЕНИТСЯ К РАЗРАБОТКЕ</a>
+                        <a class="liked-btn" href="https://docs.google.com/forms/d/e/1FAIpQLSeZGBdghVSawe-EdhFm-LLWNrwH5niCfC1yCznMIRCC_iWdqQ/viewform" target="_blank">ПРИСОЕДИНИТЬСЯ К РАЗРАБОТКЕ</a>
                         <p>
                             {{ trans('messages.36')}}
                         </p>

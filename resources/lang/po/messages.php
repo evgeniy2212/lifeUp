@@ -36,8 +36,7 @@ return [
 Jest to projekt niekomercyjny, dlatego potrzebujemy twojej pomocy dla rozwoju platformy. Razem zrobimy ją jeszcze bardziej funkcjonalną.',
     '33' => 'Wspierać',
     '34' => 'DOŁĄCZYĆ SIĘ DO OPRACOWANIA',
-    '35' => 'LIFEUP" – to unikalna platforma, Każdy członek zespołu włożył wiele sił i środków w celu opracowania i realizacji tej idei. 
-Jest to projekt niekomercyjny, dlatego potrzebujemy twojej pomocy dla rozwoju platformy. Razem zmożemy!',
+    '35' => '',
     '36' => 'Jeśli jesteś entuzjastą, jak my, masz pełno pomysłów jak można poprawić naszą aplikację, chcesz być w drużynie LifeUP - wciśnij przycisk, jeśli jesteś:',
     '37' => '-Doświadczony i kreatywny UX/UI designer',
     '38' => 'Dołącz',
@@ -46,7 +45,7 @@ Jest to projekt niekomercyjny, dlatego potrzebujemy twojej pomocy dla rozwoju pl
     '41' => 'Umiemy być wdzięczni!',
     '42' => 'Napisz nam, jaki rodzaj pomocy wyświadczyliście projektu',
     '43' => 'Google Pixel 2 64 GB czarny - 1 szt.',
-    '44' => 'Bonus-naklejki lub oryginalny plik z logiem, można to wszystko dostać ,',
+    '44' => 'Bonus-naklejki lub oryginalny plik z logiem, ',
     '45' => '* POD DAREM, ZAKUP TOWARÓW ZA 0,05 UAH Z VAT',
     '46' => 'Wysłać',
     '47' => 'KONTAKTY',
