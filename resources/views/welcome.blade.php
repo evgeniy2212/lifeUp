@@ -12,12 +12,23 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('css/fonts.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('css/style.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('css/media.css') }}">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120617677-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-120617677-1');
+    </script>
+
     <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-                new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-        })(window,document,'script','dataLayer','GTM-MX2MVDD');</script>
+    {{--<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':--}}
+                {{--new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],--}}
+            {{--j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=--}}
+            {{--'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);--}}
+        {{--})(window,document,'script','dataLayer','GTM-MX2MVDD');</script>--}}
     <!-- End Google Tag Manager -->
     <script type="text/javascript" src="{{ asset('js/jquery-3.3.1.js') }}"></script>
     <script type="text/javascript" src="{{ asset('js/popper.min.js') }}"></script>
@@ -28,8 +39,8 @@
 </head>
 <body id="home-page">
     <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MX2MVDD"
-                      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    {{--<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MX2MVDD"--}}
+                      {{--height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>--}}
     <!-- End Google Tag Manager (noscript) -->
 
     <header>
@@ -310,7 +321,7 @@
                 </form>
                 <ul class="col-md-3 col-sm-6 statistic">
                     <li class="stat">
-                        <span>36%<br>Android</span>
+                        <span>16%<br>Android</span>
                         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 505.145 505.145" style="enable-background:new 0 0 505.145 505.145;" xml:space="preserve">
 									<path class="st0" d="M68.541,164.715h-1.294c-16.588,0-30.113,13.568-30.113,30.113v131.107
 										c0,16.61,13.525,30.134,30.113,30.134h1.316c16.588,0,30.113-13.568,30.113-30.134V194.827
@@ -333,7 +344,7 @@
 								</svg>
                     </li>
                     <li class="stat">
-                        <span>7%<br>iOS</span>
+                        <span>4%<br>iOS</span>
                         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
 									<path class="st0" d="M395.748,272.046c-0.646-64.841,52.88-95.938,55.271-97.483c-30.075-44.01-76.925-50.039-93.62-50.736
 										c-39.871-4.037-77.798,23.474-98.033,23.474c-20.184,0-51.409-22.877-84.476-22.276c-43.458,0.646-83.529,25.269-105.906,64.19
@@ -345,7 +356,7 @@
 								</svg>
                     </li>
                     <li class="stat">
-                        <span>18%<br>Web</span>
+                        <span>7%<br>Web</span>
                         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
 									<path class="st0" d="M129.139,223.29L55.873,96.389C102.782,37.657,174.99,0.019,256,0.019c93.717,0,175.654,50.368,220.266,125.5H267.381
 										c-3.752-0.325-7.546-0.5-11.381-0.5C195.063,125.019,143.711,166.841,129.139,223.29z M347.652,162.519h146.73
@@ -569,15 +580,14 @@
                     <h4>александр сивчиков</h4>
                     <h5>руководитель проекта life up</h5>
                     <p>
-                        Каждое путешествие дает какой-то опыт. Для меня – это, в первую очередь, новые эмоции и знакомства с интересными людьми.
-                        Но чтобы поездка удалась, ее надо спланировать, а это занимает время.
-                    </p>
-                    <p>
-                        Приложение, которое разрабатывает наша команда, помогает быстро организовать путешествие и отправиться в него с «твоими» людьми.
-                        Это приложение – «LIFEUP».
+                        Как написал У. Берроуз: "Жить необязательно. Путешествовать — необходимо." Но чтобы поездка удалась, её нужно правильно спланировать.
+                        А это — трудоёмкий процесс. LifeUp помогает не только сэкономить время, но и правильно организовать путешествие, отправившись в него со «своими» людьми.
                     </p>
                     <div>
                         <span class="location">{{ trans('messages.30')}}</span>
+
+                    </div>
+                    <div class="thanks">
                         <h6>
                             Так же благодарю:
                             <a data-toggle="modal" data-target="#modal_thanks"></a>
@@ -1179,13 +1189,16 @@
                     <li>{{ trans('messages.81')}}</li>
                     <li>{{ trans('messages.82')}}</li>
                     <li>{{ trans('messages.83')}}</li>
+                    <li>{{ trans('messages.87')}}</li>
+                    <li>{{ trans('messages.88')}}</li>
+                    <li>{{ trans('messages.89')}}</li>
                 </ul>
                 <p>
                     {{ trans('messages.44')}}
                     <br>
                     {{ trans('messages.84')}}
                     <br>
-                    <span>*Под подарком подразумевается приобретение товара за 0,01 грн с учетом НДС.</span>
+                    <span>*Под подарком подразумевается приобретение товара за 0,05 грн с учетом НДС.</span>
                 </p>
                 <form class="col-lg-9 col-md-12" method="POST" action="{{ route('mail_present') }}">
                     {{ csrf_field() }}

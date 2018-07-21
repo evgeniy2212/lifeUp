@@ -86,4 +86,9 @@ Jest to projekt niekomercyjny, dlatego potrzebujemy twojej pomocy dla rozwoju pl
     '82' => 'Markowa bluza - 20 szt.',
     '83' => 'Multitool Leatherman Leap Green. 10 szt.',
     '84' => 'Można to wszystko dostać , po prostu napisz nam o tym!',
+    '85' => 'Be first',
+    '86' => 'OUR TEAM',
+    '87' => 'T-shirt m/f - 50 pcs.',
+    '88' => 'Power Bank 10 mAh with print "LifeUp" 10 pcs.',
+    '89' => 'Keyfob - 100 pcs.',
 ];

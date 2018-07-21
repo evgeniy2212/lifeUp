@@ -87,4 +87,7 @@ return [
     '84' => 'Can be received by anyone, just text us!',
     '85' => 'Be first',
     '86' => 'OUR TEAM',
+    '87' => 'T-shirt m/f - 50 pcs.',
+    '88' => 'Power Bank 10 mAh with print "LifeUp" 10 pcs.',
+    '89' => 'Keyfob - 100 pcs.',
 ];
