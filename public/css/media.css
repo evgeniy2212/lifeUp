@@ -626,6 +626,12 @@
     .our-contacts form textarea {
         height: 200px   ;
     }
+
+    .thanks {
+        position: unset;
+        transform: translate(0, 0);
+        right: 0;
+    }
 }
 
 @media screen and (max-width: 480px) {
