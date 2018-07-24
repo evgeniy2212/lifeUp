@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Life Up">
+    <meta property="og:title" content="Life UP - travel for free"/>
+    <meta property="og:image" content="{{asset('img/life-preview.jpg')}}"/>
     <link rel="shortcut icon" href="{{ asset('images/favicon.png') }}" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="{{ asset('css/reset.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('css/bootstrap.min.css') }}">
@@ -12,6 +14,9 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('css/fonts.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('css/style.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('css/media.css') }}">
+
+
+    {{--life-preview.jpg--}}
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120617677-1"></script>
@@ -108,8 +113,8 @@
         </ul>
         <form class="d-flex" method="POST" action="{{ route('mail_present') }}">
             {{ csrf_field() }}
-            <input  type="text" name="name" placeholder="Имя">
-            <input  type="email" name="email" placeholder="Почта">
+            <input  type="text" name="name" placeholder="{{trans('messages.92')}}">
+            <input  type="email" name="email" placeholder="{{trans('messages.93')}}">
             <button type="submit">{{ trans('messages.85')}}</button>
         </form>
         <div class="language">
@@ -313,10 +318,10 @@
                 <form class="col-md-4 col-sm-6" method="POST" action="{{ route('mail_present') }}">
                     {{ csrf_field() }}
                     <label>
-                        <input class="col" type="text" name="name" placeholder="Имя">
-                        <input class="col" type="email" name="email" placeholder="Почта">
+                        <input class="col" type="text" name="name" placeholder="{{trans('messages.92')}}">
+                        <input class="col" type="email" name="email" placeholder="{{trans('messages.93')}}">
                     </label>
-                    <p>{{ trans('message.90')}}</p>
+                    <p>{{ trans('messages.90') }}</p>
                     <button class="col-7" type="submit">{{ trans('messages.53')}}</button>
                 </form>
                 <ul class="col-md-3 col-sm-6 statistic">
@@ -1119,7 +1124,7 @@
                         </ol>
                     </div>
                     <div class="col join">
-                        <a class="liked-btn" href="https://docs.google.com/forms/d/e/1FAIpQLSeZGBdghVSawe-EdhFm-LLWNrwH5niCfC1yCznMIRCC_iWdqQ/viewform" target="_blank">ПРИСОЕДИНИТЬСЯ К РАЗРАБОТКЕ</a>
+                        <a class="liked-btn" href="https://docs.google.com/forms/d/e/1FAIpQLSeZGBdghVSawe-EdhFm-LLWNrwH5niCfC1yCznMIRCC_iWdqQ/viewform" target="_blank">{{trans('messages.34')}}</a>
                         <p>
                             {{ trans('messages.36')}}
                         </p>
@@ -1199,12 +1204,12 @@
                     <br>
                     {{ trans('messages.84')}}
                     <br>
-                    <span>*Под подарком подразумевается приобретение товара за 0,05 грн с учетом НДС.</span>
+                    <span>{{trans('messages.91')}}</span>
                 </p>
                 <form class="col-lg-9 col-md-12" method="POST" action="{{ route('mail_present') }}">
                     {{ csrf_field() }}
-                    <input class="col-sm-5 col" type="text" name="name" placeholder="Имя">
-                    <input class="col-sm-5 col" type="email" name="email" placeholder="Почта">
+                    <input class="col-sm-5 col" type="text" name="name" placeholder="{{trans('messages.92')}}">
+                    <input class="col-sm-5 col" type="email" name="email" placeholder="{{trans('messages.93')}}">
                     {{--<p>{{ trans('messages.85')}}</p>--}}
                     <button class="col-sm-5 col-7" type="submit">{{ trans('messages.46')}}</button>
                 </form>
@@ -1245,8 +1250,8 @@
                 <form method="POST" action="{{'comments'}}">
                     {{ csrf_field() }}
                     <h5>Что вы думаете о нас?</h5>
-                    <input class="col-12" type="text" name="author" placeholder="Имя" required>
-                    <input class="col-12" type="email" name="email" placeholder="E-Mail" required>
+                    <input class="col-12" type="text" name="author" placeholder="{{trans('messages.92')}}" required>
+                    <input class="col-12" type="email" name="email" placeholder="{{trans('messages.93')}}" required>
                     <input class="col-12" type="text" name="city" placeholder="Город" required>
                     <textarea placeholder="Ваш Коментарий" name="text"></textarea>
                     <label>

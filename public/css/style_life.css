@@ -247,6 +247,11 @@
     .modal_mod {
         width:85%;
     }
+    .thanks {
+        position: unset;
+        transform: translate(0, 0);
+        right: 0;
+    }
 }
 /* кнопка закрытия */
 button.close {

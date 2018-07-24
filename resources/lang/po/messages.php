@@ -67,7 +67,7 @@ Jest to projekt niekomercyjny, dlatego potrzebujemy twojej pomocy dla rozwoju pl
     '63' => 'Aby zobaczyć, jak działa aplikacja, kliknij na ekran.',
     '64' => 'MOŻE CZEGO NAM BRAKUJE!',
     '65' => 'Również Dziękuję.',
-    '66' => 'ЭТО НЕКОММЕРЧЕСКИЙ ПРОЕКТ, ПОЭТОМУ НАМ НУЖНА ВАША ПОМОЩЬ ДЛЯ РАЗВИТИЯ ПЛАТФОРМЫ. ВМЕСТЕ МЫ СДЕЛАЕМ ЕЁ ЕЩЁ ФУНКЦИОНАЛЬНЕЕ!',
+    '66' => 'To niekomercyjny projekt, więc potrzebujemy twojej pomocy w rozwoju platformy. RAZEM ZAPEWNIAMY WIĘCEJ FUNKCJONALNOŚCI!',
     '67' => 'Wspierać LIFEUP możesz tak:',
     '68' => 'Powiedz o nas swoim znajomym i przyjaciołom. Podziel się  linkiem na projekt w sieciach społecznościowych lub po prostu uwierz w nas;',
     '69' => 'Wziąć udział w projektowaniu;',
@@ -91,4 +91,8 @@ Jest to projekt niekomercyjny, dlatego potrzebujemy twojej pomocy dla rozwoju pl
     '87' => 'T-shirt m/f - 50 pcs.',
     '88' => 'Power Bank 10 mAh with print "LifeUp" 10 pcs.',
     '89' => 'Keyfob - 100 pcs.',
+    '90' => 'ZOSTAŃ JEDNAK Z NAS PRAWO TERAZ I OTRZYMAJ OBECNE NAGRODY',
+    '91' => 'Pod darem oznacza zakup towarów za 0,05 UAH z VAT.',
+    '92' => 'Imię',
+    '93' => 'Poczta',
 ];
