@@ -89,7 +89,7 @@ Jest to projekt niekomercyjny, dlatego potrzebujemy twojej pomocy dla rozwoju pl
     '85' => 'Be first',
     '86' => 'OUR TEAM',
     '87' => 'T-shirt m/f - 50 pcs.',
-    '88' => 'Power Bank 10 mAh with print "LifeUp" 10 pcs.',
+    '88' => 'Power Bank 10.000 mAh with print "LifeUp" 10 pcs.',
     '89' => 'Keyfob - 100 pcs.',
     '90' => 'ZOSTAŃ JEDNAK Z NAS PRAWO TERAZ I OTRZYMAJ OBECNE NAGRODY',
     '91' => 'Pod darem oznacza zakup towarów za 0,05 UAH z VAT.',

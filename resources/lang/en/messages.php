@@ -88,7 +88,7 @@ return [
     '85' => 'Be first',
     '86' => 'OUR TEAM',
     '87' => 'T-shirt m/f - 50 pcs.',
-    '88' => 'Power Bank 10 mAh with print "LifeUp" 10 pcs.',
+    '88' => 'Power Bank 10.000 mAh with print "LifeUp" 10 pcs.',
     '89' => 'Keyfob - 100 pcs.',
     '90' => 'BECOME ONE OF US RIGHT NOW AND GET THE PRESENT PRIZES',
     '91' => 'Under the gift means the purchase of goods for 0.05 UAH including VAT.',
