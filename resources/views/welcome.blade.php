@@ -585,8 +585,7 @@
                     <h4>александр сивчиков</h4>
                     <h5>Founder</h5>
                     <p>
-                        Как написал У. Берроуз: "Жить необязательно. Путешествовать — необходимо." Но чтобы поездка удалась, её нужно правильно спланировать.
-                        А это — трудоёмкий процесс. LifeUp помогает не только сэкономить время, но и правильно организовать путешествие, отправившись в него со «своими» людьми.
+                        William S. Burroughs said “It is not necessary to live. It is necessary to travel”. However, if you want the journey to be successful, it has to be planned, and it is a tough process. LifeUp helps not only to save your time, but also to organize the trip correctly, so you would travel with the “right” people.
                     </p>
 
                     <div>
@@ -595,7 +594,7 @@
                     </div>
                     <div class="thanks">
                         <h6>
-                            Так же благодарю:
+                            Thank you too:
                             <a data-toggle="modal" data-target="#modal_thanks"></a>
                         </h6>
                     </div>
