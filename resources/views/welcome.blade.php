@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-MX2MVDD');</script>
+    <!-- End Google Tag Manager -->
+
+
     <title>Life Up</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -19,22 +29,15 @@
     {{--life-preview.jpg--}}
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120617677-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+    {{--<script async src="https://www.googletagmanager.com/gtag/js?id=UA-120617677-1"></script>--}}
+    {{--<script>--}}
+        {{--window.dataLayer = window.dataLayer || [];--}}
+        {{--function gtag(){dataLayer.push(arguments);}--}}
+        {{--gtag('js', new Date());--}}
 
-        gtag('config', 'UA-120617677-1');
-    </script>
+        {{--gtag('config', 'UA-120617677-1');--}}
+    {{--</script>--}}
 
-    <!-- Google Tag Manager -->
-    {{--<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':--}}
-                {{--new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],--}}
-            {{--j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=--}}
-            {{--'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);--}}
-        {{--})(window,document,'script','dataLayer','GTM-MX2MVDD');</script>--}}
-    <!-- End Google Tag Manager -->
     <script type="text/javascript" src="{{ asset('js/jquery-3.3.1.js') }}"></script>
     <script type="text/javascript" src="{{ asset('js/popper.min.js') }}"></script>
     <script type="text/javascript" src="{{ asset('js/jquery.circliful.min.js') }}"></script>
@@ -43,12 +46,13 @@
     <script type='text/javascript' src='{{ asset('js/general.js') }}'></script>
 </head>
 <body id="home-page">
-    <!-- Google Tag Manager (noscript) -->
-    {{--<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MX2MVDD"--}}
-                      {{--height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>--}}
-    <!-- End Google Tag Manager (noscript) -->
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MX2MVDD"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 
-    <header>
+
+<header>
     <nav class="container">
         <ul class="soc-links">
             <li>
@@ -582,7 +586,7 @@
 								</span>
                         <span>Мои Интересы</span>
                     </div>
-                    <h4>александр сивчиков</h4>
+                    <h4>александр</h4>
                     <h5>Founder</h5>
                     <p>
                         William S. Burroughs said “It is not necessary to live. It is necessary to travel”. However, if you want the journey to be successful, it has to be planned, and it is a tough process. LifeUp helps not only to save your time, but also to organize the trip correctly, so you would travel with the “right” people.
@@ -806,7 +810,7 @@
                     <h5>главный бухгалтер</h5>
 
                     <p>
-                        Очень полезное приложение для тех, кому не охота серфить поисковики. Все собрано в одном. Реальный мультитул. Суперрр 👍))) Очень жду))
+                        Отправившись в путешествие хоть раз, потом хочется еще и еще. И вот ты уже ждешь с нетерпением очередных впечатлений, открытия новой страны, новых знаний. Ты не можешь больше думать ни о чем, кроме путешествия… LifeUp - нечто новое, масштабное и по-моему, приложение просто необходимо каждому, кто любит путешествия.
                     </p>
                 </div>
                 <div class="col-md-4 col-12 team-photo">
@@ -840,9 +844,7 @@
                     <h5>съёмка, монтаж видео</h5>
 
                     <p>
-                        Сейчас множества приложений такого рода, но ни в одном нету такого большого количества функций. Остановилась на LifeUp, жду с нетерпением запуска. Разработчикам - респект!!! Просто и ничего лишнего. Спасибо!!!
-                        Roman Popovi4
-                        Вроде хорошое приложение, задумка - тоже неплохая)) дизайн приличный, поживем, увидим))
+                        Путешествие - это всегда новый мир, новые, яркие ощущения, которые практически нереально забыть. Это новые знакомства, и вообще. Просто приятное чувство! Социальная сеть LifeUp - будет полезной для туристов, это масса возможностей всего в одном приложении. Я буду им пользоваться, ведь это очень удобно.
                     </p>
                 </div>
                 <div class="col-md-4 col-12 team-photo">
@@ -876,7 +878,7 @@
                     <h5>web вёрстка</h5>
 
                     <p>
-                       Реально полезное приложение! Я уже давно такое искал, жалко только что нет еще на андроид! Буду ждать)) Разрабам - спасибо!!!
+                        Путешествуя ты получаешь независимость. Поэтому, в первую очередь - это возможность узнать нового себя, свои возможности. LifeUp эти возможности расширяет, другими словами, с этой платформой ты становишься реально свободным.
                     </p>
                 </div>
                 <div class="col-md-4 col-12 team-photo">
@@ -910,7 +912,7 @@
                     <h5>junior web developer</h5>
 
                     <p>
-                        Интересная задумка. все что понадобится путешественнику - все в одном месте. По идее удобно. Посмотрим  на реализацию
+                        Мне очень понравилась идея этого приложения, так как я тоже люблю путешествовать и не раз сталкивался с проблемами в пути. Платформа LifeUp помогает решить многие вопросы, плюс тут удобный интерфейс, с которым не запутаешься. Буду пользоваться сам и всем советую))
                     </p>
                 </div>
                 <div class="col-md-4 col-12 team-photo">
