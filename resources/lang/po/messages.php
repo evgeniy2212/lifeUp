@@ -95,4 +95,5 @@ Jest to projekt niekomercyjny, dlatego potrzebujemy twojej pomocy dla rozwoju pl
     '91' => 'Pod darem oznacza zakup towarów za 0,05 UAH z VAT.',
     '92' => 'Imię',
     '93' => 'Poczta',
+    '94' => 'Jak napisał William S. Burroughs “Zyć nie koniecznie, Podróżować koniecznie”.Ale aby wycieczka się udała, należy ją odpowiednio zaplanować. A to czasochłonny proces. LifeUp pomaga nie tylko zaoszczędzić czas, ale i prawidłowo zorganizować wycieczkę, razem ze "swoimi" ludźmi.',
 ];

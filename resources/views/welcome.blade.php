@@ -589,7 +589,7 @@
                     <h4>александр</h4>
                     <h5>Founder</h5>
                     <p>
-                        William S. Burroughs said “It is not necessary to live. It is necessary to travel”. However, if you want the journey to be successful, it has to be planned, and it is a tough process. LifeUp helps not only to save your time, but also to organize the trip correctly, so you would travel with the “right” people.
+                        {{ trans('message.94') }}
                     </p>
 
                     <div>
