@@ -589,7 +589,7 @@
                     <h4>александр</h4>
                     <h5>Founder</h5>
                     <p>
-                        {{ trans('message.94') }}
+                        {{ trans('messages.94') }}
                     </p>
 
                     <div>
